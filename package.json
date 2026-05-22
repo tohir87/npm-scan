@@ -1,0 +1,25 @@
+{
+  "name": "npm-scan",
+  "version": "0.1.0",
+  "description": "Security gateway wrapper for the npm CLI",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "bin": {
+    "npm-scan": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && node scripts/add-hashbang.mjs dist/cli.js && chmod 755 dist/cli.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "pacote": "^21.0.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/prompts": "^2.4.9",
+    "typescript": "^5.8.3"
+  }
+}
