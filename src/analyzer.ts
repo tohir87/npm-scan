@@ -9,12 +9,10 @@ export interface FindingsReport {
   filesScanned: number;
   urls: Array<{ file: string; line: number; match: string }>;
   ips: Array<{ file: string; line: number; match: string }>;
-  lifecycleScripts: Record<string, string>;
+  scripts: Record<string, string>;
 }
 
 const SCANNABLE_EXTENSIONS = new Set(['.js', '.ts', '.mjs', '.cjs', '.json']);
-
-const LIFECYCLE_HOOKS = ['preinstall', 'postinstall', 'install', 'prepare', 'prepack', 'postpack'];
 
 // HTTP/HTTPS URLs — stops at whitespace and common string-terminating characters
 const URL_PATTERN = /https?:\/\/[^\s'"` <>\\[\](){}]+/g;
@@ -45,7 +43,7 @@ export async function fetchAndScan(spec: string, tempDir: string): Promise<Findi
 
   const urls: FindingsReport['urls'] = [];
   const ips: FindingsReport['ips'] = [];
-  const lifecycleScripts: Record<string, string> = {};
+  const scripts: Record<string, string> = {};
 
   for (const filePath of files) {
     const relPath = relative(tempDir, filePath);
@@ -60,8 +58,8 @@ export async function fetchAndScan(spec: string, tempDir: string): Promise<Findi
       try {
         const parsed = JSON.parse(content) as { scripts?: Record<string, string> };
         if (parsed.scripts) {
-          for (const hook of LIFECYCLE_HOOKS) {
-            if (parsed.scripts[hook]) lifecycleScripts[hook] = parsed.scripts[hook];
+          for (const [name, cmd] of Object.entries(parsed.scripts)) {
+            scripts[name] = cmd;
           }
         }
       } catch {
@@ -92,7 +90,7 @@ export async function fetchAndScan(spec: string, tempDir: string): Promise<Findi
     }
   }
 
-  return { spec, resolvedVersion, filesScanned: files.length, urls, ips, lifecycleScripts };
+  return { spec, resolvedVersion, filesScanned: files.length, urls, ips, scripts };
 }
 
 // Compatibility shim for Dirent.parentPath vs Dirent.path across Node versions

@@ -1,6 +1,13 @@
 import prompts from 'prompts';
 import type { FindingsReport } from './analyzer.js';
 
+// npm runs these automatically during install — no user invocation needed
+const AUTO_RUN_HOOKS = new Set([
+  'preinstall', 'install', 'postinstall',
+  'prepare', 'prepublish',
+  'prepack', 'postpack',
+]);
+
 const A = {
   red:    '\x1b[31m',
   yellow: '\x1b[33m',
@@ -18,23 +25,29 @@ function c(color: keyof typeof A, text: string): string {
 const MAX_DISPLAY = 20;
 
 export async function presentFindings(report: FindingsReport): Promise<boolean> {
-  const { spec, resolvedVersion, filesScanned, urls, ips, lifecycleScripts } = report;
-  const hookCount = Object.keys(lifecycleScripts).length;
-  const totalFindings = urls.length + ips.length + hookCount;
+  const { spec, resolvedVersion, filesScanned, urls, ips, scripts } = report;
+  const scriptEntries = Object.entries(scripts);
+  const autoRunCount = scriptEntries.filter(([name]) => AUTO_RUN_HOOKS.has(name)).length;
+  const totalFindings = urls.length + ips.length + autoRunCount;
 
   console.log('');
   console.log(c('bold', `[npm-scan] Report: ${spec} → ${resolvedVersion}`));
   console.log(c('dim', `  ${filesScanned} file(s) scanned`));
   console.log('');
 
-  // Lifecycle scripts
-  if (hookCount > 0) {
-    console.log(c('red', `  Lifecycle scripts (${hookCount} found — these run on your machine):`));
-    for (const [hook, cmd] of Object.entries(lifecycleScripts)) {
-      console.log(`    ${c('yellow', hook.padEnd(12))} ${cmd}`);
+  // All scripts from package.json
+  if (scriptEntries.length > 0) {
+    const label = autoRunCount > 0
+      ? c('red', `  Scripts (${scriptEntries.length} found, ${autoRunCount} run automatically on install):`)
+      : c('yellow', `  Scripts (${scriptEntries.length} found):`);
+    console.log(label);
+    for (const [name, cmd] of scriptEntries) {
+      const isAutoRun = AUTO_RUN_HOOKS.has(name);
+      const tag = isAutoRun ? c('red', ' [auto-run]') : c('dim', '           ');
+      console.log(`    ${c(isAutoRun ? 'yellow' : 'dim', name.padEnd(16))}${tag}  ${cmd}`);
     }
   } else {
-    console.log(c('green', '  Lifecycle scripts: none'));
+    console.log(c('green', '  Scripts: none'));
   }
   console.log('');
 
