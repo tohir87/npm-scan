@@ -88,6 +88,13 @@ export async function presentFindings(report: FindingsReport): Promise<boolean> 
   }
   console.log('');
 
+  // Remote URLs are an automatic disqualifier — no point asking, just block
+  if (urls.length > 0) {
+    console.log(c('red', `  Blocked: remote URL(s) found in package contents.`));
+    console.log('');
+    return false;
+  }
+
   const response = await prompts({
     type: 'confirm',
     name: 'proceed',
