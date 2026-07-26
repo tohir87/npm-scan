@@ -10,7 +10,15 @@ export interface FindingsReport {
   urls: Array<{ file: string; line: number; match: string }>;
   ips: Array<{ file: string; line: number; match: string }>;
   scripts: Record<string, string>;
+  autoRunScripts: string[];
 }
+
+// npm runs these automatically during install — no user invocation needed
+export const AUTO_RUN_HOOKS = new Set([
+  'preinstall', 'install', 'postinstall',
+  'prepare', 'prepublish',
+  'prepack', 'postpack',
+]);
 
 const SCANNABLE_EXTENSIONS = new Set(['.js', '.ts', '.mjs', '.cjs', '.json']);
 
@@ -90,7 +98,9 @@ export async function fetchAndScan(spec: string, tempDir: string): Promise<Findi
     }
   }
 
-  return { spec, resolvedVersion, filesScanned: files.length, urls, ips, scripts };
+  const autoRunScripts = Object.keys(scripts).filter((name) => AUTO_RUN_HOOKS.has(name));
+
+  return { spec, resolvedVersion, filesScanned: files.length, urls, ips, scripts, autoRunScripts };
 }
 
 // Compatibility shim for Dirent.parentPath vs Dirent.path across Node versions

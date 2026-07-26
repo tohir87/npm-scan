@@ -1,12 +1,5 @@
 import prompts from 'prompts';
-import type { FindingsReport } from './analyzer.js';
-
-// npm runs these automatically during install — no user invocation needed
-const AUTO_RUN_HOOKS = new Set([
-  'preinstall', 'install', 'postinstall',
-  'prepare', 'prepublish',
-  'prepack', 'postpack',
-]);
+import { AUTO_RUN_HOOKS, type FindingsReport } from './analyzer.js';
 
 const A = {
   red:    '\x1b[31m',
@@ -24,10 +17,18 @@ function c(color: keyof typeof A, text: string): string {
 
 const MAX_DISPLAY = 20;
 
-export async function presentFindings(report: FindingsReport): Promise<boolean> {
-  const { spec, resolvedVersion, filesScanned, urls, ips, scripts } = report;
+export interface PresentOptions {
+  /** When false, no question is asked — the install proceeds only on a clean report. */
+  interactive: boolean;
+}
+
+export async function presentFindings(
+  report: FindingsReport,
+  options: PresentOptions = { interactive: true },
+): Promise<boolean> {
+  const { spec, resolvedVersion, filesScanned, urls, ips, scripts, autoRunScripts } = report;
   const scriptEntries = Object.entries(scripts);
-  const autoRunCount = scriptEntries.filter(([name]) => AUTO_RUN_HOOKS.has(name)).length;
+  const autoRunCount = autoRunScripts.length;
   const totalFindings = urls.length + ips.length + autoRunCount;
 
   console.log('');
@@ -93,6 +94,13 @@ export async function presentFindings(report: FindingsReport): Promise<boolean> 
     console.log(c('red', `  Blocked: remote URL(s) found in package contents.`));
     console.log('');
     return false;
+  }
+
+  if (!options.interactive) {
+    const decision = totalFindings === 0 ? 'allowing (clean report)' : 'declining (findings present)';
+    console.log(c('dim', `  Non-interactive: ${decision}.`));
+    console.log('');
+    return totalFindings === 0;
   }
 
   const response = await prompts({

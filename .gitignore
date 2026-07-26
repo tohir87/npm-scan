@@ -1,4 +1,5 @@
 node_modules/
 dist/
+eval_results/
 *.log
 .DS_Store

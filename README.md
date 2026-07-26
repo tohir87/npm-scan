@@ -81,6 +81,63 @@ npm-scan run build
 npm-scan outdated
 ```
 
+## Evaluation logging
+
+Every scanned package writes one structured JSON file to `eval_results/raw/`, so batch
+runs against a labelled dataset leave a full trace without needing a re-run.
+
+```bash
+# Scan and log without ever installing — the mode to use for dataset sweeps
+npm-scan install evil-pkg@1.0.2 --scan-only --dataset=D_mal
+
+# Sweep a whole list
+while read -r pkg; do npm-scan install "$pkg" --scan-only --dataset=D_ben; done < benign.txt
+```
+
+| Flag | Env var | Effect |
+|------|---------|--------|
+| `--scan-only` | `NPM_SCAN_SCAN_ONLY=1` | Scan + log every spec, never hand over to `npm install`. Implies `--no-prompt`. |
+| `--dataset=D_mal\|D_ben` | `NPM_SCAN_DATASET` | Ground-truth label; drives TP/FP/TN/FN classification. |
+| `--no-prompt` | `NPM_SCAN_NONINTERACTIVE=1` | Never ask — proceed only on a clean report. |
+| `--log-dir=<path>` | `NPM_SCAN_LOG_DIR` | Log destination (default `eval_results/raw`, relative to cwd). |
+| `--no-log` | `NPM_SCAN_LOG=0` | Disable logging for this run. |
+
+These flags are consumed by `npm-scan` and never forwarded to the real `npm`.
+
+One file per scanned spec, named `<timestamp>__<spec>__<run-id>.json`:
+
+```json
+{
+  "package_name": "example-malicious-pkg",
+  "version": "1.0.2",
+  "dataset_category": "D_mal",
+  "execution_time_ms": 142,
+  "manifest_urls_found": ["http://evil-domain.com/stage2.sh"],
+  "ast_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": "TP",
+  "error_log": null,
+  "run_id": "…", "timestamp": "…", "spec": "example-malicious-pkg@1.0.2",
+  "verdict": "blocked", "detected_suspicious": true, "installed": false,
+  "files_scanned": 12, "ips_found": [], "auto_run_scripts": ["postinstall"],
+  "scripts": { "postinstall": "node install.js" }
+}
+```
+
+**Classification** is derived from the dataset label and whether the scan surfaced
+anything reviewable (a URL, an IP literal, or an auto-run lifecycle hook):
+`D_mal` + detected → `TP`, `D_mal` + clean → `FN`, `D_ben` + detected → `FP`,
+`D_ben` + clean → `TN`. Without `--dataset` it stays `null`.
+
+**Two fields are placeholders.** `ast_intents` is always `[]` and
+`semantic_mismatch_detected` always `null` — the scanner is regex-based today and has
+no AST or semantic pass. They are in the schema so downstream aggregation doesn't need
+changing when those analyses land.
+
+Failed scans (404s, network errors) are logged too, with `verdict: "error"`,
+the message in `error_log`, and `classification: null` — an incomplete run can't be
+scored either way. A log-write failure prints a warning and never blocks an install.
+
 ## Shell alias (transparent wrapping)
 
 To make `npm` itself go through `npm-scan`, add an alias to your shell profile:
@@ -106,6 +163,7 @@ src/
   analyzer.ts   # pacote fetch + file walker + regex scanner
   prompt.ts     # ANSI-coloured report + interactive Y/N prompt
   installer.ts  # Native npm passthrough and final install handover
+  logger.ts     # Structured JSON run logs + TP/FP/TN/FN classification
 scripts/
   add-hashbang.mjs  # Post-build: prepends #!/usr/bin/env node
 ```
