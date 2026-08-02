@@ -3,3 +3,8 @@ dist/
 eval_results/
 *.log
 .DS_Store
+
+# Secrets — URLHAUS_AUTH_KEY lives here
+.env
+.env.*
+!.env.example

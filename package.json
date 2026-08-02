@@ -14,6 +14,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
+    "hosted-git-info": "^9.0.3",
     "pacote": "^21.0.0",
     "prompts": "^2.4.2"
   },

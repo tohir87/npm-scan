@@ -2,8 +2,10 @@ import { mkdtemp, rm } from 'fs/promises';
 import { join } from 'path';
 import { tmpdir } from 'os';
 import { passthroughToNpm, runNpmInstall } from './installer.js';
-import { fetchAndScan, type FindingsReport } from './analyzer.js';
+import { fetchAndScan, type FindingsReport, type ScanContext } from './analyzer.js';
 import { presentFindings } from './prompt.js';
+import { loadUrlhaus, type IntelOptions } from './intel/urlhaus.js';
+import { loadDotEnv } from './env.js';
 import {
   buildRunLog,
   writeRunLog,
@@ -14,6 +16,7 @@ import {
 
 const INSTALL_CMDS = new Set(['install', 'i']);
 const DATASET_CATEGORIES = new Set<DatasetCategory>(['D_mal', 'D_ben']);
+const DEFAULT_INTEL_TIMEOUT_MS = 3000;
 
 interface ScanOptions {
   /** Ground-truth label for the run; drives TP/FP/TN/FN classification. */
@@ -23,6 +26,7 @@ interface ScanOptions {
   scanOnly: boolean;
   logging: boolean;
   logDir: string;
+  intel: IntelOptions;
 }
 
 function parseDataset(value: string | undefined): DatasetCategory | null {
@@ -45,6 +49,11 @@ function parseArgs(rest: string[]): { specs: string[]; npmFlags: string[]; optio
     scanOnly: process.env.NPM_SCAN_SCAN_ONLY === '1',
     logging: process.env.NPM_SCAN_LOG !== '0',
     logDir: process.env.NPM_SCAN_LOG_DIR || DEFAULT_LOG_DIR,
+    intel: {
+      offline: process.env.NPM_SCAN_OFFLINE === '1',
+      refresh: false,
+      timeoutMs: Number(process.env.NPM_SCAN_INTEL_TIMEOUT) || DEFAULT_INTEL_TIMEOUT_MS,
+    },
   };
 
   const specs: string[] = [];
@@ -62,6 +71,16 @@ function parseArgs(rest: string[]): { specs: string[]; npmFlags: string[]; optio
     } else if (arg === '--scan-only') {
       options.scanOnly = true;
       options.interactive = false;
+    } else if (arg === '--offline') {
+      options.intel.offline = true;
+    } else if (arg === '--refresh-intel') {
+      options.intel.refresh = true;
+    } else if (arg.startsWith('--intel-timeout=')) {
+      const ms = Number(arg.slice('--intel-timeout='.length));
+      if (!Number.isFinite(ms) || ms <= 0) {
+        throw new Error(`Invalid --intel-timeout "${arg}" — expected a positive number of milliseconds.`);
+      }
+      options.intel.timeoutMs = ms;
     } else if (arg.startsWith('-')) {
       npmFlags.push(arg);
     } else {
@@ -77,7 +96,11 @@ interface ScanOutcome {
   failed: boolean;
 }
 
-async function scanOne(spec: string, options: ScanOptions): Promise<ScanOutcome> {
+async function scanOne(
+  spec: string,
+  options: ScanOptions,
+  context: ScanContext,
+): Promise<ScanOutcome> {
   const tempDir = await mkdtemp(join(tmpdir(), 'npm-scan-'));
   const started = Date.now();
 
@@ -87,7 +110,7 @@ async function scanOne(spec: string, options: ScanOptions): Promise<ScanOutcome>
 
   try {
     console.log(`\n[npm-scan] Fetching ${spec} for inspection...`);
-    report = await fetchAndScan(spec, tempDir);
+    report = await fetchAndScan(spec, tempDir, context);
     executionTimeMs = Date.now() - started;
   } catch (err) {
     executionTimeMs = Date.now() - started;
@@ -118,6 +141,9 @@ async function scanOne(spec: string, options: ScanOptions): Promise<ScanOutcome>
 }
 
 async function main(): Promise<void> {
+  // Before parseArgs, which reads its defaults straight out of process.env.
+  loadDotEnv();
+
   const args = process.argv.slice(2);
 
   if (args.length === 0) {
@@ -140,9 +166,14 @@ async function main(): Promise<void> {
     return;
   }
 
+  // Loaded once for the whole invocation: a sweep of a thousand specs answers every
+  // URL from one cached feed rather than a request per package.
+  const urlhaus = await loadUrlhaus(options.intel);
+  const context: ScanContext = { urlhaus, intelOptions: options.intel };
+
   let anyFailed = false;
   for (const spec of specs) {
-    const { proceed, failed } = await scanOne(spec, options);
+    const { proceed, failed } = await scanOne(spec, options, context);
     anyFailed ||= failed;
 
     // In scan-only mode every spec gets scanned and logged, whatever the verdict.

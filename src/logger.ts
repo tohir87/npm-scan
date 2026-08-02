@@ -1,13 +1,27 @@
 import { mkdir, writeFile } from 'fs/promises';
 import { join, isAbsolute, resolve } from 'path';
 import { randomUUID } from 'crypto';
-import type { FindingsReport } from './analyzer.js';
+import type { Finding, FindingsReport, IntelSourceStatus } from './analyzer.js';
+import type { Position, Severity, SeverityCounts } from './classify.js';
+import type { Provenance } from './origins.js';
 
 export type DatasetCategory = 'D_mal' | 'D_ben';
 export type Classification = 'TP' | 'FP' | 'TN' | 'FN';
 export type Verdict = 'blocked' | 'allowed' | 'error';
 
 export const DEFAULT_LOG_DIR = 'eval_results/raw';
+
+/** One judged finding, flattened for downstream aggregation. */
+export interface FindingLogEntry {
+  match: string;
+  severity: Severity;
+  position: Position;
+  provenance: Provenance;
+  sinks: string[];
+  reasons: string[];
+  occurrences: number;
+  first_seen: string;
+}
 
 export interface RunLogEntry {
   // --- eval schema ---
@@ -17,7 +31,10 @@ export interface RunLogEntry {
   execution_time_ms: number;
   /** Every HTTP(S) URL found in the extracted package, deduped. */
   manifest_urls_found: string[];
-  /** Reserved for the AST pass — the scanner is regex-only today, so always []. */
+  /**
+   * Network and process sinks found next to a finding. Still a regex proximity
+   * check rather than a real AST pass, but no longer an empty placeholder.
+   */
   ast_intents: string[];
   /** Reserved for the semantic-mismatch pass — not computed yet, so always null. */
   semantic_mismatch_detected: boolean | null;
@@ -33,17 +50,51 @@ export interface RunLogEntry {
   installed: boolean;
   files_scanned: number;
   ips_found: string[];
+  /** Hooks npm runs when installing this tarball — the ones that execute on your machine. */
   auto_run_scripts: string[];
+  /** Packaging hooks, which do not run for a registry install. */
+  publish_scripts: string[];
   scripts: Record<string, string>;
+
+  // --- classification detail ---
+  severity_counts: SeverityCounts;
+  /** Per-URL and per-IP verdicts with the rules that produced them. */
+  url_findings: FindingLogEntry[];
+  ip_findings: FindingLogEntry[];
+  /** Hosts derived from the package's own manifest, used to declassify self-references. */
+  self_origins: Array<{ host: string; owner: string | null; field: string }>;
+  osv_advisories: Array<{ id: string; summary: string; malicious: boolean }>;
+  /**
+   * Which feed each verdict was drawn from and when it was downloaded. Without this
+   * a threat-intel-dependent result can't be reproduced or compared across sweeps.
+   */
+  intel_snapshot: IntelSourceStatus[];
 }
 
 /**
- * A package counts as "detected" when the scan surfaced anything the report
- * asks the user to review — remote URLs, IP literals, or auto-run lifecycle
- * hooks. This is the signal that gets scored against the dataset label.
+ * A package counts as "detected" when the scan produced at least one finding worth
+ * a human decision — a critical or a warning.
+ *
+ * This replaces "any URL, IP or lifecycle hook is a detection". That predicate fired
+ * on essentially every published package, because every package declares a repository
+ * URL, which made the FP and TN columns of an eval sweep meaningless.
  */
 export function isDetected(report: FindingsReport): boolean {
-  return report.urls.length > 0 || report.ips.length > 0 || report.autoRunScripts.length > 0;
+  return report.severityCounts.critical > 0 || report.severityCounts.warn > 0;
+}
+
+function toFindingLog(finding: Finding): FindingLogEntry {
+  const first = finding.occurrences[0];
+  return {
+    match: finding.match,
+    severity: finding.verdict.severity,
+    position: finding.verdict.position,
+    provenance: finding.verdict.provenance,
+    sinks: finding.verdict.sinks,
+    reasons: finding.verdict.reasons,
+    occurrences: finding.occurrences.length,
+    first_seen: first ? `${first.file}:${first.line}` : '',
+  };
 }
 
 export function classify(
@@ -53,10 +104,6 @@ export function classify(
   if (dataset === null) return null;
   if (dataset === 'D_mal') return detected ? 'TP' : 'FN';
   return detected ? 'FP' : 'TN';
-}
-
-function dedupe(values: string[]): string[] {
-  return [...new Set(values)];
 }
 
 export interface BuildLogInput {
@@ -74,12 +121,13 @@ export function buildRunLog(input: BuildLogInput): RunLogEntry {
   const detected = report ? isDetected(report) : false;
 
   return {
-    package_name: report?.spec ?? spec,
+    package_name: report?.name ?? spec,
     version: report?.resolvedVersion ?? null,
     dataset_category: dataset,
     execution_time_ms: executionTimeMs,
-    manifest_urls_found: report ? dedupe(report.urls.map((u) => u.match)) : [],
-    ast_intents: [],
+    // Already unique — the analyzer collapses repeats.
+    manifest_urls_found: report ? report.urls.map((u) => u.match) : [],
+    ast_intents: report?.sinks ?? [],
     semantic_mismatch_detected: null,
     // A run that never completed can't be scored either way.
     classification: report ? classify(dataset, detected) : null,
@@ -92,9 +140,17 @@ export function buildRunLog(input: BuildLogInput): RunLogEntry {
     detected_suspicious: detected,
     installed,
     files_scanned: report?.filesScanned ?? 0,
-    ips_found: report ? dedupe(report.ips.map((i) => i.match)) : [],
+    ips_found: report ? report.ips.map((i) => i.match) : [],
     auto_run_scripts: report?.autoRunScripts ?? [],
+    publish_scripts: report?.publishScripts ?? [],
     scripts: report?.scripts ?? {},
+
+    severity_counts: report?.severityCounts ?? { critical: 0, warn: 0, info: 0 },
+    url_findings: report ? report.urls.map(toFindingLog) : [],
+    ip_findings: report ? report.ips.map(toFindingLog) : [],
+    self_origins: report?.selfOrigins ?? [],
+    osv_advisories: report?.osv.advisories ?? [],
+    intel_snapshot: report?.intelSources ?? [],
   };
 }
 
