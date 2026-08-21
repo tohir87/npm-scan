@@ -18,6 +18,8 @@ export interface FindingLogEntry {
   position: Position;
   provenance: Provenance;
   sinks: string[];
+  /** Module loaders the match was the specifier of — `require`, `import()`, … */
+  loaders: string[];
   reasons: string[];
   occurrences: number;
   first_seen: string;
@@ -36,6 +38,12 @@ export interface RunLogEntry {
    * check rather than a real AST pass, but no longer an empty placeholder.
    */
   ast_intents: string[];
+  /**
+   * The subset of intents that load remote *code* rather than fetch data. Kept as its
+   * own column because a remote dynamic dependency is a different class of finding
+   * from a callback, and a sweep should be able to count them separately.
+   */
+  code_load_intents: string[];
   /** Reserved for the semantic-mismatch pass — not computed yet, so always null. */
   semantic_mismatch_detected: boolean | null;
   classification: Classification | null;
@@ -91,6 +99,7 @@ function toFindingLog(finding: Finding): FindingLogEntry {
     position: finding.verdict.position,
     provenance: finding.verdict.provenance,
     sinks: finding.verdict.sinks,
+    loaders: finding.verdict.loaders,
     reasons: finding.verdict.reasons,
     occurrences: finding.occurrences.length,
     first_seen: first ? `${first.file}:${first.line}` : '',
@@ -127,7 +136,8 @@ export function buildRunLog(input: BuildLogInput): RunLogEntry {
     execution_time_ms: executionTimeMs,
     // Already unique — the analyzer collapses repeats.
     manifest_urls_found: report ? report.urls.map((u) => u.match) : [],
-    ast_intents: report?.sinks ?? [],
+    ast_intents: [...new Set([...(report?.sinks ?? []), ...(report?.codeLoads ?? [])])],
+    code_load_intents: report?.codeLoads ?? [],
     semantic_mismatch_detected: null,
     // A run that never completed can't be scored either way.
     classification: report ? classify(dataset, detected) : null,

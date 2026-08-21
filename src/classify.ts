@@ -4,6 +4,7 @@ import {
   hasNonStandardPort,
   isLoopbackHost,
   isPrivateIpHost,
+  isPinnedPackageCdn,
   isPunycodeHost,
   isRawIpHost,
   matchAbuseInfrastructure,
@@ -33,6 +34,11 @@ const POSITION_RANK: Record<Position, number> = {
 };
 
 const INERT_POSITIONS = new Set<Position>(['metadata', 'comment', 'sourcemap']);
+
+/** Positions where a match is a string in a document, not something that runs. */
+export function isInertPosition(position: Position): boolean {
+  return INERT_POSITIONS.has(position);
+}
 
 export function worstPosition(positions: Position[]): Position {
   return positions.reduce(
@@ -92,6 +98,101 @@ export function findSinks(lines: string[], lineIndex: number): string[] {
   return [...found];
 }
 
+/**
+ * Module loaders: the argument they are given is not fetched, it is *executed*. A URL
+ * here is a remote dynamic dependency — the package ships an address instead of the
+ * code, and whatever answers that address runs in-process with full privileges the
+ * moment the module is imported. Nothing about the installed tarball tells you what
+ * that code is, and it can differ per download.
+ *
+ * Each pattern captures the specifier string so the match can be checked against it.
+ * Proximity is not good enough for this rule: `require('fs')` sits at the top of
+ * nearly every file, so a windowed check would make any URL near it look like a
+ * remote load. The URL has to be the argument.
+ */
+const CODE_LOAD_CALLS: Array<[name: string, pattern: RegExp]> = [
+  ['require', /\brequire\s*\(\s*(['"`])([^'"`\n]*)\1/g],
+  ['import()', /\bimport\s*\(\s*(['"`])([^'"`\n]*)\1/g],
+  ['importScripts', /\bimportScripts\s*\(\s*(['"`])([^'"`\n]*)\1/g],
+  ['new Worker', /\bnew\s+Worker\s*\(\s*(['"`])([^'"`\n]*)\1/g],
+  ['import from', /\b(?:import|export)\b[^;\n]*?\bfrom\s*(['"`])([^'"`\n]*)\1/g],
+  ['import', /\bimport\s+(['"`])([^'"`\n]*)\1/g],
+];
+
+/**
+ * Loaders on this line whose specifier contains `match`. Substring rather than
+ * equality because the IP scan reports `1.2.3.4` for a specifier of
+ * `http://1.2.3.4/p.js`, and the URL scan strips trailing punctuation.
+ */
+export function findCodeLoads(line: string, match: string): string[] {
+  if (!line.includes(match)) return [];
+  const found = new Set<string>();
+
+  for (const [name, pattern] of CODE_LOAD_CALLS) {
+    pattern.lastIndex = 0;
+    let m: RegExpExecArray | null;
+    while ((m = pattern.exec(line)) !== null) {
+      if (m[2].includes(match)) found.add(name);
+    }
+  }
+
+  return [...found];
+}
+
+/**
+ * Loaders whose specifier is not a literal string: `require(u)`, `import(base + p)`.
+ * The URL is somewhere else — usually a variable one line up — so this can only ever
+ * be a proximity guess, and it feeds the sink rules rather than the code-load rule.
+ */
+const DYNAMIC_LOAD_CALLS: Array<[name: string, pattern: RegExp]> = [
+  ['require(dynamic)', /\brequire\s*\(\s*[^'"`\s)]/g],
+  ['import(dynamic)', /\bimport\s*\(\s*[^'"`\s)]/g],
+];
+
+/**
+ * How far from the URL a dynamic loader still counts as related, in characters.
+ *
+ * Characters, not lines, because a line is not a unit of distance in published code:
+ * prettier ships a 532,000-character bundle whose line 11 holds both TypeScript's
+ * `aka.ms` diagnostic URLs and a `require(t)` some 99,000 characters away. A
+ * line-window called those related and warned on all four URLs. A character window
+ * is the same proximity idea measured in something that means the same thing in a
+ * minified bundle as it does in readable source.
+ */
+const LOAD_CHAR_WINDOW = 200;
+
+function offsetsOf(haystack: string, needle: string): number[] {
+  const offsets: number[] = [];
+  for (let i = haystack.indexOf(needle); i !== -1; i = haystack.indexOf(needle, i + 1)) {
+    offsets.push(i);
+  }
+  return offsets;
+}
+
+/** Dynamic loaders within `LOAD_CHAR_WINDOW` characters of `match`. */
+export function findDynamicLoads(lines: string[], lineIndex: number, match: string): string[] {
+  const start = Math.max(0, lineIndex - SINK_WINDOW);
+  const end = Math.min(lines.length - 1, lineIndex + SINK_WINDOW);
+  const text = lines.slice(start, end + 1).join('\n');
+
+  const matchOffsets = offsetsOf(text, match);
+  if (matchOffsets.length === 0) return [];
+
+  const found = new Set<string>();
+  for (const [name, pattern] of DYNAMIC_LOAD_CALLS) {
+    pattern.lastIndex = 0;
+    let m: RegExpExecArray | null;
+    while ((m = pattern.exec(text)) !== null) {
+      if (matchOffsets.some((offset) => Math.abs(m!.index - offset) <= LOAD_CHAR_WINDOW)) {
+        found.add(name);
+        break;
+      }
+    }
+  }
+
+  return [...found];
+}
+
 const SOURCEMAP_DIRECTIVE = /\/\/[#@]\s*source(Mapping)?URL=/;
 const COMMENT_LINE = /^\s*(\/\/|\/\*|\*|#)/;
 
@@ -134,6 +235,8 @@ export interface ClassifyInput {
   url: string;
   positions: Position[];
   sinks: string[];
+  /** Module loaders this URL was passed to as their specifier — see `findCodeLoads`. */
+  loaders: string[];
   selfOrigins: SelfOrigin[];
   intel: IntelHit | null;
 }
@@ -143,6 +246,7 @@ export interface UrlVerdict {
   position: Position;
   provenance: Provenance;
   sinks: string[];
+  loaders: string[];
   /** Every rule that contributed, most decisive first — this is what the report shows. */
   reasons: string[];
 }
@@ -154,13 +258,13 @@ export interface UrlVerdict {
  * version of a trusted package cannot clear itself by keeping its real metadata.
  */
 export function classifyUrl(input: ClassifyInput): UrlVerdict {
-  const { url, sinks, selfOrigins, intel } = input;
+  const { url, sinks, loaders, selfOrigins, intel } = input;
   const position = worstPosition(input.positions);
   const parts = parseUrlParts(url);
 
   // Unparseable but regex-matched — no host to reason about, so no claim to make.
   if (!parts) {
-    return { severity: 'info', position, provenance: 'third-party', sinks, reasons: ['unparseable URL'] };
+    return { severity: 'info', position, provenance: 'third-party', sinks, loaders, reasons: ['unparseable URL'] };
   }
 
   const { provenance, source } = classifyOrigin(parts, selfOrigins);
@@ -179,6 +283,7 @@ export function classifyUrl(input: ClassifyInput): UrlVerdict {
     position,
     provenance,
     sinks,
+    loaders,
     reasons,
   });
 
@@ -188,6 +293,32 @@ export function classifyUrl(input: ClassifyInput): UrlVerdict {
 
   if (position === 'script-hook') {
     return verdict('critical', 'URL inside a lifecycle script that npm runs automatically on install');
+  }
+
+  // A remote dynamic dependency. This is strictly worse than the fetch rules below:
+  // a fetched URL yields data the package then has to do something with, while a
+  // required URL yields code that has already run. Provenance is deliberately not an
+  // exemption — a URL on the publisher's own domain is still code that is not in the
+  // tarball, not reviewable, and not pinned, so `self` earns no discount here.
+  if (loaders.length > 0 && !inert && !loopback) {
+    // A fully pinned package-CDN URL is the one honest use of this shape — browser
+    // builds that import a published dependency straight from the registry's CDN
+    // (yargs' browser shim does exactly this). The code is still off-tarball and
+    // still fetched at runtime, so it is worth a decision; it is not worth a block,
+    // because the version cannot be swapped after the fact.
+    if (isPinnedPackageCdn(parts)) {
+      return verdict(
+        'warn',
+        `remote module loaded via ${loaders.join(', ')}`,
+        'version-pinned package CDN — immutable content, but fetched at runtime instead of installed',
+      );
+    }
+
+    return verdict(
+      'critical',
+      `remote code loaded and executed via ${loaders.join(', ')}`,
+      'the response body runs in-process on import — it is not in the published tarball and can change per download',
+    );
   }
 
   if (abuse && !inert) {
@@ -269,6 +400,7 @@ export interface ClassifyIpInput {
   ip: string;
   positions: Position[];
   sinks: string[];
+  loaders: string[];
 }
 
 /**
@@ -277,7 +409,7 @@ export interface ClassifyIpInput {
  * keeps costing a package its clean report.
  */
 export function classifyIp(input: ClassifyIpInput): UrlVerdict {
-  const { ip, sinks } = input;
+  const { ip, sinks, loaders } = input;
   const position = worstPosition(input.positions);
   const reachable = sinks.length > 0;
 
@@ -286,6 +418,7 @@ export function classifyIp(input: ClassifyIpInput): UrlVerdict {
     position,
     provenance: 'third-party',
     sinks,
+    loaders,
     reasons,
   });
 
@@ -297,6 +430,10 @@ export function classifyIp(input: ClassifyIpInput): UrlVerdict {
   }
 
   const executable = position === 'code' || position === 'script-manual';
+
+  if (loaders.length > 0 && !INERT_POSITIONS.has(position) && !isPrivateIpHost(ip)) {
+    return verdict('critical', `remote code loaded from a raw IP address via ${loaders.join(', ')}`);
+  }
 
   if (isPrivateIpHost(ip)) {
     return reachable && executable

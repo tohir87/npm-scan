@@ -133,10 +133,15 @@ export async function presentFindings(
     printGroup(findings.filter((f) => f.verdict.severity === 'info'), 'info');
   }
 
+  if (report.codeLoads.length > 0) {
+    console.log(c('red', `  Remote code loaded at runtime via: ${report.codeLoads.join(', ')}`));
+  }
+
   if (report.sinks.length > 0) {
     console.log(c('dim', `  Network/exec sinks near findings: ${report.sinks.join(', ')}`));
-    console.log('');
   }
+
+  if (report.codeLoads.length > 0 || report.sinks.length > 0) console.log('');
 
   // --- policy ---
   //

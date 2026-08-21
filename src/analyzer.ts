@@ -7,6 +7,9 @@ import {
   classifyUrl,
   closesBlockComment,
   countBySeverity,
+  findCodeLoads,
+  isInertPosition,
+  findDynamicLoads,
   findSinks,
   opensBlockComment,
   positionOfLine,
@@ -49,6 +52,8 @@ export interface FindingsReport {
   severityCounts: SeverityCounts;
   /** Network/exec sinks seen next to a finding — the regex stand-in for an AST pass. */
   sinks: string[];
+  /** Loaders a finding was passed to as a module specifier — remote code, not just traffic. */
+  codeLoads: string[];
   selfOrigins: SelfOrigin[];
   osv: OsvResult;
   intelSources: IntelSourceStatus[];
@@ -69,6 +74,7 @@ interface RawMatch {
   line: number;
   position: Position;
   sinks: string[];
+  loaders: string[];
 }
 
 /**
@@ -79,18 +85,19 @@ interface RawMatch {
 class FindingSet {
   private readonly byMatch = new Map<
     string,
-    { occurrences: Occurrence[]; positions: Position[]; sinks: Set<string> }
+    { occurrences: Occurrence[]; positions: Position[]; sinks: Set<string>; loaders: Set<string> }
   >();
 
   add(raw: RawMatch): void {
     let entry = this.byMatch.get(raw.match);
     if (!entry) {
-      entry = { occurrences: [], positions: [], sinks: new Set() };
+      entry = { occurrences: [], positions: [], sinks: new Set(), loaders: new Set() };
       this.byMatch.set(raw.match, entry);
     }
 
     entry.positions.push(raw.position);
     for (const sink of raw.sinks) entry.sinks.add(sink);
+    for (const loader of raw.loaders) entry.loaders.add(loader);
 
     // Same match twice on one line is one occurrence, not two.
     if (entry.occurrences.some((o) => o.file === raw.file && o.line === raw.line)) return;
@@ -98,11 +105,13 @@ class FindingSet {
   }
 
   /** Judges every collected match with `judge`, preserving first-seen order. */
-  resolve(judge: (match: string, positions: Position[], sinks: string[]) => UrlVerdict): Finding[] {
+  resolve(
+    judge: (match: string, positions: Position[], sinks: string[], loaders: string[]) => UrlVerdict,
+  ): Finding[] {
     return [...this.byMatch.entries()].map(([match, entry]) => ({
       match,
       occurrences: entry.occurrences,
-      verdict: judge(match, entry.positions, [...entry.sinks]),
+      verdict: judge(match, entry.positions, [...entry.sinks], [...entry.loaders]),
     }));
   }
 }
@@ -247,8 +256,16 @@ function collectFromPackageJson(content: string, relPath: string, isRoot: boolea
   const collect = (value: string, position: Position, sinks: string[]): void => {
     const found = extractFromLine(value);
     const line = findLine(lines, value);
-    for (const url of found.urls) into.urls.add({ match: url, file: relPath, line, position, sinks });
-    for (const ip of found.ips) into.ips.add({ match: ip, file: relPath, line, position, sinks });
+    // Loaders are per-match, not per-line: only the string actually handed to
+    // `require`/`import` counts, so each match is checked against the call itself.
+    for (const url of found.urls) {
+      const near = findDynamicLoads([value], 0, url);
+      into.urls.add({ match: url, file: relPath, line, position, sinks: [...sinks, ...near], loaders: findCodeLoads(value, url) });
+    }
+    for (const ip of found.ips) {
+      const near = findDynamicLoads([value], 0, ip);
+      into.ips.add({ match: ip, file: relPath, line, position, sinks: [...sinks, ...near], loaders: findCodeLoads(value, ip) });
+    }
   };
 
   const walk = (node: unknown): void => {
@@ -303,11 +320,18 @@ function collectFromSource(content: string, relPath: string, isJson: boolean, in
     const position: Position = isJson ? 'code' : inComment ? 'comment' : positionOfLine(line);
     const sinks = isJson ? [] : findSinks(lines, i);
 
+    // A .json file has no call sites either, so it can carry no loader.
+    // `sinks` is per line; the loader checks are per match, since only the string
+    // actually handed to `require`/`import` — or sitting right beside it — counts.
     for (const url of found.urls) {
-      into.urls.add({ match: url, file: relPath, line: i + 1, position, sinks });
+      const loaders = isJson ? [] : findCodeLoads(line, url);
+      const near = isJson ? [] : findDynamicLoads(lines, i, url);
+      into.urls.add({ match: url, file: relPath, line: i + 1, position, sinks: [...sinks, ...near], loaders });
     }
     for (const ip of found.ips) {
-      into.ips.add({ match: ip, file: relPath, line: i + 1, position, sinks });
+      const loaders = isJson ? [] : findCodeLoads(line, ip);
+      const near = isJson ? [] : findDynamicLoads(lines, i, ip);
+      into.ips.add({ match: ip, file: relPath, line: i + 1, position, sinks: [...sinks, ...near], loaders });
     }
   }
 }
@@ -361,10 +385,12 @@ export async function fetchAndScan(
 
   const osv = await checkOsv(pkg.name, resolvedVersion, context.intelOptions);
 
-  const urls = into.urls.resolve((match, positions, sinks) =>
-    classifyUrl({ url: match, positions, sinks, selfOrigins, intel: context.urlhaus.lookup(match) }),
+  const urls = into.urls.resolve((match, positions, sinks, loaders) =>
+    classifyUrl({ url: match, positions, sinks, loaders, selfOrigins, intel: context.urlhaus.lookup(match) }),
   );
-  const ips = into.ips.resolve((match, positions, sinks) => classifyIp({ ip: match, positions, sinks }));
+  const ips = into.ips.resolve((match, positions, sinks, loaders) =>
+    classifyIp({ ip: match, positions, sinks, loaders }),
+  );
 
   const autoRunScripts = Object.keys(scripts).filter((name) => INSTALL_HOOKS.has(name));
   const publishScripts = Object.keys(scripts).filter((name) => PUBLISH_HOOKS.has(name));
@@ -381,6 +407,16 @@ export async function fetchAndScan(
   if (autoRunScripts.length > 0) severityCounts.warn += 1;
 
   const sinks = [...new Set([...urls, ...ips].flatMap((f) => f.verdict.sinks))];
+  // Only loaders that actually run: a commented-out `require('https://...')` still
+  // carries its loader on the finding, and listing it in the summary would claim the
+  // package loads remote code when the line it sits on never executes.
+  const codeLoads = [
+    ...new Set(
+      [...urls, ...ips]
+        .filter((f) => !isInertPosition(f.verdict.position))
+        .flatMap((f) => f.verdict.loaders),
+    ),
+  ];
 
   return {
     spec,
@@ -394,6 +430,7 @@ export async function fetchAndScan(
     publishScripts,
     severityCounts,
     sinks,
+    codeLoads,
     selfOrigins,
     osv,
     intelSources: [

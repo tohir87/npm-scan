@@ -127,6 +127,40 @@ const ABUSE_PATTERNS: AbusePattern[] = [
   { host: 'myftp.biz', label: 'dynamic dns' },
 ];
 
+/**
+ * CDNs that serve the npm registry's own contents. A code load from one of these is
+ * still a remote dependency, but it is a different proposition from an arbitrary
+ * host: the artefact is a published package, and a fully pinned version cannot be
+ * changed under you, because npm refuses to republish a version that already exists.
+ *
+ * Membership alone proves nothing — `unpkg.com/pkg` and `unpkg.com/pkg@latest`
+ * resolve to whatever is newest, so the pin is the half that carries the guarantee.
+ */
+const PACKAGE_CDNS = [
+  'unpkg.com',
+  'cdn.jsdelivr.net',
+  'esm.sh',
+  'esm.run',
+  'cdn.skypack.dev',
+  'jspm.dev',
+  'ga.jspm.io',
+  'cdn.esm.sh',
+  'npmcdn.com',
+];
+
+/** `pkg@1.2.3`, not `pkg@8` or `pkg@latest` — an exact version, optional prerelease. */
+const PINNED_VERSION = /@\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:$|[/?#])/;
+
+/**
+ * A package-CDN URL pinned to one exact published version. The content behind it is
+ * immutable, so the code being off-tarball is a supply-chain and availability
+ * concern rather than a live remote-execution channel.
+ */
+export function isPinnedPackageCdn(parts: UrlParts): boolean {
+  if (!PACKAGE_CDNS.some((cdn) => hostMatches(parts.host, cdn))) return false;
+  return PINNED_VERSION.test(parts.path);
+}
+
 /** Paths that deliver something to run rather than something to read. */
 const EXECUTABLE_PATH = /\.(sh|bash|zsh|ps1|bat|cmd|vbs|scr|exe|dll|so|dylib|bin|elf|msi|apk|jar|zip|tar|tgz|gz|7z|rar)$/i;
 

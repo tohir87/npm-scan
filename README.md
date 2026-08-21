@@ -11,10 +11,11 @@ npm-scan install <package>
        ├─ Extracts to a temp directory
        ├─ Finds HTTP/HTTPS URLs and raw IPv4/IPv6 addresses in
        │    .js/.ts/.mjs/.cjs/.json, plus a structured walk of package.json
-       ├─ Judges each one on four signals:
+       ├─ Judges each one on five signals:
        │     • position    — metadata, comment, sourcemap, code, or lifecycle script
        │     • provenance  — does it match the package's own declared origins?
        │     • reachability— is a fetch/exec sink next to it?
+       │     • code load   — is the URL the argument of require/import? (remote code)
        │     • structure   — scheme, raw IP, odd port, punycode, abuse infrastructure
        ├─ Checks the URLs against URLhaus and the package against OSV.dev
        └─ critical → blocks    warn → asks    info → shown, ignored
@@ -76,8 +77,8 @@ with the rule that produced it.
 
 | | Blocks | Examples |
 |---|---|---|
-| **critical** | yes, without asking | URLhaus-listed URL; an OSV `MAL-` advisory for the package; any URL inside `preinstall`/`install`/`postinstall`; a request bin, tunnel, Discord webhook or paste site in code; a raw public IP reached via `fetch`/`exec` |
-| **warn** | asks, defaulting to No | a third-party URL reached from a sink; plaintext `http://` in code; a punycode host; an odd port; a URL ending in `.sh`/`.exe`; the package having any install hook at all |
+| **critical** | yes, without asking | URLhaus-listed URL; an OSV `MAL-` advisory for the package; any URL inside `preinstall`/`install`/`postinstall`; a URL passed straight to `require`/`import` (a remote dynamic dependency); a request bin, tunnel, Discord webhook or paste site in code; a raw public IP reached via `fetch`/`exec` |
+| **warn** | asks, defaulting to No | a third-party URL reached from a sink; a version-pinned package-CDN module load; plaintext `http://` in code; a punycode host; an odd port; a URL ending in `.sh`/`.exe`; the package having any install hook at all |
 | **info** | never | the package's own repository, homepage, bugs or tarball host; standards and licence hosts; anything in a comment, sourcemap directive or package.json metadata field; loopback and private addresses |
 
 **Repository URLs are declassified by provenance, not by a whitelist.** The package's
@@ -91,6 +92,33 @@ Because that manifest is publisher-controlled, self-provenance is evidence rathe
 absolution: every critical rule sits *above* it in the table. A compromised version of a
 trusted package cannot clear itself by keeping its real metadata, and a URL in a
 lifecycle hook is critical even when it points at the package's own repo.
+
+**A required URL is treated as worse than a fetched one.** A fetched URL returns data
+the package still has to do something with; a URL handed to `require`, `import`,
+`import()`, `importScripts` or `new Worker` returns *code that has already run*, in
+process, with full privileges, the moment the module is imported. That is a remote
+dynamic dependency: the tarball you audited contains an address, not the code, and
+nothing about the install pins what answers it.
+
+Self-provenance is deliberately no defence here. A URL on the publisher's own domain is
+still code that isn't in the tarball, isn't reviewable and isn't pinned, so a
+`require('https://<own-domain>/x.js')` is critical exactly like any other host.
+
+The one exception is a **fully version-pinned package CDN** — `unpkg.com/cliui@8.0.1/…`,
+`cdn.jsdelivr.net/npm/pkg@1.2.3/…`, `esm.sh/react@18.2.0`. What is behind those is a
+published npm artefact at a version that cannot be republished, and browser builds of
+real packages do this (yargs' browser shim is the reference case). Immutable but still
+off-tarball, so it warns rather than blocks. The pin carries the guarantee, not the
+host: `unpkg.com/pkg`, `pkg@8` and `pkg@latest` resolve to whatever is newest, so they
+stay critical.
+
+Matching this needs the URL to be the loader's actual argument, not merely near it —
+`require('fs')` sits at the top of nearly every file, so a proximity check would make
+any URL beside it look like a remote load. The indirect shape (`const u = URL;
+require(u)`) can only ever be a guess, so it feeds the sink rules and warns instead.
+That proximity is measured in **characters, not lines**: prettier ships a 532,000-character
+bundle whose line 11 holds both TypeScript's `aka.ms` diagnostic URLs and a
+`require(t)` some 99,000 characters away, and a line-window scored all four as reachable.
 
 **There is no URL whitelist, and there doesn't need to be one.** A list of good URLs is
 unbounded and fails open on exactly the attack that matters. What is maintained instead
@@ -264,6 +292,12 @@ found next to a finding (`fetch`, `child_process`, `curl`, …). It is still a r
 proximity check within ±2 lines rather than a real AST pass, so treat it as a
 reachability hint, not a call graph. `semantic_mismatch_detected` remains `null`.
 
+**`code_load_intents`** is the subset of those intents that loads remote *code* rather
+than fetching data (`require`, `import()`, `import from`, `importScripts`, `new Worker`),
+and each finding carries its own `loaders`. It is a separate column because a remote
+dynamic dependency is a different class of finding from a callback, and a sweep should
+be able to count the two apart.
+
 Failed scans (404s, network errors) are logged too, with `verdict: "error"`,
 the message in `error_log`, and `classification: null` — an incomplete run can't be
 scored either way. A log-write failure prints a warning and never blocks an install.
@@ -313,6 +347,7 @@ scripts/
 | HTTP/HTTPS URLs in source | Base64/hex-encoded strings |
 | Raw IPv4 and IPv6 addresses | Transitive dependencies |
 | Lifecycle hooks in the root `package.json` | URLs assembled at runtime (`"https://" + host`) |
+| URLs passed to `require`/`import`/`new Worker` | Whether a remote module is on a reachable code path |
 | URLhaus reputation, OSV `MAL-` advisories | Whether a sink is genuinely reachable (no call graph) |
 
 A URL match requires a plausible host — a domain with a real TLD, an IPv4 literal, a
