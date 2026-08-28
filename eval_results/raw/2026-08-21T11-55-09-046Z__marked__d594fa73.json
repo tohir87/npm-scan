@@ -1,0 +1,149 @@
+{
+  "package_name": "marked",
+  "version": "18.0.10",
+  "dataset_category": null,
+  "execution_time_ms": 506,
+  "manifest_urls_found": [
+    "https://github.com/markedjs/marked.git",
+    "https://marked.js.org",
+    "https://github.com/markedjs/marked/issues",
+    "https://github.com/markedjs/marked"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "d594fa73-f763-4dac-898c-84b08a787b04",
+  "timestamp": "2026-08-21T11:55:09.046Z",
+  "spec": "marked",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 6,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "bench": "npm run build && node test/bench.js",
+    "build": "npm run build:esbuild && npm run build:types && npm run build:man",
+    "build:docs": "npm run build && node docs/build.js",
+    "build:esbuild": "node esbuild.config.js",
+    "build:man": "marked-man man/marked.1.md > man/marked.1",
+    "build:reset": "rimraf ./lib ./public",
+    "build:types": "tsc && dts-bundle-generator --export-referenced-types --project tsconfig.json -o lib/marked.d.ts src/marked.ts",
+    "lint": "eslint --fix",
+    "rules": "node test/rules.js",
+    "test": "npm run build:reset && npm run build:docs && npm run test:specs && npm run test:unit && npm run test:umd && npm run test:cjs && npm run test:types && npm run test:lint",
+    "test:cjs": "node test/cjs-test.cjs",
+    "test:lint": "eslint",
+    "test:only": "npm run build && npm run test:specs:only && npm run test:unit:only",
+    "test:redos": "node test/recheck.ts > vuln.js",
+    "test:specs:only": "node --test --test-only --test-reporter=spec test/run-spec-tests.js",
+    "test:specs": "node --test --test-reporter=spec test/run-spec-tests.js",
+    "test:types": "tsc --project tsconfig-type-test.json && attw -P --entrypoints . --profile esm-only",
+    "test:umd": "node test/umd-test.js",
+    "test:unit:only": "node --test --test-only --test-reporter=spec test/unit/*.test.js",
+    "test:unit": "node --test --test-reporter=spec test/unit/*.test.js",
+    "test:update": "node test/update-specs.js"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 4
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/markedjs/marked.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:33"
+    },
+    {
+      "match": "https://marked.js.org",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:35"
+    },
+    {
+      "match": "https://github.com/markedjs/marked/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:37"
+    },
+    {
+      "match": "https://github.com/markedjs/marked",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 4,
+      "first_seen": "lib/marked.esm.js:5"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "markedjs",
+      "field": "repository"
+    },
+    {
+      "host": "marked.js.org",
+      "owner": null,
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "markedjs",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:55:07.685Z",
+      "entryCount": 0
+    }
+  ]
+}

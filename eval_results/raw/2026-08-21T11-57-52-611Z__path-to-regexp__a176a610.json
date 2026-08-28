@@ -1,0 +1,129 @@
+{
+  "package_name": "path-to-regexp",
+  "version": "8.4.2",
+  "dataset_category": null,
+  "execution_time_ms": 467,
+  "manifest_urls_found": [
+    "https://github.com/pillarjs/path-to-regexp.git",
+    "https://opencollective.com/express",
+    "https://git.new/pathToRegexpError"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "a176a610-0c82-40cd-979f-035467232693",
+  "timestamp": "2026-08-21T11:57:52.611Z",
+  "spec": "path-to-regexp",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 3,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepare"
+  ],
+  "scripts": {
+    "bench": "vitest bench",
+    "build": "ts-scripts build",
+    "format": "ts-scripts format",
+    "lint": "ts-scripts lint",
+    "prepare": "ts-scripts install && npm run build",
+    "size": "size-limit",
+    "specs": "ts-scripts specs",
+    "test": "ts-scripts test && npm run size"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 3
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/pillarjs/path-to-regexp.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:13"
+    },
+    {
+      "match": "https://opencollective.com/express",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:17"
+    },
+    {
+      "match": "https://git.new/pathToRegexpError",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "no sink, no reputation hit"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.js:44"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "pillarjs",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "pillarjs",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "pillarjs",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "opencollective.com",
+      "owner": null,
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:57:50.808Z",
+      "entryCount": 0
+    }
+  ]
+}

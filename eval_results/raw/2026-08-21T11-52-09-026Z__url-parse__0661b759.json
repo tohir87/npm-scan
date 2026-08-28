@@ -1,0 +1,106 @@
+{
+  "package_name": "url-parse",
+  "version": "1.5.10",
+  "dataset_category": null,
+  "execution_time_ms": 486,
+  "manifest_urls_found": [
+    "https://github.com/unshiftio/url-parse.git",
+    "https://url.spec.whatwg.org/#default-port"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "0661b759-470b-4b87-884e-ce925c10c716",
+  "timestamp": "2026-08-21T11:52:09.026Z",
+  "spec": "url-parse",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 4,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "browserify": "rm -rf dist && mkdir -p dist && browserify index.js -s URLParse -o dist/url-parse.js",
+    "minify": "uglifyjs dist/url-parse.js --source-map -cm -o dist/url-parse.min.js",
+    "test": "c8 --reporter=lcov --reporter=text mocha test/test.js",
+    "test-browser": "node test/browser.js",
+    "prepublishOnly": "npm run browserify && npm run minify",
+    "watch": "mocha --watch test/test.js"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 2
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/unshiftio/url-parse.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:20"
+    },
+    {
+      "match": "https://url.spec.whatwg.org/#default-port",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/url-parse.js:720"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "unshiftio",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "unshiftio",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "unshiftio",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:52:08.004Z",
+      "entryCount": 0
+    }
+  ]
+}

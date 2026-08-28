@@ -1,0 +1,302 @@
+{
+  "package_name": "micromatch",
+  "version": "4.0.8",
+  "dataset_category": null,
+  "execution_time_ms": 534,
+  "manifest_urls_found": [
+    "https://github.com/micromatch/micromatch",
+    "https://github.com/jonschlinkert",
+    "https://github.com/DianeLooney",
+    "https://github.com/TrySound",
+    "https://twitter.com/doowb",
+    "http://badassjs.com",
+    "https://github.com/es128",
+    "https://ultcombo.js.org",
+    "http://twitter.com/jonschlinkert",
+    "https://kolarik.sk",
+    "https://i.am.charlike.online",
+    "https://github.com/tomByrer",
+    "http://rumkin.com",
+    "https://github.com/drpizza",
+    "https://github.com/ku8ar",
+    "https://github.com/micromatch/micromatch/issues"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "37db244a-c738-49d0-a995-c1077cb0598e",
+  "timestamp": "2026-08-21T11:55:00.474Z",
+  "spec": "micromatch",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 2,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "test": "mocha"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 16
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/micromatch/micromatch",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:5"
+    },
+    {
+      "match": "https://github.com/jonschlinkert",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own author field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:6"
+    },
+    {
+      "match": "https://github.com/DianeLooney",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:8"
+    },
+    {
+      "match": "https://github.com/TrySound",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:10"
+    },
+    {
+      "match": "https://twitter.com/doowb",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:11"
+    },
+    {
+      "match": "http://badassjs.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:12"
+    },
+    {
+      "match": "https://github.com/es128",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:13"
+    },
+    {
+      "match": "https://ultcombo.js.org",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:14"
+    },
+    {
+      "match": "http://twitter.com/jonschlinkert",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:15"
+    },
+    {
+      "match": "https://kolarik.sk",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:16"
+    },
+    {
+      "match": "https://i.am.charlike.online",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:17"
+    },
+    {
+      "match": "https://github.com/tomByrer",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:19"
+    },
+    {
+      "match": "http://rumkin.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:20"
+    },
+    {
+      "match": "https://github.com/drpizza",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:21"
+    },
+    {
+      "match": "https://github.com/ku8ar",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:22"
+    },
+    {
+      "match": "https://github.com/micromatch/micromatch/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:26"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "micromatch",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "micromatch",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "micromatch",
+      "field": "bugs"
+    },
+    {
+      "host": "github.com",
+      "owner": "jonschlinkert",
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:54:59.162Z",
+      "entryCount": 0
+    }
+  ]
+}

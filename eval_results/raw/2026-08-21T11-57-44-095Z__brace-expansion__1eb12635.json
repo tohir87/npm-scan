@@ -1,0 +1,99 @@
+{
+  "package_name": "brace-expansion",
+  "version": "5.0.9",
+  "dataset_category": null,
+  "execution_time_ms": 478,
+  "manifest_urls_found": [
+    "https://github.com/juliangruber/brace-expansion.git"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "1eb12635-8b31-423c-9846-5dfc851fef22",
+  "timestamp": "2026-08-21T11:57:44.095Z",
+  "spec": "brace-expansion",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 7,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepare"
+  ],
+  "scripts": {
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "prepublishOnly": "git push origin --follow-tags",
+    "prepare": "tshy",
+    "pretest": "npm run prepare",
+    "presnap": "npm run prepare",
+    "test": "tap",
+    "snap": "tap",
+    "format": "prettier --write .",
+    "benchmark": "node benchmark/index.js",
+    "typedoc": "typedoc --tsconfig .tshy/esm.json ./src/*.ts"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 1
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/juliangruber/brace-expansion.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:62"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "juliangruber",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "juliangruber",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "juliangruber",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:57:42.575Z",
+      "entryCount": 0
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "package_name": "decode-uri-component",
+  "version": "0.5.0",
+  "dataset_category": null,
+  "execution_time_ms": 475,
+  "manifest_urls_found": [],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "725c799e-3d69-4da9-a0ba-aa037cbd599c",
+  "timestamp": "2026-08-21T11:56:06.535Z",
+  "spec": "decode-uri-component",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 3,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "test": "xo && nyc ava && tsd",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 0
+  },
+  "url_findings": [],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "SamVerschueren",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "SamVerschueren",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "SamVerschueren",
+      "field": "bugs"
+    },
+    {
+      "host": "github.com",
+      "owner": "github.com",
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:56:03.045Z",
+      "entryCount": 0
+    }
+  ]
+}

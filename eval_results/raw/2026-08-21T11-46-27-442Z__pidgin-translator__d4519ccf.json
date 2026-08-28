@@ -1,0 +1,108 @@
+{
+  "package_name": "pidgin-translator",
+  "version": "1.0.2",
+  "dataset_category": null,
+  "execution_time_ms": 398,
+  "manifest_urls_found": [
+    "https://about.me/tohirO/snippet/sanitizer.js",
+    "https://github.com/tohir87/pidgin-translator"
+  ],
+  "ast_intents": [
+    "require"
+  ],
+  "code_load_intents": [
+    "require"
+  ],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "d4519ccf-fc85-4947-b168-1a27305c3147",
+  "timestamp": "2026-08-21T11:46:27.442Z",
+  "spec": "pidgin-translator",
+  "verdict": "blocked",
+  "detected_suspicious": true,
+  "installed": false,
+  "files_scanned": 4,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "severity_counts": {
+    "critical": 1,
+    "warn": 0,
+    "info": 1
+  },
+  "url_findings": [
+    {
+      "match": "https://about.me/tohirO/snippet/sanitizer.js",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [
+        "require"
+      ],
+      "reasons": [
+        "remote code loaded and executed via require",
+        "the response body runs in-process on import — it is not in the published tarball and can change per download"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:22"
+    },
+    {
+      "match": "https://github.com/tohir87/pidgin-translator",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:19"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "tohir87",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "tohir87",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "tohir87",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:26:50.901Z",
+      "entryCount": 0
+    }
+  ]
+}

@@ -1,0 +1,805 @@
+{
+  "package_name": "tough-cookie",
+  "version": "6.0.2",
+  "dataset_category": null,
+  "execution_time_ms": 467,
+  "manifest_urls_found": [
+    "https://github.com/stash",
+    "https://github.com/inikulin",
+    "https://github.com/ShivanKaul",
+    "https://github.com/ruoho",
+    "https://github.com/ianlivingstone",
+    "https://github.com/awaterma",
+    "https://github.com/medelibero-sfdc",
+    "https://github.com/jstewmon",
+    "https://github.com/miggs125",
+    "https://github.com/Sebmaster",
+    "https://github.com/apsavin",
+    "https://github.com/lalitkapoor",
+    "https://github.com/sambthompson",
+    "https://github.com/colincasey",
+    "https://github.com/wjhsf",
+    "https://github.com/salesforce/tough-cookie",
+    "https://github.com/salesforce/tough-cookie/issues",
+    "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-13#section-4.1.3",
+    "https://www.rfc-editor.org/rfc/rfc6265.html",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.1",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.2",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.3",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.4",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.5",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.6",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-4.1.1",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.3",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.4",
+    "https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-13.html#section-5.2",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.1.4",
+    "https://www.rfc-editor.org/rfc/rfc6761.html",
+    "http://localhost",
+    "http://publicsuffix.org/",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.1.2",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort",
+    "https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-02##section-8.8",
+    "https://publicsuffix.org/",
+    "https://datatracker.ietf.org/doc/html/rfc6761",
+    "https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.1.3",
+    "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-22#section-5.1.3",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "https://www.rfc-editor.org/rfc/rfc2616#section-3.3.1",
+    "https://www.rfc-editor.org/rfc/rfc822#section-5",
+    "https://www.rfc-editor.org/rfc/rfc1123#page-55",
+    "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.1.1",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse",
+    "https://www.rfc-editor.org/errata/eid4148",
+    "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-21"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "fd6ef628-6e28-4a79-af4d-2000b8bd7b09",
+  "timestamp": "2026-08-21T11:56:43.826Z",
+  "spec": "tough-cookie",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 4,
+  "ips_found": [
+    "::1",
+    "2.3.2.1"
+  ],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepack"
+  ],
+  "scripts": {
+    "build": "tsup lib/cookie/index.ts --format cjs,esm --dts --clean --sourcemap",
+    "lint": "npm run _lint:check",
+    "prepack": "npm run build",
+    "prepare-pr": "npm run build && npm test -- run && npm run _api:update && npm run _docs:generate && npm run _format:fix && npm run _lint:fix && npm run _lint:types",
+    "test": "vitest",
+    "version": "npm run _version:generate && npm run prepare-pr && git add --renormalize .",
+    "_api:check": "api-extractor run --verbose",
+    "_api:update": "api-extractor run --verbose --local",
+    "_docs:generate": "api-documenter generate --input-folder ./tmp --output-folder ./api/docs",
+    "_format:check": "prettier . --check",
+    "_format:fix": "prettier . --write",
+    "_lint:check": "eslint .",
+    "_lint:fix": "eslint . --fix",
+    "_lint:types": "attw --pack .",
+    "_version:generate": "genversion --template version-template.ejs --force lib/version.ts"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 51
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/stash",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:5"
+    },
+    {
+      "match": "https://github.com/inikulin",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:10"
+    },
+    {
+      "match": "https://github.com/ShivanKaul",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:14"
+    },
+    {
+      "match": "https://github.com/ruoho",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:18"
+    },
+    {
+      "match": "https://github.com/ianlivingstone",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:22"
+    },
+    {
+      "match": "https://github.com/awaterma",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:26"
+    },
+    {
+      "match": "https://github.com/medelibero-sfdc",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:30"
+    },
+    {
+      "match": "https://github.com/jstewmon",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:34"
+    },
+    {
+      "match": "https://github.com/miggs125",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:38"
+    },
+    {
+      "match": "https://github.com/Sebmaster",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:42"
+    },
+    {
+      "match": "https://github.com/apsavin",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:46"
+    },
+    {
+      "match": "https://github.com/lalitkapoor",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:50"
+    },
+    {
+      "match": "https://github.com/sambthompson",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:54"
+    },
+    {
+      "match": "https://github.com/colincasey",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:58"
+    },
+    {
+      "match": "https://github.com/wjhsf",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:62"
+    },
+    {
+      "match": "https://github.com/salesforce/tough-cookie",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:79"
+    },
+    {
+      "match": "https://github.com/salesforce/tough-cookie/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:85"
+    },
+    {
+      "match": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-13#section-4.1.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:3"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:101"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:115"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:120"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:125"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.4",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.d.ts:130"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.5",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:136"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.2.6",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:142"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-4.1.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:148"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 5,
+      "first_seen": "dist/index.d.ts:154"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.4",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "dist/index.d.ts:158"
+    },
+    {
+      "match": "https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-13.html#section-5.2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:185"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.1.4",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.d.ts:831"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6761.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.d.ts:860"
+    },
+    {
+      "match": "http://localhost",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "loopback address — not reachable off this machine"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:874"
+    },
+    {
+      "match": "http://publicsuffix.org/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:905"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.1.2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:936"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:967"
+    },
+    {
+      "match": "https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-02##section-8.8",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.d.ts:1053"
+    },
+    {
+      "match": "https://publicsuffix.org/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1141"
+    },
+    {
+      "match": "https://datatracker.ietf.org/doc/html/rfc6761",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1159"
+    },
+    {
+      "match": "https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1175"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.1.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1698"
+    },
+    {
+      "match": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-22#section-5.1.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1703"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.d.ts:1739"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc2616#section-3.3.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1740"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc822#section-5",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1741"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc1123#page-55",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1742"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc6265.html#section-5.1.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1756"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1757"
+    },
+    {
+      "match": "https://www.rfc-editor.org/errata/eid4148",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1762"
+    },
+    {
+      "match": "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis-21",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:1766"
+    }
+  ],
+  "ip_findings": [
+    {
+      "match": "::1",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "netmask or non-routable address"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.cjs:1323"
+    },
+    {
+      "match": "2.3.2.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:948"
+    }
+  ],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "salesforce",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "salesforce",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "salesforce",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:56:42.754Z",
+      "entryCount": 0
+    }
+  ]
+}

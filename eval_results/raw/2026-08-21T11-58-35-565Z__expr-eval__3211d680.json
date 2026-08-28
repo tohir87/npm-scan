@@ -1,0 +1,161 @@
+{
+  "package_name": "expr-eval",
+  "version": "2.0.2",
+  "dataset_category": null,
+  "execution_time_ms": 551,
+  "manifest_urls_found": [
+    "https://github.com/silentmatt/expr-eval.git",
+    "https://github.com/silentmatt/expr-eval/issues",
+    "https://github.com/silentmatt/expr-eval#readme",
+    "http://www.undefined.ch/mparser/index.html",
+    "http://silentmatt.com/"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "3211d680-0d9a-435d-9311-8f27e99386c6",
+  "timestamp": "2026-08-21T11:58:35.565Z",
+  "spec": "expr-eval",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 5,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepublish"
+  ],
+  "scripts": {
+    "test": "npm run build && mocha",
+    "coverage": "npm run build && nyc --reporter=lcov --reporter=text-summary mocha",
+    "lint": "eslint index.js src test rollup.config.js rollup-min.config.js",
+    "watch": "rollup -c rollup.config.js -w",
+    "build": "rollup -c rollup.config.js && rollup -c rollup-min.config.js && rollup -c rollup-esm.config.js",
+    "prepublish": "npm run build"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 5
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/silentmatt/expr-eval.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:39"
+    },
+    {
+      "match": "https://github.com/silentmatt/expr-eval/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:52"
+    },
+    {
+      "match": "https://github.com/silentmatt/expr-eval#readme",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:54"
+    },
+    {
+      "match": "http://www.undefined.ch/mparser/index.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/bundle.js:1829"
+    },
+    {
+      "match": "http://silentmatt.com/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/bundle.js:1831"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "silentmatt",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "silentmatt",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "silentmatt",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [
+    {
+      "id": "GHSA-8gw3-rxh4-v6jx",
+      "summary": "expr-eval vulnerable to Prototype Pollution",
+      "malicious": false
+    },
+    {
+      "id": "GHSA-jc85-fpwf-qm7x",
+      "summary": "expr-eval does not restrict functions passed to the evaluate function",
+      "malicious": false
+    }
+  ],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:58:34.597Z",
+      "entryCount": 2
+    }
+  ]
+}

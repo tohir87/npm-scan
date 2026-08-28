@@ -1,0 +1,109 @@
+{
+  "package_name": "morgan",
+  "version": "1.11.0",
+  "dataset_category": null,
+  "execution_time_ms": 442,
+  "manifest_urls_found": [
+    "http://jongleberry.com",
+    "https://opencollective.com/express"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "ee41032c-fea5-423a-aeac-4ddf8b62f71a",
+  "timestamp": "2026-08-21T11:50:47.391Z",
+  "spec": "morgan",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 2,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "lint": "eslint --plugin markdown --ext js,md .",
+    "test": "mocha --check-leaks --reporter spec",
+    "test-ci": "nyc --reporter=lcov --reporter=text npm test",
+    "test-cov": "nyc --reporter=html --reporter=text npm test"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 2
+  },
+  "url_findings": [
+    {
+      "match": "http://jongleberry.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:7"
+    },
+    {
+      "match": "https://opencollective.com/express",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:19"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "expressjs",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "expressjs",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "expressjs",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "opencollective.com",
+      "owner": null,
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:50:44.668Z",
+      "entryCount": 0
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Role & Objective
+Act as an expert academic research co-pilot and senior cybersecurity researcher. Help me draft a comprehensive "Discussion of Outcomes" section for my dissertation based strictly on the raw experimentation logs provided below.
+
+# Context & Inputs
+Please see the attached literature review document-
+
+# Raw Data / Logs Path
+/Users/tohir/Projects/test/eval_results/raw
+
+# Instructions for Analysis
+Please analyze the raw logs and draft a structured discussion following these strict supervisor guidelines:
+
+1. Complete Data Transparency: Report all results. Do not omit, smooth over, or exclude any data point, log entry, or outcome—even if it does not match or support my RQs and Hypotheses. 
+2. Balanced Outcomes: Explicitly separate and discuss both the "good" (expected, successful, or supportive) and "bad" (unexpected, failed, anomalous, or contradictory) outcomes. 
+3. Direct Mapping to Intentions: Relate the outcomes directly back to what was originally proposed. How do these findings answer RQ1 and RQ2? Do they accept or reject Hypothesis 1 and Hypothesis 2?
+4. Literature Grounding: Connect these outcomes to existing research. Does my data confirm, contradict, or extend the findings from the literature review mentioned above? 
+
+# Expected Output Format
+Provide a highly professional, academic-grade draft structured into clear subsections:
+- Overview of Experimental Outcomes (Reporting all results/logs objectively)
+- Analysis of Expected vs. Unexpected (Good and Bad) Findings
+- Hypothesis Testing & RQ Alignment (Addressing H1, H2, RQ1, RQ2)
+- Contextualization within Existing Literature

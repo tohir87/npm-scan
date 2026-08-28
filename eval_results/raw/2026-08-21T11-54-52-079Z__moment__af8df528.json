@@ -1,0 +1,2901 @@
+{
+  "package_name": "moment",
+  "version": "2.30.1",
+  "dataset_category": null,
+  "execution_time_ms": 584,
+  "manifest_urls_found": [
+    "https://momentjs.com/guides/#/parsing/",
+    "http://stackoverflow.com/questions/3561493/is-there-a-regexp-escape-function-in-javascript",
+    "https://stackoverflow.com/q/181348",
+    "https://en.wikipedia.org/wiki/ISO_week_date#Calculating_a_date_given_the_year.2C_week_number_and_weekday",
+    "http://momentjs.com/guides/#/warnings/define-locale/",
+    "https://tools.ietf.org/html/rfc2822#section-3.3",
+    "http://momentjs.com/guides/#/warnings/js-date/",
+    "https://github.com/moment/moment/issues/1423",
+    "http://momentjs.com/guides/#/warnings/min-max/",
+    "https://github.com/moment/moment/issues/2978",
+    "https://github.com/moment/moment/pull/1871",
+    "http://docs.closure-library.googlecode.com/git/closure_goog_date_date.js.source.html",
+    "http://momentjs.com/guides/#/warnings/add-inverted-param/",
+    "https://nodejs.org/dist/latest/docs/api/util.html#util_custom_inspect_function_on_objects",
+    "http://momentjs.com/guides/#/warnings/zone/",
+    "http://momentjs.com/guides/#/warnings/dst-shifted/",
+    "https://github.com/moment/moment/issues/2166",
+    "https://github.com/dordille/moment-isoduration/blob/master/moment.isoduration.js",
+    "https://momentjs.com",
+    "https://github.com/ichernev",
+    "http://timwoodcreates.com/",
+    "http://rockymeza.com",
+    "http://codeofmatt.com",
+    "http://isaaccambron.com",
+    "https://github.com/oire",
+    "https://github.com/moment/moment.git",
+    "https://github.com/moment/moment/issues",
+    "https://github.com/wernerm",
+    "https://github.com/jjupiter",
+    "https://github.com/Amine27",
+    "https://github.com/abdelsaid",
+    "https://github.com/forabi",
+    "https://github.com/noureddinem",
+    "https://github.com/nusretparlak",
+    "https://github.com/kikoanis",
+    "https://github.com/ElFadiliY",
+    "https://github.com/majdal",
+    "https://github.com/xsoh",
+    "https://github.com/naderio",
+    "https://github.com/topchiyev",
+    "https://github.com/demidov91",
+    "http://praleska.pro/",
+    "https://github.com/Oire",
+    "https://github.com/kraz",
+    "https://github.com/estellecomment",
+    "https://github.com/abdoufata",
+    "https://github.com/ashwoolford",
+    "https://github.com/kaushikgandhi",
+    "https://github.com/vajradog",
+    "https://github.com/jbleduigou",
+    "https://github.com/frontyard",
+    "https://github.com/rasidre",
+    "https://github.com/juanghurtado",
+    "https://github.com/petrbela",
+    "https://github.com/mirontoli",
+    "https://github.com/robgallen",
+    "https://github.com/ryangreaves",
+    "https://github.com/mrbase",
+    "https://github.com/lluchs",
+    "https://github.com/MadMG",
+    "https://github.com/mik01aj",
+    "https://github.com/sschueller",
+    "https://www.bk.admin.ch/dokumentation/sprachen/04915/05016/index.html?lang=de#",
+    "https://github.com/jawish",
+    "https://github.com/mehiel",
+    "https://github.com/jarcoal",
+    "https://github.com/jonbca",
+    "https://github.com/chrisgedrim",
+    "https://github.com/chriscartlidge",
+    "https://github.com/jatinag22",
+    "https://github.com/lukemcgregor",
+    "https://github.com/techdimension",
+    "https://github.com/colindean",
+    "https://github.com/miestasmia",
+    "https://github.com/jcfranco",
+    "https://github.com/bustta",
+    "https://github.com/chrisrodz",
+    "https://github.com/julionc",
+    "https://github.com/madhenry",
+    "https://github.com/ragulka",
+    "https://github.com/eillarra",
+    "https://github.com/ebraminio",
+    "https://github.com/bleadof",
+    "https://github.com/hagmandan",
+    "https://github.com/matthewdeeco",
+    "https://github.com/ragnar123",
+    "https://github.com/sakarisson",
+    "https://github.com/gaspard",
+    "https://github.com/jfroffice",
+    "https://github.com/moment/moment/issues/3375",
+    "https://github.com/robin0van0der0v",
+    "https://github.com/askpt",
+    "https://github.com/jonashdown",
+    "https://github.com/WikiDiscoverer",
+    "https://github.com/Kaushik1987",
+    "https://github.com/tomer",
+    "https://github.com/DevelopmentIL",
+    "https://github.com/TalAter",
+    "https://github.com/mayanksinghal",
+    "https://github.com/bmarkovic",
+    "https://github.com/adambrunner",
+    "https://github.com/passatgt",
+    "https://github.com/armendarabyan",
+    "https://github.com/tyok",
+    "http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan",
+    "https://github.com/hinrik",
+    "https://github.com/xfh",
+    "https://github.com/aliem",
+    "https://github.com/nostalgiaz",
+    "https://github.com/Manfre98",
+    "https://github.com/baryon",
+    "https://github.com/lantip",
+    "http://jv.wikipedia.org/wiki/Basa_Jawa",
+    "https://github.com/IrakliJani",
+    "https://github.com/nurlan",
+    "https://github.com/kruyvanna",
+    "https://github.com/rajeevnaikte",
+    "https://github.com/kyungw00k",
+    "https://github.com/mergehez",
+    "https://github.com/ShahramMebashar",
+    "https://github.com/chyngyz",
+    "https://github.com/mweimerskirch",
+    "https://github.com/kwisatz",
+    "https://github.com/ryanhart2",
+    "https://github.com/mmozuras",
+    "https://github.com/skakri",
+    "https://github.com/JanisE",
+    "https://github.com/miodragnikac",
+    "https://github.com/johnideal",
+    "https://github.com/B0k0",
+    "https://github.com/bkyceh",
+    "https://github.com/floydpink",
+    "https://github.com/javkhaanj7",
+    "https://github.com/kalehv",
+    "https://github.com/vnathalye",
+    "https://github.com/weldan",
+    "https://github.com/alesma",
+    "https://github.com/gholadr",
+    "https://github.com/thanyawzinmin",
+    "https://github.com/rexxars",
+    "https://github.com/sigurdga",
+    "https://github.com/stephenramthun",
+    "https://github.com/suvash",
+    "https://github.com/jorisroling",
+    "https://github.com/middagj",
+    "https://github.com/mechuwind",
+    "https://github.com/Quenty31",
+    "https://github.com/harpreetkhalsagtbit",
+    "https://github.com/evoL",
+    "https://github.com/caio-ribeiro-pereira",
+    "https://github.com/jalex79",
+    "https://github.com/gurdiga",
+    "https://github.com/avaly",
+    "https://github.com/cepem",
+    "https://github.com/Viktorminator",
+    "https://github.com/socketpair",
+    "http://new.gramota.ru/spravka/rules/139-prop",
+    "http://new.gramota.ru/spravka/buro/search-answer?s=242637",
+    "http://www.unicode.org/cldr/charts/28/summary/ru.html#1753",
+    "https://github.com/narainsagar",
+    "https://github.com/karamell",
+    "https://github.com/sampathsris",
+    "https://github.com/k2s",
+    "https://github.com/sedovsek",
+    "https://github.com/flakerimi",
+    "https://github.com/oerd",
+    "https://github.com/milan-j",
+    "https://github.com/crnjakovic",
+    "https://github.com/nicolaidavies",
+    "https://github.com/ulmus",
+    "https://github.com/fadsel",
+    "https://github.com/tk120404",
+    "http://ta.wikipedia.org/s/1er1",
+    "https://github.com/kcthota",
+    "https://github.com/joshbrooks",
+    "https://github.com/marobo",
+    "https://github.com/soniasimoes",
+    "https://github.com/orif-jr",
+    "https://github.com/sirn",
+    "https://github.com/atamyratabdy",
+    "https://github.com/amaranthrose",
+    "https://github.com/erhangundogan",
+    "https://github.com/BYK",
+    "https://github.com/boyaq",
+    "https://github.com/zemlanin",
+    "https://github.com/ibnesayeed",
+    "https://github.com/ZackVision",
+    "https://github.com/muminoff",
+    "https://github.com/bangnk",
+    "https://github.com/chienkira",
+    "https://github.com/andrewhood125",
+    "https://github.com/andela-batolagbe",
+    "https://github.com/suupic",
+    "https://github.com/zenozeng",
+    "https://github.com/uu109",
+    "https://github.com/ben-lin",
+    "https://github.com/hehachris",
+    "https://github.com/skfd",
+    "https://github.com/anthonylau",
+    "https://github.com/le0tan"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "af8df528-72ca-4ee0-b90a-0c3b98686d18",
+  "timestamp": "2026-08-21T11:54:52.079Z",
+  "spec": "moment",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 533,
+  "ips_found": [
+    "4.4.3.2"
+  ],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "ts3.1-typescript-test": "cross-env node_modules/typescript3/bin/tsc --project ts3.1-typing-tests",
+    "typescript-test": "cross-env node_modules/typescript/bin/tsc --project typing-tests",
+    "test": "grunt test",
+    "eslint": "eslint Gruntfile.js tasks src",
+    "prettier-check": "prettier --check Gruntfile.js tasks src",
+    "prettier-fmt": "prettier --write Gruntfile.js tasks src",
+    "coverage": "nyc npm test && nyc report",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 201
+  },
+  "url_findings": [
+    {
+      "match": "https://momentjs.com/guides/#/parsing/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 8,
+      "first_seen": "moment.d.ts:9"
+    },
+    {
+      "match": "http://stackoverflow.com/questions/3561493/is-there-a-regexp-escape-function-in-javascript",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:782"
+    },
+    {
+      "match": "https://stackoverflow.com/q/181348",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:1373"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/ISO_week_date#Calculating_a_date_given_the_year.2C_week_number_and_weekday",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:1417"
+    },
+    {
+      "match": "http://momentjs.com/guides/#/warnings/define-locale/",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 6,
+      "first_seen": "moment.js:2215"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc2822#section-3.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:2410"
+    },
+    {
+      "match": "http://momentjs.com/guides/#/warnings/js-date/",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 6,
+      "first_seen": "moment.js:2620"
+    },
+    {
+      "match": "https://github.com/moment/moment/issues/1423",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:3092"
+    },
+    {
+      "match": "http://momentjs.com/guides/#/warnings/min-max/",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 10,
+      "first_seen": "moment.js:3108"
+    },
+    {
+      "match": "https://github.com/moment/moment/issues/2978",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:3239"
+    },
+    {
+      "match": "https://github.com/moment/moment/pull/1871",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:3359"
+    },
+    {
+      "match": "http://docs.closure-library.googlecode.com/git/closure_goog_date_date.js.source.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:3520"
+    },
+    {
+      "match": "http://momentjs.com/guides/#/warnings/add-inverted-param/",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 6,
+      "first_seen": "moment.js:3655"
+    },
+    {
+      "match": "https://nodejs.org/dist/latest/docs/api/util.html#util_custom_inspect_function_on_objects",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (nodejs.org)"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:4027"
+    },
+    {
+      "match": "http://momentjs.com/guides/#/warnings/zone/",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 6,
+      "first_seen": "moment.js:5004"
+    },
+    {
+      "match": "http://momentjs.com/guides/#/warnings/dst-shifted/",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 6,
+      "first_seen": "moment.js:5008"
+    },
+    {
+      "match": "https://github.com/moment/moment/issues/2166",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:5259"
+    },
+    {
+      "match": "https://github.com/dordille/moment-isoduration/blob/master/moment.isoduration.js",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:5561"
+    },
+    {
+      "match": "https://momentjs.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:5"
+    },
+    {
+      "match": "https://github.com/ichernev",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own author field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:6"
+    },
+    {
+      "match": "http://timwoodcreates.com/",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:8"
+    },
+    {
+      "match": "http://rockymeza.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:9"
+    },
+    {
+      "match": "http://codeofmatt.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:10"
+    },
+    {
+      "match": "http://isaaccambron.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:11"
+    },
+    {
+      "match": "https://github.com/oire",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:12"
+    },
+    {
+      "match": "https://github.com/moment/moment.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:43"
+    },
+    {
+      "match": "https://github.com/moment/moment/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:46"
+    },
+    {
+      "match": "https://github.com/wernerm",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/af.js:3"
+    },
+    {
+      "match": "https://github.com/jjupiter",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "no sink, no reputation hit"
+      ],
+      "occurrences": 5,
+      "first_seen": "src/locale/af.js:65"
+    },
+    {
+      "match": "https://github.com/Amine27",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ar-dz.js:3"
+    },
+    {
+      "match": "https://github.com/abdelsaid",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 15,
+      "first_seen": "src/locale/ar-dz.js:4"
+    },
+    {
+      "match": "https://github.com/forabi",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/ar-dz.js:6"
+    },
+    {
+      "match": "https://github.com/noureddinem",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ar-dz.js:7"
+    },
+    {
+      "match": "https://github.com/nusretparlak",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ar-kw.js:3"
+    },
+    {
+      "match": "https://github.com/kikoanis",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ar-ly.js:3"
+    },
+    {
+      "match": "https://github.com/ElFadiliY",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ar-ma.js:3"
+    },
+    {
+      "match": "https://github.com/majdal",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ar-ps.js:3"
+    },
+    {
+      "match": "https://github.com/xsoh",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ar-sa.js:3"
+    },
+    {
+      "match": "https://github.com/naderio",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ar-tn.js:3"
+    },
+    {
+      "match": "https://github.com/topchiyev",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/az.js:3"
+    },
+    {
+      "match": "https://github.com/demidov91",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/be.js:3"
+    },
+    {
+      "match": "http://praleska.pro/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/be.js:4"
+    },
+    {
+      "match": "https://github.com/Oire",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 18,
+      "first_seen": "src/locale/be.js:5"
+    },
+    {
+      "match": "https://github.com/kraz",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/bg.js:3"
+    },
+    {
+      "match": "https://github.com/estellecomment",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/bm.js:3"
+    },
+    {
+      "match": "https://github.com/abdoufata",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/locale/bm.js:4"
+    },
+    {
+      "match": "https://github.com/ashwoolford",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/bn-bd.js:3"
+    },
+    {
+      "match": "https://github.com/kaushikgandhi",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/bn.js:3"
+    },
+    {
+      "match": "https://github.com/vajradog",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/bo.js:3"
+    },
+    {
+      "match": "https://github.com/jbleduigou",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/br.js:3"
+    },
+    {
+      "match": "https://github.com/frontyard",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/bs.js:3"
+    },
+    {
+      "match": "https://github.com/rasidre",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/bs.js:4"
+    },
+    {
+      "match": "https://github.com/juanghurtado",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/ca.js:3"
+    },
+    {
+      "match": "https://github.com/petrbela",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/cs.js:3"
+    },
+    {
+      "match": "https://github.com/mirontoli",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/cv.js:3"
+    },
+    {
+      "match": "https://github.com/robgallen",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/cy.js:3"
+    },
+    {
+      "match": "https://github.com/ryangreaves",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/cy.js:4"
+    },
+    {
+      "match": "https://github.com/mrbase",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/da.js:3"
+    },
+    {
+      "match": "https://github.com/lluchs",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/de-at.js:3"
+    },
+    {
+      "match": "https://github.com/MadMG",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/de-at.js:5"
+    },
+    {
+      "match": "https://github.com/mik01aj",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/de-at.js:6"
+    },
+    {
+      "match": "https://github.com/sschueller",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/de-ch.js:3"
+    },
+    {
+      "match": "https://www.bk.admin.ch/dokumentation/sprachen/04915/05016/index.html?lang=de#",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/locale/de-ch.js:5"
+    },
+    {
+      "match": "https://github.com/jawish",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/dv.js:3"
+    },
+    {
+      "match": "https://github.com/mehiel",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/el.js:3"
+    },
+    {
+      "match": "https://github.com/jarcoal",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/en-au.js:3"
+    },
+    {
+      "match": "https://github.com/jonbca",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/en-ca.js:3"
+    },
+    {
+      "match": "https://github.com/chrisgedrim",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/en-gb.js:3"
+    },
+    {
+      "match": "https://github.com/chriscartlidge",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/en-ie.js:3"
+    },
+    {
+      "match": "https://github.com/jatinag22",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/en-in.js:3"
+    },
+    {
+      "match": "https://github.com/lukemcgregor",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/en-nz.js:3"
+    },
+    {
+      "match": "https://github.com/techdimension",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/en-sg.js:3"
+    },
+    {
+      "match": "https://github.com/colindean",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/eo.js:3"
+    },
+    {
+      "match": "https://github.com/miestasmia",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/eo.js:4"
+    },
+    {
+      "match": "https://github.com/jcfranco",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/es-mx.js:3"
+    },
+    {
+      "match": "https://github.com/bustta",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/es-us.js:3"
+    },
+    {
+      "match": "https://github.com/chrisrodz",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/es-us.js:4"
+    },
+    {
+      "match": "https://github.com/julionc",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/es.js:3"
+    },
+    {
+      "match": "https://github.com/madhenry",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/et.js:3"
+    },
+    {
+      "match": "https://github.com/ragulka",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/et.js:4"
+    },
+    {
+      "match": "https://github.com/eillarra",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/eu.js:3"
+    },
+    {
+      "match": "https://github.com/ebraminio",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/fa.js:3"
+    },
+    {
+      "match": "https://github.com/bleadof",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/fi.js:3"
+    },
+    {
+      "match": "https://github.com/hagmandan",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/fil.js:3"
+    },
+    {
+      "match": "https://github.com/matthewdeeco",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/fil.js:4"
+    },
+    {
+      "match": "https://github.com/ragnar123",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/fo.js:3"
+    },
+    {
+      "match": "https://github.com/sakarisson",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/fo.js:4"
+    },
+    {
+      "match": "https://github.com/gaspard",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/fr-ch.js:3"
+    },
+    {
+      "match": "https://github.com/jfroffice",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/fr.js:3"
+    },
+    {
+      "match": "https://github.com/moment/moment/issues/3375",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 5,
+      "first_seen": "src/locale/fr.js:86"
+    },
+    {
+      "match": "https://github.com/robin0van0der0v",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/fy.js:3"
+    },
+    {
+      "match": "https://github.com/askpt",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ga.js:3"
+    },
+    {
+      "match": "https://github.com/jonashdown",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/gd.js:3"
+    },
+    {
+      "match": "https://github.com/WikiDiscoverer",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/gom-deva.js:3"
+    },
+    {
+      "match": "https://github.com/Kaushik1987",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/gu.js:3"
+    },
+    {
+      "match": "https://github.com/tomer",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/he.js:3"
+    },
+    {
+      "match": "https://github.com/DevelopmentIL",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/he.js:4"
+    },
+    {
+      "match": "https://github.com/TalAter",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/he.js:5"
+    },
+    {
+      "match": "https://github.com/mayanksinghal",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/hi.js:3"
+    },
+    {
+      "match": "https://github.com/bmarkovic",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/hr.js:3"
+    },
+    {
+      "match": "https://github.com/adambrunner",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/hu.js:3"
+    },
+    {
+      "match": "https://github.com/passatgt",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/hu.js:4"
+    },
+    {
+      "match": "https://github.com/armendarabyan",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/hy-am.js:3"
+    },
+    {
+      "match": "https://github.com/tyok",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/id.js:3"
+    },
+    {
+      "match": "http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/id.js:4"
+    },
+    {
+      "match": "https://github.com/hinrik",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/is.js:3"
+    },
+    {
+      "match": "https://github.com/xfh",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/it-ch.js:3"
+    },
+    {
+      "match": "https://github.com/aliem",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/it.js:3"
+    },
+    {
+      "match": "https://github.com/nostalgiaz",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/it.js:4"
+    },
+    {
+      "match": "https://github.com/Manfre98",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/it.js:5"
+    },
+    {
+      "match": "https://github.com/baryon",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ja.js:3"
+    },
+    {
+      "match": "https://github.com/lantip",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/jv.js:3"
+    },
+    {
+      "match": "http://jv.wikipedia.org/wiki/Basa_Jawa",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/jv.js:4"
+    },
+    {
+      "match": "https://github.com/IrakliJani",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ka.js:3"
+    },
+    {
+      "match": "https://github.com/nurlan",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/kk.js:3"
+    },
+    {
+      "match": "https://github.com/kruyvanna",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/km.js:3"
+    },
+    {
+      "match": "https://github.com/rajeevnaikte",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/kn.js:3"
+    },
+    {
+      "match": "https://github.com/kyungw00k",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ko.js:3"
+    },
+    {
+      "match": "https://github.com/mergehez",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ku-kmr.js:3"
+    },
+    {
+      "match": "https://github.com/ShahramMebashar",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ku.js:3"
+    },
+    {
+      "match": "https://github.com/chyngyz",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ky.js:3"
+    },
+    {
+      "match": "https://github.com/mweimerskirch",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/lb.js:3"
+    },
+    {
+      "match": "https://github.com/kwisatz",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/lb.js:4"
+    },
+    {
+      "match": "https://github.com/ryanhart2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/lo.js:3"
+    },
+    {
+      "match": "https://github.com/mmozuras",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/lt.js:3"
+    },
+    {
+      "match": "https://github.com/skakri",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/lv.js:3"
+    },
+    {
+      "match": "https://github.com/JanisE",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/lv.js:4"
+    },
+    {
+      "match": "https://github.com/miodragnikac",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/me.js:3"
+    },
+    {
+      "match": "https://github.com/johnideal",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/mi.js:3"
+    },
+    {
+      "match": "https://github.com/B0k0",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/mk.js:3"
+    },
+    {
+      "match": "https://github.com/bkyceh",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/mk.js:4"
+    },
+    {
+      "match": "https://github.com/floydpink",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ml.js:3"
+    },
+    {
+      "match": "https://github.com/javkhaanj7",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/mn.js:3"
+    },
+    {
+      "match": "https://github.com/kalehv",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/mr.js:3"
+    },
+    {
+      "match": "https://github.com/vnathalye",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/mr.js:4"
+    },
+    {
+      "match": "https://github.com/weldan",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/ms-my.js:4"
+    },
+    {
+      "match": "https://github.com/alesma",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/mt.js:3"
+    },
+    {
+      "match": "https://github.com/gholadr",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/my.js:4"
+    },
+    {
+      "match": "https://github.com/thanyawzinmin",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/my.js:5"
+    },
+    {
+      "match": "https://github.com/rexxars",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/nb.js:3"
+    },
+    {
+      "match": "https://github.com/sigurdga",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/nb.js:4"
+    },
+    {
+      "match": "https://github.com/stephenramthun",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/nb.js:5"
+    },
+    {
+      "match": "https://github.com/suvash",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ne.js:3"
+    },
+    {
+      "match": "https://github.com/jorisroling",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/nl-be.js:3"
+    },
+    {
+      "match": "https://github.com/middagj",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/nl-be.js:4"
+    },
+    {
+      "match": "https://github.com/mechuwind",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/nn.js:3"
+    },
+    {
+      "match": "https://github.com/Quenty31",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/oc-lnc.js:3"
+    },
+    {
+      "match": "https://github.com/harpreetkhalsagtbit",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/pa-in.js:3"
+    },
+    {
+      "match": "https://github.com/evoL",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/pl.js:3"
+    },
+    {
+      "match": "https://github.com/caio-ribeiro-pereira",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/pt-br.js:3"
+    },
+    {
+      "match": "https://github.com/jalex79",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/pt.js:3"
+    },
+    {
+      "match": "https://github.com/gurdiga",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ro.js:3"
+    },
+    {
+      "match": "https://github.com/avaly",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ro.js:4"
+    },
+    {
+      "match": "https://github.com/cepem",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ro.js:5"
+    },
+    {
+      "match": "https://github.com/Viktorminator",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ru.js:3"
+    },
+    {
+      "match": "https://github.com/socketpair",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ru.js:5"
+    },
+    {
+      "match": "http://new.gramota.ru/spravka/rules/139-prop",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 5,
+      "first_seen": "src/locale/ru.js:48"
+    },
+    {
+      "match": "http://new.gramota.ru/spravka/buro/search-answer?s=242637",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 5,
+      "first_seen": "src/locale/ru.js:49"
+    },
+    {
+      "match": "http://www.unicode.org/cldr/charts/28/summary/ru.html#1753",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (unicode.org)"
+      ],
+      "occurrences": 5,
+      "first_seen": "src/locale/ru.js:50"
+    },
+    {
+      "match": "https://github.com/narainsagar",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/sd.js:3"
+    },
+    {
+      "match": "https://github.com/karamell",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/se.js:3"
+    },
+    {
+      "match": "https://github.com/sampathsris",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/si.js:3"
+    },
+    {
+      "match": "https://github.com/k2s",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/sk.js:3"
+    },
+    {
+      "match": "https://github.com/sedovsek",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/sl.js:3"
+    },
+    {
+      "match": "https://github.com/flakerimi",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/sq.js:3"
+    },
+    {
+      "match": "https://github.com/oerd",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/sq.js:5"
+    },
+    {
+      "match": "https://github.com/milan-j",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/sr-cyrl.js:3"
+    },
+    {
+      "match": "https://github.com/crnjakovic",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/locale/sr-cyrl.js:4"
+    },
+    {
+      "match": "https://github.com/nicolaidavies",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ss.js:3"
+    },
+    {
+      "match": "https://github.com/ulmus",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/sv.js:3"
+    },
+    {
+      "match": "https://github.com/fadsel",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/sw.js:3"
+    },
+    {
+      "match": "https://github.com/tk120404",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ta.js:3"
+    },
+    {
+      "match": "http://ta.wikipedia.org/s/1er1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 5,
+      "first_seen": "src/locale/ta.js:94"
+    },
+    {
+      "match": "https://github.com/kcthota",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/te.js:3"
+    },
+    {
+      "match": "https://github.com/joshbrooks",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/tet.js:3"
+    },
+    {
+      "match": "https://github.com/marobo",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/tet.js:4"
+    },
+    {
+      "match": "https://github.com/soniasimoes",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/tet.js:5"
+    },
+    {
+      "match": "https://github.com/orif-jr",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/tg.js:3"
+    },
+    {
+      "match": "https://github.com/sirn",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/th.js:3"
+    },
+    {
+      "match": "https://github.com/atamyratabdy",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/tk.js:3"
+    },
+    {
+      "match": "https://github.com/amaranthrose",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/tlh.js:3"
+    },
+    {
+      "match": "https://github.com/erhangundogan",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/tr.js:3"
+    },
+    {
+      "match": "https://github.com/BYK",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/tr.js:4"
+    },
+    {
+      "match": "https://github.com/boyaq",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ug-cn.js:3"
+    },
+    {
+      "match": "https://github.com/zemlanin",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/uk.js:3"
+    },
+    {
+      "match": "https://github.com/ibnesayeed",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ur.js:3"
+    },
+    {
+      "match": "https://github.com/ZackVision",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/ur.js:4"
+    },
+    {
+      "match": "https://github.com/muminoff",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/uz.js:3"
+    },
+    {
+      "match": "https://github.com/bangnk",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/vi.js:3"
+    },
+    {
+      "match": "https://github.com/chienkira",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/vi.js:4"
+    },
+    {
+      "match": "https://github.com/andrewhood125",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/x-pseudo.js:3"
+    },
+    {
+      "match": "https://github.com/andela-batolagbe",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/yo.js:3"
+    },
+    {
+      "match": "https://github.com/suupic",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/zh-cn.js:3"
+    },
+    {
+      "match": "https://github.com/zenozeng",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/zh-cn.js:4"
+    },
+    {
+      "match": "https://github.com/uu109",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/zh-cn.js:5"
+    },
+    {
+      "match": "https://github.com/ben-lin",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 9,
+      "first_seen": "src/locale/zh-hk.js:3"
+    },
+    {
+      "match": "https://github.com/hehachris",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 9,
+      "first_seen": "src/locale/zh-hk.js:4"
+    },
+    {
+      "match": "https://github.com/skfd",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/zh-hk.js:5"
+    },
+    {
+      "match": "https://github.com/anthonylau",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/zh-hk.js:6"
+    },
+    {
+      "match": "https://github.com/le0tan",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/locale/zh-mo.js:5"
+    }
+  ],
+  "ip_findings": [
+    {
+      "match": "4.4.3.2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 4,
+      "first_seen": "moment.js:3521"
+    }
+  ],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "moment",
+      "field": "repository"
+    },
+    {
+      "host": "momentjs.com",
+      "owner": null,
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "moment",
+      "field": "bugs"
+    },
+    {
+      "host": "github.com",
+      "owner": "ichernev",
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:36:13.760Z",
+      "entryCount": 0
+    }
+  ]
+}

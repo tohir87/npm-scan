@@ -1,0 +1,124 @@
+{
+  "package_name": "slugify",
+  "version": "1.6.9",
+  "dataset_category": null,
+  "execution_time_ms": 448,
+  "manifest_urls_found": [
+    "https://github.com/simov/slugify",
+    "https://simov.github.io",
+    "https://github.com/simov/slugify.git"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "29764a10-e10c-4720-8988-cc5cd537ad18",
+  "timestamp": "2026-08-21T11:51:36.825Z",
+  "spec": "slugify",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 3,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "build": "node bin/build",
+    "build:changelog": "github-changes --owner simov --repository slugify --only-pulls --use-commit-body --date-format '(YYYY-MM-DD)' --file CHANGELOG.md --verbose",
+    "test:ci": "npx mocha --recursive",
+    "test:cov": "npx nyc --reporter=lcov --reporter=text-summary mocha -- --recursive",
+    "test": "npm run build && npm run test:ci"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 3
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/simov/slugify",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:12"
+    },
+    {
+      "match": "https://simov.github.io",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own author field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:13"
+    },
+    {
+      "match": "https://github.com/simov/slugify.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:16"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "simov",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "simov",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "simov",
+      "field": "bugs"
+    },
+    {
+      "host": "simov.github.io",
+      "owner": null,
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:51:33.926Z",
+      "entryCount": 0
+    }
+  ]
+}

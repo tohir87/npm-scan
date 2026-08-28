@@ -1,0 +1,177 @@
+{
+  "package_name": "mongo-object",
+  "version": "3.0.4",
+  "dataset_category": null,
+  "execution_time_ms": 807,
+  "manifest_urls_found": [
+    "https://github.com/longshotlabs/mongo-object.git",
+    "https://github.com/longshotlabs/mongo-object/issues",
+    "https://github.com/longshotlabs/mongo-object",
+    "https://www.npmjs.com/package/mongo-object/v/",
+    "https://github.com/longshotlabs/mongo-object/releases/tag/",
+    "https://github.com/sponsors/aldeed",
+    "https://github.com/semantic-release/semantic-release"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "4ce51a3b-f89c-43ab-89c3-705ca09074d2",
+  "timestamp": "2026-08-21T11:58:25.365Z",
+  "spec": "mongo-object",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 15,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "build": "rm -rf dist/** && tsc -p tsconfig-esm-build.json && tsc -p tsconfig-cjs-build.json && ./scripts/post-build.sh",
+    "check": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepublishOnly": "npm run build",
+    "test": "node --import tsx --test",
+    "test:watch": "npm test -- --watch"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 7
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/longshotlabs/mongo-object.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:9"
+    },
+    {
+      "match": "https://github.com/longshotlabs/mongo-object/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:12"
+    },
+    {
+      "match": "https://github.com/longshotlabs/mongo-object",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:9"
+    },
+    {
+      "match": "https://www.npmjs.com/package/mongo-object/v/",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (npmjs.com)"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:1"
+    },
+    {
+      "match": "https://github.com/longshotlabs/mongo-object/releases/tag/",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:1"
+    },
+    {
+      "match": "https://github.com/sponsors/aldeed",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:1"
+    },
+    {
+      "match": "https://github.com/semantic-release/semantic-release",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:1"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "longshotlabs",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "longshotlabs",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "longshotlabs",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:58:24.054Z",
+      "entryCount": 0
+    }
+  ]
+}

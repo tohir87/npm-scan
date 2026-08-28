@@ -1,0 +1,1539 @@
+{
+  "package_name": "node-forge",
+  "version": "1.4.0",
+  "dataset_category": null,
+  "execution_time_ms": 791,
+  "manifest_urls_found": [
+    "https://github.com/digitalbazaar/forge",
+    "http://digitalbazaar.com/",
+    "https://github.com/digitalbazaar/forge/issues",
+    "http://www.openssl.org",
+    "https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2011/february/double-hmac-verification/",
+    "https://github.com/cryptocoinjs/base-x",
+    "http://www.tero.co.uk/des/",
+    "http://www.netdealing.com",
+    "https://github.com/dchest/tweetnacl-js",
+    "https://tools.ietf.org/html/rfc8032",
+    "https://github.com/digitalbazaar/forge/blob/master/lib/asn1.js#L542",
+    "https://tools.ietf.org/html/rfc8410#section-10.3",
+    "http://www.openssl.org/docs/crypto/EVP_BytesToKey.html",
+    "https://datatracker.ietf.org/doc/html/rfc7468#section-7",
+    "https://github.com/kjur/jsjws/blob/master/rsa.js",
+    "http://webrsa.cvs.sourceforge.net/viewvc/webrsa/Client/RSAES-OAEP.js?content-type=text%2Fplain",
+    "http://www.rsa.com/rsalabs/node.asp?id=2125",
+    "http://evanjones.ca/",
+    "http://www.ietf.org/rfc/rfc2315.txt",
+    "http://www.w3.org/TR/WebCryptoAPI/#RandomSource-method-getRandomValues",
+    "http://www.ietf.org/rfc/rfc2268.txt",
+    "https://github.com/digitalbazaar/forge/blob/cbebca3780658703d925b61b2caffb1d263a6c1d/LICENSE",
+    "https://github.com/shellac",
+    "http://stackoverflow.com/questions/679915/how-do-i-test-for-an-empty-javascript-object-from-json/679937#679937",
+    "http://snipplr.com/view/5945/javascript-numberformat--ported-from-php/",
+    "http://kevin.vanzonneveld.net",
+    "http://www.jsfromhell.com",
+    "http://crestidg.com",
+    "http://www.winternet.no",
+    "http://snipplr.com/view/5949/format-humanize-file-byte-size-presentation-in-javascript/",
+    "http://www.w3.org/TR/XMLHttpRequest",
+    "https://myserver.com"
+  ],
+  "ast_intents": [
+    "XMLHttpRequest",
+    "got"
+  ],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "c35e2c9e-42b0-4c8c-acfa-357cd7d3358b",
+  "timestamp": "2026-08-21T11:53:20.842Z",
+  "spec": "node-forge",
+  "verdict": "blocked",
+  "detected_suspicious": true,
+  "installed": false,
+  "files_scanned": 53,
+  "ips_found": [
+    "1.3.101.112",
+    "2.5.4.3",
+    "2.5.4.4",
+    "2.5.4.5",
+    "2.5.4.6",
+    "2.5.4.7",
+    "2.5.4.8",
+    "2.5.4.9",
+    "2.5.4.10",
+    "2.5.4.11",
+    "2.5.4.12",
+    "2.5.4.13",
+    "2.5.4.15",
+    "2.5.4.17",
+    "2.5.4.42",
+    "2.5.4.65",
+    "2.5.29.1",
+    "2.5.29.2",
+    "2.5.29.3",
+    "2.5.29.4",
+    "2.5.29.5",
+    "2.5.29.6",
+    "2.5.29.7",
+    "2.5.29.8",
+    "2.5.29.9",
+    "2.5.29.10",
+    "2.5.29.11",
+    "2.5.29.12",
+    "2.5.29.13",
+    "2.5.29.14",
+    "2.5.29.15",
+    "2.5.29.16",
+    "2.5.29.17",
+    "2.5.29.18",
+    "2.5.29.19",
+    "2.5.29.20",
+    "2.5.29.21",
+    "2.5.29.22",
+    "2.5.29.23",
+    "2.5.29.24",
+    "2.5.29.25",
+    "2.5.29.26",
+    "2.5.29.27",
+    "2.5.29.28",
+    "2.5.29.29",
+    "2.5.29.30",
+    "2.5.29.31",
+    "2.5.29.32",
+    "2.5.29.33",
+    "2.5.29.34",
+    "2.5.29.35",
+    "2.5.29.36",
+    "2.5.29.37",
+    "2.5.29.46",
+    "2.5.29.54",
+    "1.1.1.1",
+    "6.2.3.1",
+    "6.2.3.3",
+    "4.2.1.2"
+  ],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepublish"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "webpack",
+    "test-build": "webpack --config webpack-tests.config.js",
+    "test": "npm run test-node",
+    "test-node": "cross-env NODE_ENV=test mocha -t 30000 -R ${REPORTER:-spec} tests/unit/index.js",
+    "test-karma": "karma start",
+    "test-karma-sauce": "karma start karma-sauce.conf",
+    "test-server": "node tests/server.js",
+    "test-server-ws": "node tests/websockets/server-ws.js",
+    "test-server-webid": "node tests/websockets/server-webid.js",
+    "coverage": "rm -rf coverage && nyc --reporter=lcov --reporter=text-summary npm test",
+    "coverage-ci": "rm -rf coverage && nyc --reporter=lcovonly npm test",
+    "coverage-report": "nyc report",
+    "lint": "eslint *.js lib/*.js tests/*.js tests/**/*.js examples/*.js flash/*.js"
+  },
+  "severity_counts": {
+    "critical": 55,
+    "warn": 0,
+    "info": 36
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/digitalbazaar/forge",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:5"
+    },
+    {
+      "match": "http://digitalbazaar.com/",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own author field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:9"
+    },
+    {
+      "match": "https://github.com/digitalbazaar/forge/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:51"
+    },
+    {
+      "match": "http://www.openssl.org",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/aes.js:12"
+    },
+    {
+      "match": "https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2011/february/double-hmac-verification/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/aesCipherSuites.js:262"
+    },
+    {
+      "match": "https://github.com/cryptocoinjs/base-x",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/baseN.js:5"
+    },
+    {
+      "match": "http://www.tero.co.uk/des/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/des.js:8"
+    },
+    {
+      "match": "http://www.netdealing.com",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/des.js:12"
+    },
+    {
+      "match": "https://github.com/dchest/tweetnacl-js",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/ed25519.js:9"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc8032",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/ed25519.js:29"
+    },
+    {
+      "match": "https://github.com/digitalbazaar/forge/blob/master/lib/asn1.js#L542",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/ed25519.js:95"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc8410#section-10.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/ed25519.js:102"
+    },
+    {
+      "match": "http://www.openssl.org/docs/crypto/EVP_BytesToKey.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/pbe.js:925"
+    },
+    {
+      "match": "https://datatracker.ietf.org/doc/html/rfc7468#section-7",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/pem.js:110"
+    },
+    {
+      "match": "https://github.com/kjur/jsjws/blob/master/rsa.js",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/pkcs1.js:6"
+    },
+    {
+      "match": "http://webrsa.cvs.sourceforge.net/viewvc/webrsa/Client/RSAES-OAEP.js?content-type=text%2Fplain",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/pkcs1.js:30"
+    },
+    {
+      "match": "http://www.rsa.com/rsalabs/node.asp?id=2125",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/pkcs1.js:39"
+    },
+    {
+      "match": "http://evanjones.ca/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/pkcs1.js:41"
+    },
+    {
+      "match": "http://www.ietf.org/rfc/rfc2315.txt",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/pkcs7asn1.js:11"
+    },
+    {
+      "match": "http://www.w3.org/TR/WebCryptoAPI/#RandomSource-method-getRandomValues",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/prng.js:282"
+    },
+    {
+      "match": "http://www.ietf.org/rfc/rfc2268.txt",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/rc2.js:9"
+    },
+    {
+      "match": "https://github.com/digitalbazaar/forge/blob/cbebca3780658703d925b61b2caffb1d263a6c1d/LICENSE",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/ssh.js:7"
+    },
+    {
+      "match": "https://github.com/shellac",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/ssh.js:9"
+    },
+    {
+      "match": "http://stackoverflow.com/questions/679915/how-do-i-test-for-an-empty-javascript-object-from-json/679937#679937",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/util.js:2265"
+    },
+    {
+      "match": "http://snipplr.com/view/5945/javascript-numberformat--ported-from-php/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/util.js:2337"
+    },
+    {
+      "match": "http://kevin.vanzonneveld.net",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/util.js:2340"
+    },
+    {
+      "match": "http://www.jsfromhell.com",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/util.js:2341"
+    },
+    {
+      "match": "http://crestidg.com",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/util.js:2343"
+    },
+    {
+      "match": "http://www.winternet.no",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/util.js:2345"
+    },
+    {
+      "match": "http://snipplr.com/view/5949/format-humanize-file-byte-size-presentation-in-javascript/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/util.js:2364"
+    },
+    {
+      "match": "http://www.w3.org/TR/XMLHttpRequest",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [
+        "XMLHttpRequest"
+      ],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/xhr.js:22"
+    },
+    {
+      "match": "https://myserver.com",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/xhr.js:98"
+    }
+  ],
+  "ip_findings": [
+    {
+      "match": "1.3.101.112",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:38"
+    },
+    {
+      "match": "2.5.4.3",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:112"
+    },
+    {
+      "match": "2.5.4.4",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:113"
+    },
+    {
+      "match": "2.5.4.5",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:114"
+    },
+    {
+      "match": "2.5.4.6",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:115"
+    },
+    {
+      "match": "2.5.4.7",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:116"
+    },
+    {
+      "match": "2.5.4.8",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:117"
+    },
+    {
+      "match": "2.5.4.9",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:118"
+    },
+    {
+      "match": "2.5.4.10",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:119"
+    },
+    {
+      "match": "2.5.4.11",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:120"
+    },
+    {
+      "match": "2.5.4.12",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:121"
+    },
+    {
+      "match": "2.5.4.13",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:122"
+    },
+    {
+      "match": "2.5.4.15",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:123"
+    },
+    {
+      "match": "2.5.4.17",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:124"
+    },
+    {
+      "match": "2.5.4.42",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:125"
+    },
+    {
+      "match": "2.5.4.65",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:126"
+    },
+    {
+      "match": "2.5.29.1",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:133"
+    },
+    {
+      "match": "2.5.29.2",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:134"
+    },
+    {
+      "match": "2.5.29.3",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:135"
+    },
+    {
+      "match": "2.5.29.4",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:136"
+    },
+    {
+      "match": "2.5.29.5",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:137"
+    },
+    {
+      "match": "2.5.29.6",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:138"
+    },
+    {
+      "match": "2.5.29.7",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:139"
+    },
+    {
+      "match": "2.5.29.8",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:140"
+    },
+    {
+      "match": "2.5.29.9",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:141"
+    },
+    {
+      "match": "2.5.29.10",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:142"
+    },
+    {
+      "match": "2.5.29.11",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:143"
+    },
+    {
+      "match": "2.5.29.12",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:144"
+    },
+    {
+      "match": "2.5.29.13",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:145"
+    },
+    {
+      "match": "2.5.29.14",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:146"
+    },
+    {
+      "match": "2.5.29.15",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:147"
+    },
+    {
+      "match": "2.5.29.16",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:148"
+    },
+    {
+      "match": "2.5.29.17",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:149"
+    },
+    {
+      "match": "2.5.29.18",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:150"
+    },
+    {
+      "match": "2.5.29.19",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:151"
+    },
+    {
+      "match": "2.5.29.20",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:152"
+    },
+    {
+      "match": "2.5.29.21",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:153"
+    },
+    {
+      "match": "2.5.29.22",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:154"
+    },
+    {
+      "match": "2.5.29.23",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:155"
+    },
+    {
+      "match": "2.5.29.24",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:156"
+    },
+    {
+      "match": "2.5.29.25",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:157"
+    },
+    {
+      "match": "2.5.29.26",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:158"
+    },
+    {
+      "match": "2.5.29.27",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:159"
+    },
+    {
+      "match": "2.5.29.28",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:160"
+    },
+    {
+      "match": "2.5.29.29",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:161"
+    },
+    {
+      "match": "2.5.29.30",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:162"
+    },
+    {
+      "match": "2.5.29.31",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:163"
+    },
+    {
+      "match": "2.5.29.32",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:164"
+    },
+    {
+      "match": "2.5.29.33",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:165"
+    },
+    {
+      "match": "2.5.29.34",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:166"
+    },
+    {
+      "match": "2.5.29.35",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:167"
+    },
+    {
+      "match": "2.5.29.36",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:168"
+    },
+    {
+      "match": "2.5.29.37",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:169"
+    },
+    {
+      "match": "2.5.29.46",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:170"
+    },
+    {
+      "match": "2.5.29.54",
+      "severity": "critical",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "got"
+      ],
+      "loaders": [],
+      "reasons": [
+        "public IP contacted directly, bypassing DNS",
+        "reached via got"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/oids.js:171"
+    },
+    {
+      "match": "1.1.1.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/pkcs1.js:33"
+    },
+    {
+      "match": "6.2.3.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/tls.js:173"
+    },
+    {
+      "match": "6.2.3.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/tls.js:2313"
+    },
+    {
+      "match": "4.2.1.2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/x509.js:1249"
+    }
+  ],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "digitalbazaar",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "digitalbazaar",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "digitalbazaar",
+      "field": "bugs"
+    },
+    {
+      "host": "digitalbazaar.com",
+      "owner": null,
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:53:20.825Z",
+      "entryCount": 0
+    }
+  ]
+}

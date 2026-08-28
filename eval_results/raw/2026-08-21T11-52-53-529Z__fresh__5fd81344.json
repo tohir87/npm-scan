@@ -1,0 +1,124 @@
+{
+  "package_name": "fresh",
+  "version": "0.5.2",
+  "dataset_category": null,
+  "execution_time_ms": 498,
+  "manifest_urls_found": [
+    "https://tools.ietf.org/html/rfc2616#section-14.9.4",
+    "http://tjholowaychuk.com",
+    "http://jongleberry.com"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "5fd81344-4aae-4cb4-b708-caa347f60de7",
+  "timestamp": "2026-08-21T11:52:53.529Z",
+  "spec": "fresh",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 2,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "bench": "node benchmark/index.js",
+    "lint": "eslint --plugin markdown --ext js,md .",
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 3
+  },
+  "url_findings": [
+    {
+      "match": "https://tools.ietf.org/html/rfc2616#section-14.9.4",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:45"
+    },
+    {
+      "match": "http://tjholowaychuk.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own author field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:5"
+    },
+    {
+      "match": "http://jongleberry.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:8"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "jshttp",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "jshttp",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "jshttp",
+      "field": "bugs"
+    },
+    {
+      "host": "tjholowaychuk.com",
+      "owner": null,
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:52:52.391Z",
+      "entryCount": 0
+    }
+  ]
+}

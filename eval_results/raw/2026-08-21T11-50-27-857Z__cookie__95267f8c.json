@@ -1,0 +1,311 @@
+{
+  "package_name": "cookie",
+  "version": "2.0.1",
+  "dataset_category": null,
+  "execution_time_ms": 481,
+  "manifest_urls_found": [
+    "https://opencollective.com/express",
+    "https://datatracker.ietf.org/doc/html/rfc6265#section-4.1.1",
+    "https://tools.ietf.org/html/rfc6265#section-5.2.2",
+    "https://tools.ietf.org/html/rfc6265#section-5.3",
+    "https://tools.ietf.org/html/rfc6265#section-5.2.1",
+    "https://tools.ietf.org/html/rfc6265#section-5.2.3",
+    "https://tools.ietf.org/html/rfc6265#section-5.2.4",
+    "https://tools.ietf.org/html/rfc6265#section-5.1.4",
+    "https://tools.ietf.org/html/rfc6265#section-5.2.6",
+    "https://tools.ietf.org/html/rfc6265#section-5.2.5",
+    "https://tools.ietf.org/html/draft-cutler-httpbis-partitioned-cookies/",
+    "https://github.com/privacycg/CHIPS",
+    "https://tools.ietf.org/html/draft-west-cookie-priority-00#section-4.1",
+    "https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-09#section-5.4.7",
+    "https://github.com/jshttp/cookie/issues/191",
+    "https://github.com/jshttp/cookie/issues/173"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "95267f8c-1a07-49b5-9a9c-413b7ff3fbf4",
+  "timestamp": "2026-08-21T11:50:27.857Z",
+  "spec": "cookie",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 3,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepare"
+  ],
+  "scripts": {
+    "bench": "vitest bench",
+    "build": "ts-scripts build",
+    "format": "ts-scripts format",
+    "prepare": "ts-scripts install",
+    "prepublishOnly": "npm run build",
+    "size": "size-limit",
+    "specs": "ts-scripts specs",
+    "test": "ts-scripts test && npm run size"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 16
+  },
+  "url_findings": [
+    {
+      "match": "https://opencollective.com/express",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:12"
+    },
+    {
+      "match": "https://datatracker.ietf.org/doc/html/rfc6265#section-4.1.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.d.ts:6"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc6265#section-5.2.2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:56"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc6265#section-5.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.d.ts:58"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc6265#section-5.2.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:64"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc6265#section-5.2.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:73"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc6265#section-5.2.4",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:78"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc6265#section-5.1.4",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:79"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc6265#section-5.2.6",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:83"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc6265#section-5.2.5",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:88"
+    },
+    {
+      "match": "https://tools.ietf.org/html/draft-cutler-httpbis-partitioned-cookies/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:93"
+    },
+    {
+      "match": "https://github.com/privacycg/CHIPS",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.d.ts:98"
+    },
+    {
+      "match": "https://tools.ietf.org/html/draft-west-cookie-priority-00#section-4.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.d.ts:102"
+    },
+    {
+      "match": "https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-09#section-5.4.7",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.d.ts:112"
+    },
+    {
+      "match": "https://github.com/jshttp/cookie/issues/191",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/index.js:12"
+    },
+    {
+      "match": "https://github.com/jshttp/cookie/issues/173",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "dist/index.js:46"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "jshttp",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "jshttp",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "jshttp",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "opencollective.com",
+      "owner": null,
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:50:25.520Z",
+      "entryCount": 0
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "package_name": "negotiator",
+  "version": "1.1.0",
+  "dataset_category": null,
+  "execution_time_ms": 439,
+  "manifest_urls_found": [
+    "http://blog.izs.me/",
+    "https://opencollective.com/express"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "cadb2968-76a8-4684-aac4-d47908eab550",
+  "timestamp": "2026-08-21T11:52:27.209Z",
+  "spec": "negotiator",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 7,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "bench": "vitest bench",
+    "lint": "eslint .",
+    "test": "mocha --reporter spec --check-leaks test/",
+    "test:debug": "mocha --reporter spec --check-leaks --inspect --inspect-brk test/",
+    "test-ci": "nyc --reporter=lcovonly --reporter=text npm test",
+    "test-cov": "nyc --reporter=html --reporter=text npm test"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 2
+  },
+  "url_findings": [
+    {
+      "match": "http://blog.izs.me/",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:8"
+    },
+    {
+      "match": "https://opencollective.com/express",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:22"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "jshttp",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "jshttp",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "jshttp",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "opencollective.com",
+      "owner": null,
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:52:26.131Z",
+      "entryCount": 0
+    }
+  ]
+}

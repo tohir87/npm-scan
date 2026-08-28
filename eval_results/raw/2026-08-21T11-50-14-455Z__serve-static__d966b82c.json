@@ -1,0 +1,96 @@
+{
+  "package_name": "serve-static",
+  "version": "2.2.1",
+  "dataset_category": null,
+  "execution_time_ms": 500,
+  "manifest_urls_found": [
+    "https://opencollective.com/express"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "d966b82c-0a5c-411f-814c-4ff935d6a650",
+  "timestamp": "2026-08-21T11:50:14.455Z",
+  "spec": "serve-static",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 2,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-ci": "nyc --reporter=lcov --reporter=text npm test",
+    "test-cov": "nyc --reporter=html --reporter=text npm test",
+    "version": "node scripts/version-history.js && git add HISTORY.md"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 1
+  },
+  "url_findings": [
+    {
+      "match": "https://opencollective.com/express",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:10"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "expressjs",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "expressjs",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "expressjs",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "opencollective.com",
+      "owner": null,
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:50:06.216Z",
+      "entryCount": 0
+    }
+  ]
+}

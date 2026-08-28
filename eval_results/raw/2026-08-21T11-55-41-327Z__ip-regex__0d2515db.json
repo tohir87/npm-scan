@@ -1,0 +1,416 @@
+{
+  "package_name": "ip-regex",
+  "version": "5.0.0",
+  "dataset_category": null,
+  "execution_time_ms": 456,
+  "manifest_urls_found": [
+    "https://github.com/sponsors/sindresorhus"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "0d2515db-4361-4642-94a5-6ccefaeadc4f",
+  "timestamp": "2026-08-21T11:55:41.327Z",
+  "spec": "ip-regex",
+  "verdict": "blocked",
+  "detected_suspicious": true,
+  "installed": false,
+  "files_scanned": 3,
+  "ips_found": [
+    "192.168.0.1",
+    "1:2:3:4:5:6:7:8",
+    "1:2:3:4:5:6:7::",
+    "1.2.3.4",
+    "1:2:3:4:5:6::",
+    "1:2:3:4:5:6::8",
+    "1:2:3:4:5::",
+    "1:2:3:4:5::7:8",
+    "1:2:3:4:5::8",
+    "1:2:3:4::",
+    "1:2:3:4::6:7:8",
+    "1:2:3:4::8",
+    "1:2:3::",
+    "1:2:3::5:6:7:8",
+    "1:2:3::8",
+    "1:2::",
+    "1:2::4:5:6:7:8",
+    "1:2::8",
+    "1::",
+    "1::3:4:5:6:7:8",
+    "1::8",
+    "::2:3:4:5:6:7:8",
+    "::8"
+  ],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "test": "xo && ava && tsd"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 22,
+    "info": 2
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/sponsors/sindresorhus",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:7"
+    }
+  ],
+  "ip_findings": [
+    {
+      "match": "192.168.0.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "private-network address"
+      ],
+      "occurrences": 4,
+      "first_seen": "index.d.ts:28"
+    },
+    {
+      "match": "1:2:3:4:5:6:7:8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 4,
+      "first_seen": "index.d.ts:35"
+    },
+    {
+      "match": "1:2:3:4:5:6:7::",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:13"
+    },
+    {
+      "match": "1.2.3.4",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 7,
+      "first_seen": "index.js:14"
+    },
+    {
+      "match": "1:2:3:4:5:6::",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:14"
+    },
+    {
+      "match": "1:2:3:4:5:6::8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:14"
+    },
+    {
+      "match": "1:2:3:4:5::",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:15"
+    },
+    {
+      "match": "1:2:3:4:5::7:8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:15"
+    },
+    {
+      "match": "1:2:3:4:5::8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:15"
+    },
+    {
+      "match": "1:2:3:4::",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:16"
+    },
+    {
+      "match": "1:2:3:4::6:7:8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:16"
+    },
+    {
+      "match": "1:2:3:4::8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:16"
+    },
+    {
+      "match": "1:2:3::",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:17"
+    },
+    {
+      "match": "1:2:3::5:6:7:8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:17"
+    },
+    {
+      "match": "1:2:3::8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:17"
+    },
+    {
+      "match": "1:2::",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:18"
+    },
+    {
+      "match": "1:2::4:5:6:7:8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:18"
+    },
+    {
+      "match": "1:2::8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:18"
+    },
+    {
+      "match": "1::",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:19"
+    },
+    {
+      "match": "1::3:4:5:6:7:8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:19"
+    },
+    {
+      "match": "1::8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:19"
+    },
+    {
+      "match": "::2:3:4:5:6:7:8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:20"
+    },
+    {
+      "match": "::8",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:20"
+    }
+  ],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "sindresorhus",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "sindresorhus",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "sindresorhus",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:55:22.831Z",
+      "entryCount": 0
+    }
+  ]
+}

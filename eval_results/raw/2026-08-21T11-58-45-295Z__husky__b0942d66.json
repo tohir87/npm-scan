@@ -1,0 +1,104 @@
+{
+  "package_name": "husky",
+  "version": "9.1.7",
+  "dataset_category": null,
+  "execution_time_ms": 494,
+  "manifest_urls_found": [
+    "https://github.com/typicode/husky.git",
+    "https://github.com/sponsors/typicode"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "b0942d66-740a-4e20-9f89-085a4080ca1f",
+  "timestamp": "2026-08-21T11:58:45.295Z",
+  "spec": "husky",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 4,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {},
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 2
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/typicode/husky.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:13"
+    },
+    {
+      "match": "https://github.com/sponsors/typicode",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:15"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "typicode",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "typicode",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "typicode",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:58:43.297Z",
+      "entryCount": 0
+    }
+  ]
+}

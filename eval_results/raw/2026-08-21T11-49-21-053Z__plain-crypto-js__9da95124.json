@@ -1,0 +1,65 @@
+{
+  "package_name": "plain-crypto-js",
+  "version": "0.0.1-security.0",
+  "dataset_category": null,
+  "execution_time_ms": 1382,
+  "manifest_urls_found": [],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "9da95124-7b97-4da7-b62b-67f40447039c",
+  "timestamp": "2026-08-21T11:49:21.053Z",
+  "spec": "plain-crypto-js",
+  "verdict": "blocked",
+  "detected_suspicious": true,
+  "installed": false,
+  "files_scanned": 1,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {},
+  "severity_counts": {
+    "critical": 1,
+    "warn": 0,
+    "info": 0
+  },
+  "url_findings": [],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "npm",
+      "field": "repository"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [
+    {
+      "id": "MAL-2026-2306",
+      "summary": "Malicious code in plain-crypto-js (npm)",
+      "malicious": true
+    }
+  ],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:49:21.037Z",
+      "entryCount": 1
+    }
+  ]
+}

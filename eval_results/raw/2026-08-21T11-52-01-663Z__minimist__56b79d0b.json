@@ -1,0 +1,179 @@
+{
+  "package_name": "minimist",
+  "version": "1.2.8",
+  "dataset_category": null,
+  "execution_time_ms": 480,
+  "manifest_urls_found": [
+    "http://stackoverflow.com/a/1068308/13216",
+    "https://github.com/minimistjs/minimist",
+    "http://substack.net",
+    "https://github.com/sponsors/ljharb",
+    "https://github.com/substack/node-optimist/issues/71",
+    "https://github.com/backstage/backstage/issues/10343"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "56b79d0b-d006-487a-ab05-48069c56ec56",
+  "timestamp": "2026-08-21T11:52:01.663Z",
+  "spec": "minimist",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 18,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepack",
+    "prepublish"
+  ],
+  "scripts": {
+    "prepack": "npmignore --auto --commentLines=auto",
+    "prepublishOnly": "safe-publish-latest",
+    "prepublish": "not-in-publish || npm run prepublishOnly",
+    "lint": "eslint --ext=js,mjs .",
+    "pretest": "npm run lint",
+    "tests-only": "nyc tape 'test/**/*.js'",
+    "test": "npm run tests-only",
+    "posttest": "aud --production",
+    "version": "auto-changelog && git add CHANGELOG.md",
+    "postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 6
+  },
+  "url_findings": [
+    {
+      "match": "http://stackoverflow.com/a/1068308/13216",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:151"
+    },
+    {
+      "match": "https://github.com/minimistjs/minimist",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:46"
+    },
+    {
+      "match": "http://substack.net",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own author field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:56"
+    },
+    {
+      "match": "https://github.com/sponsors/ljharb",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:59"
+    },
+    {
+      "match": "https://github.com/substack/node-optimist/issues/71",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "test/bool.js:125"
+    },
+    {
+      "match": "https://github.com/backstage/backstage/issues/10343",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "test/proto.js:58"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "minimistjs",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "minimistjs",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "minimistjs",
+      "field": "bugs"
+    },
+    {
+      "host": "substack.net",
+      "owner": null,
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:51:59.940Z",
+      "entryCount": 0
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "package_name": "uuid",
+  "version": "14.0.2",
+  "dataset_category": null,
+  "execution_time_ms": 458,
+  "manifest_urls_found": [
+    "https://github.com/sponsors/broofa",
+    "https://github.com/sponsors/ctavan",
+    "https://github.com/uuidjs/uuid.git"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "0f7efec1-8524-4291-af95-57c367cd4fc3",
+  "timestamp": "2026-08-21T11:51:28.070Z",
+  "spec": "uuid",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 67,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepack",
+    "prepare"
+  ],
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "build:watch": "tsc --watch -p tsconfig.json",
+    "bundlewatch": "npm run pretest:browser && bundlewatch --config bundlewatch.config.json",
+    "docs:diff": "npm run docs && git diff README.md",
+    "docs": "npm run build && npx runmd --output=README.md README_js.md",
+    "biome:check": "biome check .",
+    "biome:fix": "biome check --write .",
+    "examples:browser:rollup:build": "cd examples/browser-rollup && npm run build",
+    "examples:browser:webpack:build": "cd examples/browser-webpack && npm run build",
+    "examples:node:esmodules:test": "cd examples/node-esmodules && npm test",
+    "examples:node:jest:test": "cd examples/node-jest && npm test",
+    "examples:node:typescript:test": "cd examples/typescript && npm test",
+    "format": "biome format --write .",
+    "format:check": "biome format --check .",
+    "lint": "npm run biome:check",
+    "md": "runmd --watch --output=README.md README_js.md",
+    "prepack": "npm run build -- --no-pack",
+    "prepare": "lefthook install",
+    "prepublishOnly": "npm run build",
+    "pretest:benchmark": "npm run build",
+    "pretest:browser": "./scripts/iodd && npm run build && npm-run-all --parallel examples:browser:**",
+    "pretest:node": "npm run build",
+    "pretest": "npm run build",
+    "release": "standard-version --no-verify",
+    "test:benchmark": "cd examples/benchmark && npm test",
+    "test:browser": "wdio run ./wdio.conf.js",
+    "test:node": "npm-run-all --parallel examples:node:**",
+    "test:watch": "node --test --enable-source-maps --watch dist-node/test/*.js",
+    "test": "node --test --enable-source-maps dist-node/test/*.js"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 3
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/sponsors/broofa",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:7"
+    },
+    {
+      "match": "https://github.com/sponsors/ctavan",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:8"
+    },
+    {
+      "match": "https://github.com/uuidjs/uuid.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:102"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "uuidjs",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "uuidjs",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "uuidjs",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:51:26.721Z",
+      "entryCount": 0
+    }
+  ]
+}

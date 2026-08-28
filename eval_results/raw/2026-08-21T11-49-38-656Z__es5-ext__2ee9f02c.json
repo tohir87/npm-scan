@@ -1,0 +1,508 @@
+{
+  "package_name": "es5-ext",
+  "version": "0.10.64",
+  "dataset_category": null,
+  "execution_time_ms": 670,
+  "manifest_urls_found": [
+    "https://forum.torproject.net/t/tor-blocked-in-russia-how-to-circumvent-censorship/982",
+    "https://mathiasbynens.be/notes/globalthis",
+    "http://www.medikoo.com/",
+    "http://norbertlindenberg.com/2012/05/ecmascript-supplementary-characters/",
+    "https://github.com/mathiasbynens/String.fromCodePoint/blob/master",
+    "https://github.com/mathiasbynens/String.prototype.at",
+    "http://www.2ality.com/2014/01/efficient-string-repeat.html",
+    "https://github.com/mathiasbynens/String.prototype.repeat/blob/4a4b567def/repeat.js",
+    "https://github.com/walling/unorm/blob/master/lib/unorm.js",
+    "https://github.com/mathiasbynens/String.prototype.codePointAt",
+    "http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae",
+    "http://stackoverflow.com/questions/3561493",
+    "https://github.com/tc39/ecma262/issues/262",
+    "https://github.com/tc39/ecma262/pull/263",
+    "https://bugs.chromium.org/p/v8/issues/detail?id=4617",
+    "http://code.google.com/p/v8/issues/detail?id=2804",
+    "http://wiki.ecmascript.org/doku.php?id=harmony:egal",
+    "https://gist.github.com/WebReflection/5593554",
+    "http://www.2ality.com/2014/05/is-integer.html",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round",
+    "https://github.com/paulmillr/es6-shim/",
+    "http://dev.w3.org/2006/webapi/WebIDL/#es-type-mapping",
+    "https://github.com/paulmillr/es6-shim/blob/master/es6-shim.js",
+    "https://github.com/monolithed/ECMAScript-6/blob/master/ES6.js",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+    "https://github.com/paulmillr/es6-shim",
+    "https://github.com/monolithed/ECMAScript-6",
+    "http://closure-library.googlecode.com/svn/docs/",
+    "http://documentcloud.github.com/underscore/#compact",
+    "http://documentcloud.github.com/underscore/#groupBy"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "2ee9f02c-42c8-4ec7-ac39-604ab9c20508",
+  "timestamp": "2026-08-21T11:49:38.656Z",
+  "spec": "es5-ext",
+  "verdict": "blocked",
+  "detected_suspicious": true,
+  "installed": false,
+  "files_scanned": 427,
+  "ips_found": [],
+  "auto_run_scripts": [
+    "postinstall"
+  ],
+  "publish_scripts": [],
+  "scripts": {
+    "coverage": "nyc npm test",
+    "lint": "eslint --ignore-path=.gitignore .",
+    "lint:updated": "pipe-git-updated --base=main --ext=js -- eslint --ignore-pattern '!*'",
+    "postinstall": " node -e \"try{require('./_postinstall')}catch(e){}\" || exit 0",
+    "prettier-check": "prettier -c --ignore-path .gitignore \"**/*.{css,html,js,json,md,yaml,yml}\"",
+    "prettier-check:updated": "pipe-git-updated --base=main --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier -c",
+    "prettify": "prettier --write --ignore-path .gitignore \"**/*.{css,html,js,json,md,yaml,yml}\"",
+    "prettify:updated": "pipe-git-updated ---base=main -ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier --write",
+    "test": "node ./node_modules/tad/bin/tad"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 1,
+    "info": 30
+  },
+  "url_findings": [
+    {
+      "match": "https://forum.torproject.net/t/tor-blocked-in-russia-how-to-circumvent-censorship/982",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "no sink, no reputation hit"
+      ],
+      "occurrences": 1,
+      "first_seen": "_postinstall.js:44"
+    },
+    {
+      "match": "https://mathiasbynens.be/notes/globalthis",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "global.js:15"
+    },
+    {
+      "match": "http://www.medikoo.com/",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own author field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:5"
+    },
+    {
+      "match": "http://norbertlindenberg.com/2012/05/ecmascript-supplementary-characters/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "string/from-code-point/shim.js:2"
+    },
+    {
+      "match": "https://github.com/mathiasbynens/String.fromCodePoint/blob/master",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "string/from-code-point/shim.js:4"
+    },
+    {
+      "match": "https://github.com/mathiasbynens/String.prototype.at",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "string/#/at.js:1"
+    },
+    {
+      "match": "http://www.2ality.com/2014/01/efficient-string-repeat.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "string/#/repeat/shim.js:2"
+    },
+    {
+      "match": "https://github.com/mathiasbynens/String.prototype.repeat/blob/4a4b567def/repeat.js",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "string/#/repeat/shim.js:3"
+    },
+    {
+      "match": "https://github.com/walling/unorm/blob/master/lib/unorm.js",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "string/#/normalize/shim.js:3"
+    },
+    {
+      "match": "https://github.com/mathiasbynens/String.prototype.codePointAt",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "string/#/code-point-at/shim.js:1"
+    },
+    {
+      "match": "http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "string/#/code-point-at/shim.js:21"
+    },
+    {
+      "match": "http://stackoverflow.com/questions/3561493",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 1,
+      "first_seen": "reg-exp/escape.js:2"
+    },
+    {
+      "match": "https://github.com/tc39/ecma262/issues/262",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "reg-exp/#/unicode/is-implemented.js:6"
+    },
+    {
+      "match": "https://github.com/tc39/ecma262/pull/263",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "reg-exp/#/unicode/is-implemented.js:7"
+    },
+    {
+      "match": "https://bugs.chromium.org/p/v8/issues/detail?id=4617",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "reg-exp/#/unicode/is-implemented.js:8"
+    },
+    {
+      "match": "http://code.google.com/p/v8/issues/detail?id=2804",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "object/create.js:1"
+    },
+    {
+      "match": "http://wiki.ecmascript.org/doku.php?id=harmony:egal",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "object/is.js:2"
+    },
+    {
+      "match": "https://gist.github.com/WebReflection/5593554",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "object/set-prototype-of/shim.js:4"
+    },
+    {
+      "match": "http://www.2ality.com/2014/05/is-integer.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "number/is-integer/shim.js:1"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "math/_decimal-adjust.js:2"
+    },
+    {
+      "match": "https://github.com/paulmillr/es6-shim/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 4,
+      "first_seen": "math/_pack-ieee754.js:2"
+    },
+    {
+      "match": "http://dev.w3.org/2006/webapi/WebIDL/#es-type-mapping",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "math/_pack-ieee754.js:28"
+    },
+    {
+      "match": "https://github.com/paulmillr/es6-shim/blob/master/es6-shim.js",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "math/sinh/shim.js:2"
+    },
+    {
+      "match": "https://github.com/monolithed/ECMAScript-6/blob/master/ES6.js",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "math/log1p/shim.js:1"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "math/imul/shim.js:3"
+    },
+    {
+      "match": "https://github.com/paulmillr/es6-shim",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "math/hypot/shim.js:1"
+    },
+    {
+      "match": "https://github.com/monolithed/ECMAScript-6",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "math/expm1/shim.js:1"
+    },
+    {
+      "match": "http://closure-library.googlecode.com/svn/docs/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "array/#/clear.js:2"
+    },
+    {
+      "match": "http://documentcloud.github.com/underscore/#compact",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "array/#/compact.js:1"
+    },
+    {
+      "match": "http://documentcloud.github.com/underscore/#groupBy",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "array/#/group.js:2"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "medikoo",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "medikoo",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "medikoo",
+      "field": "bugs"
+    },
+    {
+      "host": "medikoo.com",
+      "owner": null,
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:49:36.597Z",
+      "entryCount": 0
+    }
+  ]
+}

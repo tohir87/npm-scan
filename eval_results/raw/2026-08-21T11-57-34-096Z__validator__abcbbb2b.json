@@ -1,0 +1,1067 @@
+{
+  "package_name": "validator",
+  "version": "13.15.35",
+  "dataset_category": null,
+  "execution_time_ms": 625,
+  "manifest_urls_found": [
+    "https://github.com/validatorjs/validator.js",
+    "https://github.com/profnandaa",
+    "https://github.com/validatorjs/validator.js/issues",
+    "https://github.com/validatorjs/validator.js.git",
+    "http://www.localeplanet.com/java/",
+    "https://en.wikipedia.org/wiki/Decimal_mark",
+    "https://tools.ietf.org/html/rfc2822#appendix-A.1.2",
+    "http://username:password@example.com",
+    "https://www.rfc-editor.org/rfc/rfc5646.html",
+    "http://www.brainjar.com/js/validation/",
+    "https://www.aba.com/news-research/research-analysis/routing-number-policy-procedures",
+    "https://en.wikipedia.org/",
+    "https://docs.microsoft.com/en-us/microsoft-365/compliance/eu-passport-number",
+    "https://countrycode.org/",
+    "https://semver.org/",
+    "http://isrc.ifpi.org/en/isrc-standard/code-syntax",
+    "https://en.wikipedia.org/wiki/International_Bank_Account_Number",
+    "https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2",
+    "https://en.wikipedia.org/wiki/ISO_9362",
+    "https://github.com/uuidjs/uuid/blob/main/src/regex.js",
+    "https://github.com/gotwarlost/istanbul/blob/master/ignoring-code-for-coverage.md#ignoring-code-for-coverage-purposes",
+    "https://dvv.fi/en/personal-identity-code#:~:text=control%20character%20for%20a-,personal,-identity%20code%20calculated",
+    "https://it.wikipedia.org/wiki/Carta_d%27identit%C3%A0_elettronica_italiana",
+    "https://no.wikipedia.org/wiki/F%C3%B8dselsnummer",
+    "https://www.gtin.info/itf-14-barcodes/",
+    "https://en.wikipedia.org/wiki/International_Article_Number",
+    "https://www.gtin.info/",
+    "https://en.wikipedia.org/wiki/International_Article_Number#Calculation_of_checksum_digit",
+    "https://www.isin.org/isin-format/",
+    "https://ec.europa.eu/taxation_customs/tin/specs/FS-TIN%20Algorithms-Public.docx",
+    "http://www.irs.gov/Businesses/Small-Businesses-&-Self-Employed/How-EINs-are-Assigned-and-Valid-EIN-Prefixes",
+    "https://en.wikipedia.org/wiki/Social_Insurance_Number",
+    "https://www.canada.ca/en/employment-social-development/services/sin.html",
+    "https://www.codercrunch.com/challenge/819302488/sin-validator",
+    "https://lorenc.info/3MA381/overeni-spravnosti-rodneho-cisla.htm",
+    "https://www.mvcr.cz/clanek/rady-a-sluzby-dokumenty-rodne-cislo.aspx",
+    "http://epixeirisi.gr/%CE%9A%CE%A1%CE%99%CE%A3%CE%99%CE%9C%CE%91-%CE%98%CE%95%CE%9C%CE%91%CE%A4%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%9A%CE%91%CE%99-%CE%9B%CE%9F%CE%93%CE%99%CE%A3%CE%A4%CE%99%CE%9A%CE%97%CE%A3/23791/%CE%91%CF%81%CE%B9%CE%B8%CE%BC%CF%8C%CF%82-%CE%A6%CE%BF%CF%81%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CE%BA%CE%BF%CF%8D-%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%CF%85",
+    "https://servicioscf.afip.gob.ar/publico/abc/ABCpaso2.aspx?id_nivel1=3036&id_nivel2=3040&p=Conceptos%20b%C3%A1sicos",
+    "https://es.wikipedia.org/wiki/Clave_%C3%9Anica_de_Identificaci%C3%B3n_Tributaria",
+    "https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Estonia-TIN.pdf",
+    "https://en.wikipedia.org/wiki/Italian_fiscal_code",
+    "https://boot.ritakafija.lv/forums/index.php?/topic/88314-personas-koda-algoritms-%C4%8Deksumma/",
+    "https://en.wikipedia.org/wiki/National_identification_number#Romania",
+    "https://en.wikipedia.org/wiki/ISO_6346",
+    "http://goo.gl/0ejHHW",
+    "https://tools.ietf.org/html/rfc3339#section-5.6",
+    "https://www.unicode.org/iso15924/iso15924-codes.html",
+    "https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
+    "https://en.wikipedia.org/wiki/ISO_3166-1_numeric",
+    "https://en.wikipedia.org/wiki/ISO_4217",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Escaping",
+    "https://blog.stevenlevithan.com/archives/faster-trim-javascript",
+    "https://tools.ietf.org/html/rfc6657",
+    "https://www.iana.org/assignments/media-types/media-types.xhtml",
+    "https://tools.ietf.org/html/rfc2045",
+    "https://tools.ietf.org/html/rfc2046",
+    "https://tools.ietf.org/html/rfc7231#section-3.1.1.1",
+    "https://tools.ietf.org/html/rfc7231#section-3.1.1.5",
+    "https://www.pakpost.gov.pk/postcodes.php",
+    "https://github.com/validatorjs/validator.js/issues/1827",
+    "http://stackoverflow.com/a/9808332/192024",
+    "https://blogs.office.com/2013/04/17/outlook-com-gets-two-step-verification-sign-in-by-alias-and-new-international-domains/",
+    "https://abr.business.gov.au/Help/AbnFormat",
+    "https://www.ech.ch/de/ech/ech-0097/5.2.0",
+    "https://www.estv.admin.ch/estv/de/home/mehrwertsteuer/uid/mwst-uid-nummer.html"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "abcbbb2b-aace-4455-a9e7-5fb6795b7dc6",
+  "timestamp": "2026-08-21T11:57:34.096Z",
+  "spec": "validator",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 231,
+  "ips_found": [
+    "fe80::1234",
+    "ff02::5678",
+    "ff08::9abc",
+    "3.1.1.1",
+    "3.1.1.5"
+  ],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "lint": "eslint src test",
+    "lint:fix": "eslint --fix src test",
+    "clean:node": "rimraf index.js lib",
+    "clean:es": "rimraf es",
+    "clean:browser": "rimraf validator*.js",
+    "clean": "run-p clean:*",
+    "minify": "uglifyjs validator.js -o validator.min.js  --compress --mangle --comments /Copyright/",
+    "build:browser": "node --require @babel/register build-browser && npm run minify",
+    "build:es": "babel src -d es --env-name=es",
+    "build:node": "babel src -d .",
+    "build": "run-p build:*",
+    "pretest": "npm run build && npm run lint",
+    "test": "nyc --reporter=cobertura --reporter=text-summary mocha --require @babel/register --reporter dot --recursive"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 70
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/validatorjs/validator.js",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:6"
+    },
+    {
+      "match": "https://github.com/profnandaa",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:28"
+    },
+    {
+      "match": "https://github.com/validatorjs/validator.js/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:32"
+    },
+    {
+      "match": "https://github.com/validatorjs/validator.js.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:36"
+    },
+    {
+      "match": "http://www.localeplanet.com/java/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:151"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Decimal_mark",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:173"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc2822#appendix-A.1.2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:696"
+    },
+    {
+      "match": "http://username:password@example.com",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:855"
+    },
+    {
+      "match": "https://www.rfc-editor.org/rfc/rfc5646.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (rfc-editor.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:1366"
+    },
+    {
+      "match": "http://www.brainjar.com/js/validation/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:1374"
+    },
+    {
+      "match": "https://www.aba.com/news-research/research-analysis/routing-number-policy-procedures",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:1375"
+    },
+    {
+      "match": "https://en.wikipedia.org/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:1443"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/microsoft-365/compliance/eu-passport-number",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:1444"
+    },
+    {
+      "match": "https://countrycode.org/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:1445"
+    },
+    {
+      "match": "https://semver.org/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:1713"
+    },
+    {
+      "match": "http://isrc.ifpi.org/en/isrc-standard/code-syntax",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:1821"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/International_Bank_Account_Number",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "validator.js:1831"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:1997"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/ISO_9362",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2017"
+    },
+    {
+      "match": "https://github.com/uuidjs/uuid/blob/main/src/regex.js",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2168"
+    },
+    {
+      "match": "https://github.com/gotwarlost/istanbul/blob/master/ignoring-code-for-coverage.md#ignoring-code-for-coverage-purposes",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 15,
+      "first_seen": "validator.js:2208"
+    },
+    {
+      "match": "https://dvv.fi/en/personal-identity-code#:~:text=control%20character%20for%20a-,personal,-identity%20code%20calculated",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2346"
+    },
+    {
+      "match": "https://it.wikipedia.org/wiki/Carta_d%27identit%C3%A0_elettronica_italiana",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "no sink, no reputation hit"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2397"
+    },
+    {
+      "match": "https://no.wikipedia.org/wiki/F%C3%B8dselsnummer",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2406"
+    },
+    {
+      "match": "https://www.gtin.info/itf-14-barcodes/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2702"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/International_Article_Number",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2705"
+    },
+    {
+      "match": "https://www.gtin.info/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2706"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/International_Article_Number#Calculation_of_checksum_digit",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2735"
+    },
+    {
+      "match": "https://www.isin.org/isin-format/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2767"
+    },
+    {
+      "match": "https://ec.europa.eu/taxation_customs/tin/specs/FS-TIN%20Algorithms-Public.docx",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2972"
+    },
+    {
+      "match": "http://www.irs.gov/Businesses/Small-Businesses-&-Self-Employed/How-EINs-are-Assigned-and-Valid-EIN-Prefixes",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:2982"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Social_Insurance_Number",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3035"
+    },
+    {
+      "match": "https://www.canada.ca/en/employment-social-development/services/sin.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3036"
+    },
+    {
+      "match": "https://www.codercrunch.com/challenge/819302488/sin-validator",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3037"
+    },
+    {
+      "match": "https://lorenc.info/3MA381/overeni-spravnosti-rodneho-cisla.htm",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3064"
+    },
+    {
+      "match": "https://www.mvcr.cz/clanek/rady-a-sluzby-dokumenty-rodne-cislo.aspx",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3065"
+    },
+    {
+      "match": "http://epixeirisi.gr/%CE%9A%CE%A1%CE%99%CE%A3%CE%99%CE%9C%CE%91-%CE%98%CE%95%CE%9C%CE%91%CE%A4%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%9A%CE%91%CE%99-%CE%9B%CE%9F%CE%93%CE%99%CE%A3%CE%A4%CE%99%CE%9A%CE%97%CE%A3/23791/%CE%91%CF%81%CE%B9%CE%B8%CE%BC%CF%8C%CF%82-%CE%A6%CE%BF%CF%81%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CE%BA%CE%BF%CF%8D-%CE%9C%CE%B7%CF%84%CF%81%CF%8E%CE%BF%CF%85",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3294"
+    },
+    {
+      "match": "https://servicioscf.afip.gob.ar/publico/abc/ABCpaso2.aspx?id_nivel1=3036&id_nivel2=3040&p=Conceptos%20b%C3%A1sicos",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3374"
+    },
+    {
+      "match": "https://es.wikipedia.org/wiki/Clave_%C3%9Anica_de_Identificaci%C3%B3n_Tributaria",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3375"
+    },
+    {
+      "match": "https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Estonia-TIN.pdf",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3436"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Italian_fiscal_code",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3662"
+    },
+    {
+      "match": "https://boot.ritakafija.lv/forums/index.php?/topic/88314-personas-koda-algoritms-%C4%8Deksumma/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:3790"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/National_identification_number#Romania",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4052"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/ISO_6346",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4660"
+    },
+    {
+      "match": "http://goo.gl/0ejHHW",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4694"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc3339#section-5.6",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4734"
+    },
+    {
+      "match": "https://www.unicode.org/iso15924/iso15924-codes.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (unicode.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4754"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4761"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/ISO_3166-1_numeric",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4780"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/ISO_4217",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4787"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Escaping",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 6,
+      "first_seen": "validator.js:4858"
+    },
+    {
+      "match": "https://blog.stevenlevithan.com/archives/faster-trim-javascript",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4862"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc6657",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4953"
+    },
+    {
+      "match": "https://www.iana.org/assignments/media-types/media-types.xhtml",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4956"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc2045",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4963"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc2046",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4964"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc7231#section-3.1.1.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4965"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc7231#section-3.1.1.5",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4966"
+    },
+    {
+      "match": "https://www.pakpost.gov.pk/postcodes.php",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:5063"
+    },
+    {
+      "match": "https://github.com/validatorjs/validator.js/issues/1827",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:5114"
+    },
+    {
+      "match": "http://stackoverflow.com/a/9808332/192024",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:5146"
+    },
+    {
+      "match": "https://blogs.office.com/2013/04/17/outlook-com-gets-two-step-verification-sign-in-by-alias-and-new-international-domains/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:5186"
+    },
+    {
+      "match": "https://abr.business.gov.au/Help/AbnFormat",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:5432"
+    },
+    {
+      "match": "https://www.ech.ch/de/ech/ech-0097/5.2.0",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:5443"
+    },
+    {
+      "match": "https://www.estv.admin.ch/estv/de/home/mehrwertsteuer/uid/mwst-uid-nummer.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:5453"
+    }
+  ],
+  "ip_findings": [
+    {
+      "match": "fe80::1234",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 9,
+      "first_seen": "validator.js:619"
+    },
+    {
+      "match": "ff02::5678",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 9,
+      "first_seen": "validator.js:620"
+    },
+    {
+      "match": "ff08::9abc",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 9,
+      "first_seen": "validator.js:621"
+    },
+    {
+      "match": "3.1.1.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4965"
+    },
+    {
+      "match": "3.1.1.5",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "validator.js:4966"
+    }
+  ],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "validatorjs",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "validatorjs",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "validatorjs",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:57:32.266Z",
+      "entryCount": 0
+    }
+  ]
+}

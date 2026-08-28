@@ -1,0 +1,140 @@
+{
+  "package_name": "minimatch",
+  "version": "10.2.6",
+  "dataset_category": null,
+  "execution_time_ms": 508,
+  "manifest_urls_found": [
+    "http://blog.izs.me",
+    "https://github.com/sponsors/isaacs",
+    "https://github.com/yetingli"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "96c490e9-aceb-4e4a-8e8e-67f82cd05a46",
+  "timestamp": "2026-08-21T11:58:00.625Z",
+  "spec": "minimatch",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 27,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepare"
+  ],
+  "scripts": {
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "prepublishOnly": "git push origin --follow-tags",
+    "prepare": "tshy",
+    "pretest": "npm run prepare",
+    "presnap": "npm run prepare",
+    "test": "tap",
+    "snap": "tap",
+    "format": "prettier --write .",
+    "benchmark": "node benchmark/index.js",
+    "typedoc": "typedoc --tsconfig .tshy/esm.json ./src/*.ts",
+    "lint": "oxlint --fix src test",
+    "postsnap": "npm run lint",
+    "postlint": "npm run format"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 3
+  },
+  "url_findings": [
+    {
+      "match": "http://blog.izs.me",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own author field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:2"
+    },
+    {
+      "match": "https://github.com/sponsors/isaacs",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:58"
+    },
+    {
+      "match": "https://github.com/yetingli",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/esm/index.js:145"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "isaacs",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "isaacs",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "isaacs",
+      "field": "bugs"
+    },
+    {
+      "host": "blog.izs.me",
+      "owner": null,
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:57:59.535Z",
+      "entryCount": 0
+    }
+  ]
+}

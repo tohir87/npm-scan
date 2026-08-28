@@ -1,0 +1,65 @@
+{
+  "package_name": "rate-limit-flexible",
+  "version": "0.0.1-security",
+  "dataset_category": null,
+  "execution_time_ms": 1237,
+  "manifest_urls_found": [],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "a5382628-0648-48a0-afe0-e316b0fd6a69",
+  "timestamp": "2026-08-21T11:48:21.354Z",
+  "spec": "rate-limit-flexible",
+  "verdict": "blocked",
+  "detected_suspicious": true,
+  "installed": false,
+  "files_scanned": 1,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {},
+  "severity_counts": {
+    "critical": 1,
+    "warn": 0,
+    "info": 0
+  },
+  "url_findings": [],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "npm",
+      "field": "repository"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [
+    {
+      "id": "MAL-2026-5626",
+      "summary": "Malicious code in rate-limit-flexible (npm)",
+      "malicious": true
+    }
+  ],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:48:21.338Z",
+      "entryCount": 1
+    }
+  ]
+}

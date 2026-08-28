@@ -1,0 +1,156 @@
+{
+  "package_name": "browserslist",
+  "version": "4.28.8",
+  "dataset_category": null,
+  "execution_time_ms": 628,
+  "manifest_urls_found": [
+    "https://github.com/browserslist/browserslist/issues/431#issuecomment-565230615",
+    "https://github.com/browserslist/update-db#readme",
+    "https://opencollective.com/browserslist",
+    "https://tidelift.com/funding/github/npm/browserslist",
+    "https://github.com/sponsors/ai"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "dccc6c64-ba98-44fe-80f7-b9b1ac3d6f48",
+  "timestamp": "2026-08-21T11:51:44.775Z",
+  "spec": "browserslist",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 9,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {},
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 5
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/browserslist/browserslist/issues/431#issuecomment-565230615",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "node.js:244"
+    },
+    {
+      "match": "https://github.com/browserslist/update-db#readme",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "node.js:494"
+    },
+    {
+      "match": "https://opencollective.com/browserslist",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:16"
+    },
+    {
+      "match": "https://tidelift.com/funding/github/npm/browserslist",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:20"
+    },
+    {
+      "match": "https://github.com/sponsors/ai",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:24"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "browserslist",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "browserslist",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "browserslist",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "opencollective.com",
+      "owner": null,
+      "field": "funding"
+    },
+    {
+      "host": "tidelift.com",
+      "owner": null,
+      "field": "funding"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:51:43.573Z",
+      "entryCount": 0
+    }
+  ]
+}

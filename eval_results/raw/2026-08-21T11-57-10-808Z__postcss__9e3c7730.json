@@ -1,0 +1,240 @@
+{
+  "package_name": "postcss",
+  "version": "8.5.26",
+  "dataset_category": null,
+  "execution_time_ms": 581,
+  "manifest_urls_found": [
+    "https://postcss.org/",
+    "https://github.com/postcss/postcss/issues",
+    "https://opencollective.com/postcss/",
+    "https://tidelift.com/funding/github/npm/postcss",
+    "https://github.com/sponsors/ai",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/Comments",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax#css_declarations",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/important",
+    "https://github.com/postcss/postcss/pull/1879",
+    "https://evilmartians.com/chronicles/postcss-8-plugin-migration",
+    "https://www.w3ctech.com/topic/2226"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "9e3c7730-a9e0-44e0-9783-a92d0e99a6b1",
+  "timestamp": "2026-08-21T11:57:10.808Z",
+  "spec": "postcss",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 52,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {},
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 11
+  },
+  "url_findings": [
+    {
+      "match": "https://postcss.org/",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:16"
+    },
+    {
+      "match": "https://github.com/postcss/postcss/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:18"
+    },
+    {
+      "match": "https://opencollective.com/postcss/",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:26"
+    },
+    {
+      "match": "https://tidelift.com/funding/github/npm/postcss",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:30"
+    },
+    {
+      "match": "https://github.com/sponsors/ai",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:34"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/CSS/Comments",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/comment.d.ts:34"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax#css_declarations",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/declaration.d.ts:47"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/CSS/important",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/declaration.d.ts:74"
+    },
+    {
+      "match": "https://github.com/postcss/postcss/pull/1879",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/node.d.ts:70"
+    },
+    {
+      "match": "https://evilmartians.com/chronicles/postcss-8-plugin-migration",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "no sink, no reputation hit"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/postcss.js:39"
+    },
+    {
+      "match": "https://www.w3ctech.com/topic/2226",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "no sink, no reputation hit"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/postcss.js:47"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "postcss",
+      "field": "repository"
+    },
+    {
+      "host": "postcss.org",
+      "owner": null,
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "postcss",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "opencollective.com",
+      "owner": null,
+      "field": "funding"
+    },
+    {
+      "host": "tidelift.com",
+      "owner": null,
+      "field": "funding"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:57:08.961Z",
+      "entryCount": 0
+    }
+  ]
+}

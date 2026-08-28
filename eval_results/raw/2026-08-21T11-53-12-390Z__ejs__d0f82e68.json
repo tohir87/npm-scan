@@ -1,0 +1,143 @@
+{
+  "package_name": "ejs",
+  "version": "6.0.1",
+  "dataset_category": null,
+  "execution_time_ms": 487,
+  "manifest_urls_found": [
+    "http://www.apache.org/licenses/LICENSE-2.0",
+    "http://ejs.co",
+    "https://github.com/RyanZim/EJS-Lint",
+    "https://github.com/mde/ejs/issues",
+    "https://github.com/mde/ejs"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "d0f82e68-116e-4884-a2a3-d08a94ea37b9",
+  "timestamp": "2026-08-21T11:53:12.390Z",
+  "spec": "ejs",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 13,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "test": "npx jake test"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 5
+  },
+  "url_findings": [
+    {
+      "match": "http://www.apache.org/licenses/LICENSE-2.0",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (apache.org)"
+      ],
+      "occurrences": 12,
+      "first_seen": "ejs.js:10"
+    },
+    {
+      "match": "http://ejs.co",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "ejs.js:28"
+    },
+    {
+      "match": "https://github.com/RyanZim/EJS-Lint",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "no sink, no reputation hit"
+      ],
+      "occurrences": 4,
+      "first_seen": "ejs.js:618"
+    },
+    {
+      "match": "https://github.com/mde/ejs/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:29"
+    },
+    {
+      "match": "https://github.com/mde/ejs",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:29"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "mde",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "mde",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "mde",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:53:10.507Z",
+      "entryCount": 0
+    }
+  ]
+}

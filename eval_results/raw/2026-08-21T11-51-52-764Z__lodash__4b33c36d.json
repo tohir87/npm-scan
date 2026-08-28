@@ -1,0 +1,1109 @@
+{
+  "package_name": "lodash",
+  "version": "4.18.1",
+  "dataset_category": null,
+  "execution_time_ms": 543,
+  "manifest_urls_found": [
+    "http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero",
+    "http://ecma-international.org/ecma-262/7.0/#sec-patterns",
+    "https://bugs.webkit.org/show_bug.cgi?id=156034",
+    "https://en.wikipedia.org/wiki/Exponentiation_by_squaring",
+    "https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg",
+    "https://github.com/lodash/lodash/security/advisories/GHSA-f23m-r3pf-42rh",
+    "https://github.com/jashkenas/underscore/pull/1247",
+    "https://bugs.chromium.org/p/v8/issues/detail?id=90",
+    "http://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist",
+    "https://es5.github.io/#x13.2.2",
+    "https://mdn.io/round#Examples",
+    "http://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring",
+    "http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring",
+    "http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/",
+    "http://ecma-international.org/ecma-262/7.0/#sec-object.keys",
+    "https://bugs.chromium.org/p/v8/issues/detail?id=2070",
+    "https://mathiasbynens.be/notes/javascript-unicode",
+    "https://mdn.io/Object/assign",
+    "http://peter.michaux.ca/articles/lazy-function-definition-pattern",
+    "https://en.wikipedia.org/wiki/CamelCase",
+    "https://mdn.io/Structured_clone_algorithm",
+    "https://lodash.com/",
+    "https://openjsf.org/",
+    "https://lodash.com/license",
+    "http://underscorejs.org/LICENSE",
+    "https://mdn.io/Array/slice",
+    "https://en.wikipedia.org/wiki/Empty_set",
+    "https://en.wikipedia.org/wiki/Vacuous_truth",
+    "https://mdn.io/Number/isFinite",
+    "http://ecma-international.org/ecma-262/7.0/#sec-tolength",
+    "http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types",
+    "https://mdn.io/Number/isNaN",
+    "https://mdn.io/isNaN",
+    "http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger",
+    "https://mths.be/he",
+    "https://mathiasbynens.be/notes/ambiguous-ampersands",
+    "http://wonko.com/post/html-escaping",
+    "http://requirejs.org/docs/errors.html#mismatch",
+    "https://css-tricks.com/debouncing-throttling-explained-examples/",
+    "https://en.wikipedia.org/wiki/Combining_Diacritical_Marks",
+    "https://en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols",
+    "https://en.wikipedia.org/wiki/Latin-1_Supplement_",
+    "https://en.wikipedia.org/wiki/Latin_Extended-A",
+    "https://mdn.io/Number/isInteger",
+    "https://npms.io/search?q=ponyfill",
+    "https://www.npmjs.com/package/babel-polyfill",
+    "https://mdn.io/Number/isSafeInteger",
+    "https://en.wikipedia.org/wiki/Letter_case#Special_case_styles",
+    "http://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components",
+    "https://github.com/lodash/lodash/blob/main/threat-model.md",
+    "https://mdn.io/clearTimeout",
+    "https://mdn.io/setTimeout",
+    "https://mdn.io/Array/reverse",
+    "https://en.wikipedia.org/wiki/Symmetric_difference",
+    "https://mdn.io/iteration_protocols#iterator",
+    "https://en.wikipedia.org/wiki/Fisher-Yates_shuffle",
+    "http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object",
+    "https://mdn.io/rest_parameters",
+    "http://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply",
+    "https://mdn.io/spread_operator",
+    "https://es5.github.io/#x15.1.2.2",
+    "https://mdn.io/String/replace",
+    "https://en.wikipedia.org/wiki/Snake_case",
+    "https://mdn.io/String/split",
+    "https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage",
+    "http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl",
+    "https://lodash.com/custom-builds",
+    "https://developer.chrome.com/extensions/sandboxingEval",
+    "http://ejohn.org/blog/javascript-micro-templating/",
+    "https://github.com/olado/doT",
+    "https://mdn.io/toLowerCase",
+    "https://mdn.io/toUpperCase",
+    "https://travis-ci.org/lodash-archive/lodash-cli",
+    "https://lodash.com/icon.svg"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "4b33c36d-5e31-42eb-996b-2378a988b24e",
+  "timestamp": "2026-08-21T11:51:52.764Z",
+  "spec": "lodash",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 1049,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "test": "echo \"See https://travis-ci.org/lodash-archive/lodash-cli for testing details.\""
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 74
+  },
+  "url_findings": [
+    {
+      "match": "http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 23,
+      "first_seen": "_assignValue.js:12"
+    },
+    {
+      "match": "http://ecma-international.org/ecma-262/7.0/#sec-patterns",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "_baseIsNative.js:8"
+    },
+    {
+      "match": "https://bugs.webkit.org/show_bug.cgi?id=156034",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "_baseIteratee.js:16"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Exponentiation_by_squaring",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "_baseRepeat.js:21"
+    },
+    {
+      "match": "https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 2,
+      "first_seen": "_baseUnset.js:24"
+    },
+    {
+      "match": "https://github.com/lodash/lodash/security/advisories/GHSA-f23m-r3pf-42rh",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 2,
+      "first_seen": "_baseUnset.js:25"
+    },
+    {
+      "match": "https://github.com/jashkenas/underscore/pull/1247",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "_compareMultiple.js:36"
+    },
+    {
+      "match": "https://bugs.chromium.org/p/v8/issues/detail?id=90",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "_compareMultiple.js:40"
+    },
+    {
+      "match": "http://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "_createCtor.js:15"
+    },
+    {
+      "match": "https://es5.github.io/#x13.2.2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (es5.github.io)"
+      ],
+      "occurrences": 3,
+      "first_seen": "_createCtor.js:32"
+    },
+    {
+      "match": "https://mdn.io/round#Examples",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "_createRound.js:24"
+    },
+    {
+      "match": "http://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "_equalByTag.js:77"
+    },
+    {
+      "match": "http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 6,
+      "first_seen": "_getRawTag.js:11"
+    },
+    {
+      "match": "http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "_hasUnicode.js:12"
+    },
+    {
+      "match": "http://ecma-international.org/ecma-262/7.0/#sec-object.keys",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 6,
+      "first_seen": "_nativeKeysIn.js:3"
+    },
+    {
+      "match": "https://bugs.chromium.org/p/v8/issues/detail?id=2070",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "_setData.js:10"
+    },
+    {
+      "match": "https://mathiasbynens.be/notes/javascript-unicode",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "_unicodeSize.js:26"
+    },
+    {
+      "match": "https://mdn.io/Object/assign",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "assign.js:20"
+    },
+    {
+      "match": "http://peter.michaux.ca/articles/lazy-function-definition-pattern",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "bindKey.js:17"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/CamelCase",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "camelCase.js:5"
+    },
+    {
+      "match": "https://mdn.io/Structured_clone_algorithm",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "clone.js:10"
+    },
+    {
+      "match": "https://lodash.com/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 5,
+      "first_seen": "core.js:3"
+    },
+    {
+      "match": "https://openjsf.org/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "core.js:5"
+    },
+    {
+      "match": "https://lodash.com/license",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 2,
+      "first_seen": "core.js:6"
+    },
+    {
+      "match": "http://underscorejs.org/LICENSE",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "core.js:7"
+    },
+    {
+      "match": "https://mdn.io/Array/slice",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "core.js:1706"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Empty_set",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "core.js:1874"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Vacuous_truth",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "core.js:1875"
+    },
+    {
+      "match": "https://mdn.io/Number/isFinite",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "core.js:2667"
+    },
+    {
+      "match": "http://ecma-international.org/ecma-262/7.0/#sec-tolength",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 5,
+      "first_seen": "core.js:2724"
+    },
+    {
+      "match": "http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "core.js:2753"
+    },
+    {
+      "match": "https://mdn.io/Number/isNaN",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "core.js:2813"
+    },
+    {
+      "match": "https://mdn.io/isNaN",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "core.js:2814"
+    },
+    {
+      "match": "http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 3,
+      "first_seen": "core.js:2992"
+    },
+    {
+      "match": "https://mths.be/he",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 5,
+      "first_seen": "core.js:3414"
+    },
+    {
+      "match": "https://mathiasbynens.be/notes/ambiguous-ampersands",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "core.js:3419"
+    },
+    {
+      "match": "http://wonko.com/post/html-escaping",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "core.js:3423"
+    },
+    {
+      "match": "http://requirejs.org/docs/errors.html#mismatch",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "core.js:3856"
+    },
+    {
+      "match": "https://css-tricks.com/debouncing-throttling-explained-examples/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 4,
+      "first_seen": "debounce.js:30"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Combining_Diacritical_Marks",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 4,
+      "first_seen": "deburr.js:17"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "deburr.js:18"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Latin-1_Supplement_",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "deburr.js:24"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Latin_Extended-A",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "deburr.js:25"
+    },
+    {
+      "match": "https://mdn.io/Number/isInteger",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "isInteger.js:7"
+    },
+    {
+      "match": "https://npms.io/search?q=ponyfill",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "no sink, no reputation hit"
+      ],
+      "occurrences": 3,
+      "first_seen": "isNative.js:5"
+    },
+    {
+      "match": "https://www.npmjs.com/package/babel-polyfill",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (npmjs.com)"
+      ],
+      "occurrences": 2,
+      "first_seen": "isNative.js:15"
+    },
+    {
+      "match": "https://mdn.io/Number/isSafeInteger",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "isSafeInteger.js:11"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Letter_case#Special_case_styles",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "kebabCase.js:5"
+    },
+    {
+      "match": "http://ecma-international.org/ecma-262/7.0/#sec-template-literal-lexical-components",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:188"
+    },
+    {
+      "match": "https://github.com/lodash/lodash/blob/main/threat-model.md",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 4,
+      "first_seen": "lodash.js:1757"
+    },
+    {
+      "match": "https://mdn.io/clearTimeout",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lodash.js:4582"
+    },
+    {
+      "match": "https://mdn.io/setTimeout",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lodash.js:6733"
+    },
+    {
+      "match": "https://mdn.io/Array/reverse",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:7968"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Symmetric_difference",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:8638"
+    },
+    {
+      "match": "https://mdn.io/iteration_protocols#iterator",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:8996"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Fisher-Yates_shuffle",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:9902"
+    },
+    {
+      "match": "http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:10605"
+    },
+    {
+      "match": "https://mdn.io/rest_parameters",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:10875"
+    },
+    {
+      "match": "http://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ecma-international.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:10905"
+    },
+    {
+      "match": "https://mdn.io/spread_operator",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:10908"
+    },
+    {
+      "match": "https://es5.github.io/#x15.1.2.2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (es5.github.io)"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:14567"
+    },
+    {
+      "match": "https://mdn.io/String/replace",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:14629"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Snake_case",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:14653"
+    },
+    {
+      "match": "https://mdn.io/String/split",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:14680"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:14718"
+    },
+    {
+      "match": "http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:14786"
+    },
+    {
+      "match": "https://lodash.com/custom-builds",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:14790"
+    },
+    {
+      "match": "https://developer.chrome.com/extensions/sandboxingEval",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:14793"
+    },
+    {
+      "match": "http://ejohn.org/blog/javascript-micro-templating/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:14884"
+    },
+    {
+      "match": "https://github.com/olado/doT",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:14885"
+    },
+    {
+      "match": "https://mdn.io/toLowerCase",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:15007"
+    },
+    {
+      "match": "https://mdn.io/toUpperCase",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lodash.js:15032"
+    },
+    {
+      "match": "https://travis-ci.org/lodash-archive/lodash-cli",
+      "severity": "info",
+      "position": "script-manual",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "no sink, no reputation hit"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:1"
+    },
+    {
+      "match": "https://lodash.com/icon.svg",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:8"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "lodash",
+      "field": "repository"
+    },
+    {
+      "host": "lodash.com",
+      "owner": null,
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "lodash",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:36:08.757Z",
+      "entryCount": 0
+    }
+  ]
+}

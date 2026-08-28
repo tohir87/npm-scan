@@ -1,0 +1,173 @@
+{
+  "package_name": "nth-check",
+  "version": "3.0.1",
+  "dataset_category": null,
+  "execution_time_ms": 479,
+  "manifest_urls_found": [
+    "https://github.com/fb55/nth-check?sponsor=1",
+    "https://github.com/fb55/nth-check",
+    "https://github.com/fb55/nth-check/issues",
+    "https://github.com/fb55/boolbase",
+    "http://www.w3.org/TR/css3-selectors/#nth-child-pseudo",
+    "https://www.w3.org/TR/selectors-3/#lex"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "ed60a235-4c9c-4aff-940d-04cf84bae2c7",
+  "timestamp": "2026-08-21T11:57:25.424Z",
+  "spec": "nth-check",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 11,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepare"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "npm run format:es && npm run format:biome",
+    "format:biome": "biome check --write .",
+    "format:es": "npm run lint:es -- --fix",
+    "lint": "npm run lint:es && npm run lint:biome",
+    "lint:biome": "biome check .",
+    "lint:es": "eslint .",
+    "prepare": "npm run build",
+    "test": "npm run test:vi && npm run lint",
+    "test:vi": "vitest run"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 6
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/fb55/nth-check?sponsor=1",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:11"
+    },
+    {
+      "match": "https://github.com/fb55/nth-check",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:11"
+    },
+    {
+      "match": "https://github.com/fb55/nth-check/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:48"
+    },
+    {
+      "match": "https://github.com/fb55/boolbase",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/index.ts:9"
+    },
+    {
+      "match": "http://www.w3.org/TR/css3-selectors/#nth-child-pseudo",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/parse.ts:1"
+    },
+    {
+      "match": "https://www.w3.org/TR/selectors-3/#lex",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/parse.ts:3"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "fb55",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "fb55",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "fb55",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "github.com",
+      "owner": "fb55",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:57:24.368Z",
+      "entryCount": 0
+    }
+  ]
+}

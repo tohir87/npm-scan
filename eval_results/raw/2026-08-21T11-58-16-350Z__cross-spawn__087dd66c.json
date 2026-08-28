@@ -1,0 +1,151 @@
+{
+  "package_name": "cross-spawn",
+  "version": "7.0.6",
+  "dataset_category": null,
+  "execution_time_ms": 499,
+  "manifest_urls_found": [
+    "https://github.com/IndigoUnited/node-cross-spawn/issues/16",
+    "https://github.com/moxystudio/node-cross-spawn",
+    "http://www.robvanderwoude.com/escapechars.php",
+    "https://qntm.org/cmd",
+    "https://github.com/moxystudio/node-cross-spawn/pull/160"
+  ],
+  "ast_intents": [
+    "spawn"
+  ],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "087dd66c-509e-4722-b303-ff86eff02646",
+  "timestamp": "2026-08-21T11:58:16.350Z",
+  "spec": "cross-spawn",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 7,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --env node --coverage",
+    "prerelease": "npm t && npm run lint",
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin HEAD && npm publish"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 5
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/IndigoUnited/node-cross-spawn/issues/16",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [
+        "spawn"
+      ],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "index.js:15"
+    },
+    {
+      "match": "https://github.com/moxystudio/node-cross-spawn",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:16"
+    },
+    {
+      "match": "http://www.robvanderwoude.com/escapechars.php",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/util/escape.js:3"
+    },
+    {
+      "match": "https://qntm.org/cmd",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/util/escape.js:17"
+    },
+    {
+      "match": "https://github.com/moxystudio/node-cross-spawn/pull/160",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/util/escape.js:19"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "moxystudio",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "moxystudio",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "moxystudio",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:58:14.542Z",
+      "entryCount": 0
+    }
+  ]
+}

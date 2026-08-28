@@ -1,0 +1,164 @@
+{
+  "package_name": "mime",
+  "version": "4.1.0",
+  "dataset_category": null,
+  "execution_time_ms": 482,
+  "manifest_urls_found": [
+    "http://github.com/broofa",
+    "https://github.com/broofa/mime",
+    "https://github.com/sponsors/broofa",
+    "https://github.com/broofa/mime/blob/main/README.md#custom-mime-instances",
+    "https://github.com/tc39/proposal-import-attributes"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "21e1eb08-303e-4803-a49a-dfdd640feeb4",
+  "timestamp": "2026-08-21T11:50:02.690Z",
+  "spec": "mime",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 20,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepack"
+  ],
+  "scripts": {
+    "build": "rm -fr dist && tsc",
+    "build:types": "node dist/scripts/build.js",
+    "build:watch": "npm run build -- --watch",
+    "lint": "prettier -c .",
+    "lint:fix": "prettier -w .",
+    "prepack": "npm run build",
+    "pretest": "npm run build",
+    "prepublishOnly": "npm test",
+    "test": "node --test && ./test/exports_test.sh",
+    "test:watch": "clear && node --enable-source-maps --test --watch test"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 5
+  },
+  "url_findings": [
+    {
+      "match": "http://github.com/broofa",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:4"
+    },
+    {
+      "match": "https://github.com/broofa/mime",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:68"
+    },
+    {
+      "match": "https://github.com/sponsors/broofa",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:73"
+    },
+    {
+      "match": "https://github.com/broofa/mime/blob/main/README.md#custom-mime-instances",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/Mime.ts:119"
+    },
+    {
+      "match": "https://github.com/tc39/proposal-import-attributes",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "src/mime_cli.ts:16"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "broofa",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "broofa",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "broofa",
+      "field": "bugs"
+    },
+    {
+      "host": "github.com",
+      "owner": "broofa",
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:49:56.793Z",
+      "entryCount": 0
+    }
+  ]
+}

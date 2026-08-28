@@ -1,0 +1,1113 @@
+{
+  "package_name": "ua-parser-js",
+  "version": "2.0.10",
+  "dataset_category": null,
+  "execution_time_ms": 646,
+  "manifest_urls_found": [
+    "http://faisalman.com",
+    "https://uaparser.dev",
+    "https://github.com/faisalman/ua-parser-js.git",
+    "https://github.com/faisalman/ua-parser-js/issues",
+    "https://raw.github.com/faisalman/ua-parser-js/master/dist/ua-parser.pack.js",
+    "https://opencollective.com/ua-parser-js",
+    "https://paypal.me/faisalman",
+    "https://github.com/sponsors/faisalman",
+    "https://github.com/faisalman/ua-parser-js",
+    "https://github.com/faisalman",
+    "https://webostv.developer.lge.com/develop/specifications/web-api-and-web-engine",
+    "https://webkit.org/blog/17333/webkit-features-in-safari-26-0/#update-to-ua-string",
+    "https://ahrefs.com/robot",
+    "https://developer.amazon.com/amazonbot",
+    "https://awario.com/bots.html",
+    "https://www.bing.com/webmasters/help/which-crawlers-does-bing-use-8c184ec0",
+    "https://search.brave.com/help/brave-search-crawler",
+    "https://commoncrawl.org/faq",
+    "https://affiliate-program.amazon.com/help/node/topic/GT98G5PPRERNVZ2C",
+    "https://connect.coveo.com/s/article/19648",
+    "https://www.criteo.com/criteo-crawler/",
+    "https://moz.com/help/moz-procedures/crawlers/dotbot",
+    "http://duckduckgo.com/duckduckbot.html",
+    "https://developers.facebook.com/docs/sharing/bot/",
+    "https://platform.openai.com/docs/gptbot",
+    "https://iask.ai",
+    "https://kagi.com/bot",
+    "https://kangaroollm.com.au/kangaroo-bot/",
+    "http://www.linkedin.com",
+    "https://mj12bot.com/",
+    "https://www.mojeek.com/bot.html",
+    "https://www.onespot.com/identifying-traffic.html",
+    "https://platform.openai.com/docs/bots",
+    "https://perplexity.ai/perplexitybot",
+    "https://www.sbintuitions.co.jp/bot/",
+    "http://napoveda.seznam.cz/seznambot-intro",
+    "http://sur.ly/bot.html",
+    "https://swiftype.com/swiftbot",
+    "https://yep.com/yepbot/",
+    "http://apple.com/go/applebot",
+    "https://help.baidu.com/question?prod_id=99&class=0&id=3001",
+    "https://help.coccoc.com/en/search-engine",
+    "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers",
+    "http://www.google.com/bot.html",
+    "https://help.qwant.com/bot",
+    "http://www.semrush.com/bot.html",
+    "https://support.yahoo-net.jp/PccSearch/s/article/H000007955",
+    "https://yandex.com/bots",
+    "https://ds.rois.ac.jp/en_center8/en_crawler/",
+    "https://docs.freespoke.com/search/bot/",
+    "https://headline.com/legal/crawler",
+    "https://allenai.org/crawler",
+    "https://dataforseo.com/dataforseo-bot",
+    "https://aspiegel.com/petalbot",
+    "https://imagesift.com/about",
+    "https://help.siteimprove.com/support/solutions/articles/80000448553",
+    "https://www.turnitin.com/robot/crawlerinfo.html",
+    "https://vercel.com/docs/bot-management",
+    "http://help.yahoo.com/help/us/ysearch/slurp",
+    "https://ahrefs.com/robot/site-audit",
+    "https://scraper.buffer.com/about/bots/link-preview-bot",
+    "https://platform.openai.com/docs/plugins/bot",
+    "https://duckduckgo.com/duckassistbot/",
+    "https://feedly.com/fetcher.html",
+    "https://about.flipboard.com/proxy-service/",
+    "https://iframely.com/docs/about",
+    "https://docs.perplexity.ai/guides/bots",
+    "https://docs.mistral.ai/robots/",
+    "https://github.com/aws/nova-act",
+    "https://api.slack.com/robots",
+    "https://docs.uaparser.dev/info/device/type"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "69307773-70f5-438c-a405-c2391acfe816",
+  "timestamp": "2026-08-21T11:56:26.149Z",
+  "spec": "ua-parser-js",
+  "verdict": "blocked",
+  "detected_suspicious": true,
+  "installed": false,
+  "files_scanned": 27,
+  "ips_found": [
+    "100.0.0.0"
+  ],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "build": "./script/build-dist.sh && ./script/build-esm.js",
+    "build+test": "npm run build && npm run test",
+    "test": "./script/test-all.sh",
+    "test:dts-lint": "tsd --typings src/main/ua-parser.d.ts --files test/static/dts-lint.ts",
+    "test:eslint": "eslint --no-config-lookup src",
+    "test:fuzz": "jazzer ./test/fuzz/redos.js --sync",
+    "test:jshint": "jshint src/main",
+    "test:lockfile-lint": "lockfile-lint -p package-lock.json",
+    "test:mocha": "mocha --recursive test/unit",
+    "test:nyc": "nyc --timeout=50000 --include=src/**/*.js npm run test",
+    "test:playwright": "npx playwright install && playwright test test/e2e --browser all"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 1,
+    "info": 71
+  },
+  "url_findings": [
+    {
+      "match": "http://faisalman.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own author field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:5"
+    },
+    {
+      "match": "https://uaparser.dev",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 3,
+      "first_seen": "package.json:24"
+    },
+    {
+      "match": "https://github.com/faisalman/ua-parser-js.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:279"
+    },
+    {
+      "match": "https://github.com/faisalman/ua-parser-js/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:291"
+    },
+    {
+      "match": "https://raw.github.com/faisalman/ua-parser-js/master/dist/ua-parser.pack.js",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:293"
+    },
+    {
+      "match": "https://opencollective.com/ua-parser-js",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:297"
+    },
+    {
+      "match": "https://paypal.me/faisalman",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:301"
+    },
+    {
+      "match": "https://github.com/sponsors/faisalman",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:305"
+    },
+    {
+      "match": "https://github.com/faisalman/ua-parser-js",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 21,
+      "first_seen": "src/main/ua-parser.d.ts:2"
+    },
+    {
+      "match": "https://github.com/faisalman",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 6,
+      "first_seen": "src/main/ua-parser.d.ts:3"
+    },
+    {
+      "match": "https://webostv.developer.lge.com/develop/specifications/web-api-and-web-engine",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/main/ua-parser.js:1033"
+    },
+    {
+      "match": "https://webkit.org/blog/17333/webkit-features-in-safari-26-0/#update-to-ua-string",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/main/ua-parser.js:1299"
+    },
+    {
+      "match": "https://ahrefs.com/robot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:56"
+    },
+    {
+      "match": "https://developer.amazon.com/amazonbot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:57"
+    },
+    {
+      "match": "https://awario.com/bots.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:58"
+    },
+    {
+      "match": "https://www.bing.com/webmasters/help/which-crawlers-does-bing-use-8c184ec0",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:59"
+    },
+    {
+      "match": "https://search.brave.com/help/brave-search-crawler",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:60"
+    },
+    {
+      "match": "https://commoncrawl.org/faq",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:61"
+    },
+    {
+      "match": "https://affiliate-program.amazon.com/help/node/topic/GT98G5PPRERNVZ2C",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:62"
+    },
+    {
+      "match": "https://connect.coveo.com/s/article/19648",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:63"
+    },
+    {
+      "match": "https://www.criteo.com/criteo-crawler/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:64"
+    },
+    {
+      "match": "https://moz.com/help/moz-procedures/crawlers/dotbot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:65"
+    },
+    {
+      "match": "http://duckduckgo.com/duckduckbot.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:66"
+    },
+    {
+      "match": "https://developers.facebook.com/docs/sharing/bot/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:67"
+    },
+    {
+      "match": "https://platform.openai.com/docs/gptbot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:68"
+    },
+    {
+      "match": "https://iask.ai",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:69"
+    },
+    {
+      "match": "https://kagi.com/bot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:70"
+    },
+    {
+      "match": "https://kangaroollm.com.au/kangaroo-bot/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:71"
+    },
+    {
+      "match": "http://www.linkedin.com",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:72"
+    },
+    {
+      "match": "https://mj12bot.com/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:73"
+    },
+    {
+      "match": "https://www.mojeek.com/bot.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:74"
+    },
+    {
+      "match": "https://www.onespot.com/identifying-traffic.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:75"
+    },
+    {
+      "match": "https://platform.openai.com/docs/bots",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:76"
+    },
+    {
+      "match": "https://perplexity.ai/perplexitybot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:77"
+    },
+    {
+      "match": "https://www.sbintuitions.co.jp/bot/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:78"
+    },
+    {
+      "match": "http://napoveda.seznam.cz/seznambot-intro",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:79"
+    },
+    {
+      "match": "http://sur.ly/bot.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:80"
+    },
+    {
+      "match": "https://swiftype.com/swiftbot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:81"
+    },
+    {
+      "match": "https://yep.com/yepbot/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:82"
+    },
+    {
+      "match": "http://apple.com/go/applebot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:88"
+    },
+    {
+      "match": "https://help.baidu.com/question?prod_id=99&class=0&id=3001",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:91"
+    },
+    {
+      "match": "https://help.coccoc.com/en/search-engine",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:97"
+    },
+    {
+      "match": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:104"
+    },
+    {
+      "match": "http://www.google.com/bot.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:107"
+    },
+    {
+      "match": "https://help.qwant.com/bot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:116"
+    },
+    {
+      "match": "http://www.semrush.com/bot.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:119"
+    },
+    {
+      "match": "https://support.yahoo-net.jp/PccSearch/s/article/H000007955",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:125"
+    },
+    {
+      "match": "https://yandex.com/bots",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 4,
+      "first_seen": "src/extensions/ua-parser-extensions.js:128"
+    },
+    {
+      "match": "https://ds.rois.ac.jp/en_center8/en_crawler/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:135"
+    },
+    {
+      "match": "https://docs.freespoke.com/search/bot/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:136"
+    },
+    {
+      "match": "https://headline.com/legal/crawler",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:142"
+    },
+    {
+      "match": "https://allenai.org/crawler",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:157"
+    },
+    {
+      "match": "https://dataforseo.com/dataforseo-bot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:158"
+    },
+    {
+      "match": "https://aspiegel.com/petalbot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:159"
+    },
+    {
+      "match": "https://imagesift.com/about",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:160"
+    },
+    {
+      "match": "https://help.siteimprove.com/support/solutions/articles/80000448553",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:161"
+    },
+    {
+      "match": "https://www.turnitin.com/robot/crawlerinfo.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:162"
+    },
+    {
+      "match": "https://vercel.com/docs/bot-management",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:163"
+    },
+    {
+      "match": "http://help.yahoo.com/help/us/ysearch/slurp",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:164"
+    },
+    {
+      "match": "https://ahrefs.com/robot/site-audit",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:312"
+    },
+    {
+      "match": "https://scraper.buffer.com/about/bots/link-preview-bot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:313"
+    },
+    {
+      "match": "https://platform.openai.com/docs/plugins/bot",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:314"
+    },
+    {
+      "match": "https://duckduckgo.com/duckassistbot/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:315"
+    },
+    {
+      "match": "https://feedly.com/fetcher.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:316"
+    },
+    {
+      "match": "https://about.flipboard.com/proxy-service/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:317"
+    },
+    {
+      "match": "https://iframely.com/docs/about",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:319"
+    },
+    {
+      "match": "https://docs.perplexity.ai/guides/bots",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:320"
+    },
+    {
+      "match": "https://docs.mistral.ai/robots/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:321"
+    },
+    {
+      "match": "https://github.com/aws/nova-act",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:331"
+    },
+    {
+      "match": "https://api.slack.com/robots",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/extensions/ua-parser-extensions.js:337"
+    },
+    {
+      "match": "https://docs.uaparser.dev/info/device/type",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 3,
+      "first_seen": "src/enums/ua-parser-enums.d.ts:230"
+    }
+  ],
+  "ip_findings": [
+    {
+      "match": "100.0.0.0",
+      "severity": "warn",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "public IP literal in executable code"
+      ],
+      "occurrences": 2,
+      "first_seen": "src/device-detection/device-detection.js:13"
+    }
+  ],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "faisalman",
+      "field": "repository"
+    },
+    {
+      "host": "uaparser.dev",
+      "owner": null,
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "faisalman",
+      "field": "bugs"
+    },
+    {
+      "host": "faisalman.com",
+      "owner": null,
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "opencollective.com",
+      "owner": null,
+      "field": "funding"
+    },
+    {
+      "host": "paypal.me",
+      "owner": null,
+      "field": "funding"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:56:24.855Z",
+      "entryCount": 0
+    }
+  ]
+}

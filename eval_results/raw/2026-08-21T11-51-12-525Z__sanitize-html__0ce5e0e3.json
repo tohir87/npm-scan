@@ -1,0 +1,158 @@
+{
+  "package_name": "sanitize-html",
+  "version": "2.17.7",
+  "dataset_category": null,
+  "execution_time_ms": 560,
+  "manifest_urls_found": [
+    "https://github.com/fb55/htmlparser2/issues/105",
+    "https://html.spec.whatwg.org/multipage/indices.html#attributes-3",
+    "https://github.com/apostrophecms/sanitize-html/issues/547",
+    "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+    "https://github.com/apostrophecms/apostrophe.git",
+    "https://github.com/apostrophecms/apostrophe/tree/main/packages/sanitize-html#readme"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "0ce5e0e3-2a25-4b67-acc0-508c08e8387a",
+  "timestamp": "2026-08-21T11:51:12.525Z",
+  "spec": "sanitize-html",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 2,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "test": "npm run lint && mocha",
+    "lint": "eslint ."
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 6
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/fb55/htmlparser2/issues/105",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:92"
+    },
+    {
+      "match": "https://html.spec.whatwg.org/multipage/indices.html#attributes-3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:342"
+    },
+    {
+      "match": "https://github.com/apostrophecms/sanitize-html/issues/547",
+      "severity": "info",
+      "position": "code",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:530"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.js:959"
+    },
+    {
+      "match": "https://github.com/apostrophecms/apostrophe.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:12"
+    },
+    {
+      "match": "https://github.com/apostrophecms/apostrophe/tree/main/packages/sanitize-html#readme",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:15"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "apostrophecms",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "apostrophecms",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "apostrophecms",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:51:11.220Z",
+      "entryCount": 0
+    }
+  ]
+}

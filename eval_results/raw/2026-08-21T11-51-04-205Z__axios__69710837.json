@@ -1,0 +1,659 @@
+{
+  "package_name": "axios",
+  "version": "1.19.0",
+  "dataset_category": null,
+  "execution_time_ms": 331,
+  "manifest_urls_found": [
+    "https://github.com/axios/axios.git",
+    "https://github.com/mzabriskie",
+    "https://github.com/jasonsaayman",
+    "https://github.com/DigitalBrainJS",
+    "https://github.com/nickuraltsev",
+    "https://github.com/emilyemorehouse",
+    "https://github.com/rubennorte",
+    "https://github.com/JustinBeckwith",
+    "https://github.com/codeclown",
+    "https://github.com/chinesedfan",
+    "https://github.com/shaanmajid",
+    "https://github.com/remcohaszing",
+    "https://github.com/WillianAgostini",
+    "https://github.com/RikkiGibson",
+    "https://github.com/axios/axios/issues",
+    "https://axios-http.com",
+    "https://github.com/facebook/react-native/blob/26684cf3adf4094eb6c405d345a75bf8c7c0bf88/Libraries/Network/FormData.js#L68-L71",
+    "https://github.com/DigitalBrainJS/AxiosPromise/blob/16deab13710ec09779922131f3fa5954320f83ab/lib/utils.js#L11-L34",
+    "http://localhost",
+    "http://www.google.com",
+    "https://nodejs.org/api/http.html#http_message_headers",
+    "https://evil.com",
+    "https://github.com/cloudflare/workerd/issues/902",
+    "https://github.com/axios/axios/issues/69",
+    "https://www.npmjs.com/package/form-data",
+    "https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/error_event",
+    "https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE"
+  ],
+  "ast_intents": [
+    "axios",
+    "request",
+    "XMLHttpRequest"
+  ],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "69710837-64dd-4bf1-83fa-6686ece65ccc",
+  "timestamp": "2026-08-21T11:51:04.205Z",
+  "spec": "axios",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 76,
+  "ips_found": [
+    "0.0.0.0",
+    "127.0.0.1",
+    "1.2.0.3",
+    "0.0.0.127",
+    "127.0.255.255",
+    "127.0.0.255",
+    "::1",
+    "::ffff:7f00:1",
+    "0:0:0:0:0:0:0:1",
+    "::ffff:0:0",
+    "192.168.1.5",
+    "::ffff:c0a8:105"
+  ],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepare"
+  ],
+  "scripts": {
+    "build": "gulp clear && cross-env NODE_ENV=production rollup -c",
+    "version": "npm run build && git add package.json",
+    "preversion": "gulp version",
+    "test": "npm run test:vitest",
+    "test:vitest": "vitest run",
+    "test:vitest:unit": "vitest run --project unit",
+    "test:vitest:browser": "vitest run --project browser",
+    "test:vitest:browser:headless": "vitest run --project browser-headless",
+    "test:vitest:watch": "vitest",
+    "test:smoke:cjs:vitest": "npm --prefix tests/smoke/cjs run test:smoke:cjs:mocha",
+    "test:smoke:esm:vitest": "npm --prefix tests/smoke/esm run test:smoke:esm:vitest",
+    "test:smoke:deno": "deno task --cwd tests/smoke/deno test",
+    "test:smoke:bun": "bun test --cwd tests/smoke/bun",
+    "test:module:cjs": "npm --prefix tests/module/cjs run test:module:cjs",
+    "test:module:esm": "npm --prefix tests/module/esm run test:module:esm",
+    "docs:dev": "cd docs && npm run docs:dev",
+    "start": "node ./sandbox/server.js",
+    "examples": "node ./examples/server.js",
+    "lint": "eslint lib/**/*.js",
+    "fix": "eslint --fix lib/**/*.js",
+    "prepare": "husky"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 39
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/axios/axios.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:66"
+    },
+    {
+      "match": "https://github.com/mzabriskie",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:82"
+    },
+    {
+      "match": "https://github.com/jasonsaayman",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:83"
+    },
+    {
+      "match": "https://github.com/DigitalBrainJS",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:84"
+    },
+    {
+      "match": "https://github.com/nickuraltsev",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:85"
+    },
+    {
+      "match": "https://github.com/emilyemorehouse",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:86"
+    },
+    {
+      "match": "https://github.com/rubennorte",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:87"
+    },
+    {
+      "match": "https://github.com/JustinBeckwith",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:88"
+    },
+    {
+      "match": "https://github.com/codeclown",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:89"
+    },
+    {
+      "match": "https://github.com/chinesedfan",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:90"
+    },
+    {
+      "match": "https://github.com/shaanmajid",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:91"
+    },
+    {
+      "match": "https://github.com/remcohaszing",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:92"
+    },
+    {
+      "match": "https://github.com/WillianAgostini",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:93"
+    },
+    {
+      "match": "https://github.com/RikkiGibson",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:94"
+    },
+    {
+      "match": "https://github.com/axios/axios/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:99"
+    },
+    {
+      "match": "https://axios-http.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own homepage field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:101"
+    },
+    {
+      "match": "https://github.com/facebook/react-native/blob/26684cf3adf4094eb6c405d345a75bf8c7c0bf88/Libraries/Network/FormData.js#L68-L71",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 5,
+      "first_seen": "lib/utils.js:248"
+    },
+    {
+      "match": "https://github.com/DigitalBrainJS/AxiosPromise/blob/16deab13710ec09779922131f3fa5954320f83ab/lib/utils.js#L11-L34",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 5,
+      "first_seen": "lib/utils.js:902"
+    },
+    {
+      "match": "http://localhost",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [
+        "axios",
+        "request",
+        "XMLHttpRequest"
+      ],
+      "loaders": [],
+      "reasons": [
+        "loopback address — not reachable off this machine"
+      ],
+      "occurrences": 9,
+      "first_seen": "lib/platform/common/utils.js:44"
+    },
+    {
+      "match": "http://www.google.com",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 5,
+      "first_seen": "lib/helpers/buildURL.js:25"
+    },
+    {
+      "match": "https://nodejs.org/api/http.html#http_message_headers",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (nodejs.org)"
+      ],
+      "occurrences": 5,
+      "first_seen": "lib/helpers/parseHeaders.js:6"
+    },
+    {
+      "match": "https://evil.com",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 5,
+      "first_seen": "lib/helpers/resolveConfig.js:29"
+    },
+    {
+      "match": "https://github.com/cloudflare/workerd/issues/902",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 5,
+      "first_seen": "lib/adapters/fetch.js:404"
+    },
+    {
+      "match": "https://github.com/axios/axios/issues/69",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [
+        "axios"
+      ],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/adapters/http.js:727"
+    },
+    {
+      "match": "https://www.npmjs.com/package/form-data",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (npmjs.com)"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/adapters/http.js:751"
+    },
+    {
+      "match": "https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/error_event",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [
+        "XMLHttpRequest"
+      ],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 5,
+      "first_seen": "lib/adapters/xhr.js:122"
+    },
+    {
+      "match": "https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [
+        "axios",
+        "request",
+        "XMLHttpRequest"
+      ],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "dist/axios.js:295"
+    }
+  ],
+  "ip_findings": [
+    {
+      "match": "0.0.0.0",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "netmask or non-routable address"
+      ],
+      "occurrences": 6,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:1"
+    },
+    {
+      "match": "127.0.0.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "loopback address — not reachable off this machine"
+      ],
+      "occurrences": 6,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:19"
+    },
+    {
+      "match": "1.2.0.3",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:21"
+    },
+    {
+      "match": "0.0.0.127",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:84"
+    },
+    {
+      "match": "127.0.255.255",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "loopback address — not reachable off this machine"
+      ],
+      "occurrences": 4,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:97"
+    },
+    {
+      "match": "127.0.0.255",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "loopback address — not reachable off this machine"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:98"
+    },
+    {
+      "match": "::1",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "netmask or non-routable address"
+      ],
+      "occurrences": 6,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:148"
+    },
+    {
+      "match": "::ffff:7f00:1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:154"
+    },
+    {
+      "match": "0:0:0:0:0:0:0:1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:166"
+    },
+    {
+      "match": "::ffff:0:0",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:228"
+    },
+    {
+      "match": "192.168.1.5",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "private-network address"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:230"
+    },
+    {
+      "match": "::ffff:c0a8:105",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/helpers/shouldBypassProxy.js:231"
+    }
+  ],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "axios",
+      "field": "repository"
+    },
+    {
+      "host": "axios-http.com",
+      "owner": null,
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "axios",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:36:11.596Z",
+      "entryCount": 0
+    }
+  ]
+}

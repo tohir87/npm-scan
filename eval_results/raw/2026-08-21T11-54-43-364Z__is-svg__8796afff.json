@@ -1,0 +1,139 @@
+{
+  "package_name": "is-svg",
+  "version": "6.1.0",
+  "dataset_category": null,
+  "execution_time_ms": 583,
+  "manifest_urls_found": [
+    "https://en.wikipedia.org/wiki/Scalable_Vector_Graphics",
+    "http://www.w3.org/2000/svg",
+    "https://github.com/sponsors/sindresorhus",
+    "https://sindresorhus.com"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "8796afff-d1de-446f-ac49-afc8bbc8f68d",
+  "timestamp": "2026-08-21T11:54:43.364Z",
+  "spec": "is-svg",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 3,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "test": "xo && ava && tsd"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 4
+  },
+  "url_findings": [
+    {
+      "match": "https://en.wikipedia.org/wiki/Scalable_Vector_Graphics",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.d.ts:13"
+    },
+    {
+      "match": "http://www.w3.org/2000/svg",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "index.d.ts:19"
+    },
+    {
+      "match": "https://github.com/sponsors/sindresorhus",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own funding field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:7"
+    },
+    {
+      "match": "https://sindresorhus.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own author field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:11"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "sindresorhus",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "sindresorhus",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "sindresorhus",
+      "field": "bugs"
+    },
+    {
+      "host": "sindresorhus.com",
+      "owner": null,
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    },
+    {
+      "host": "github.com",
+      "owner": "sponsors",
+      "field": "funding"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:54:41.497Z",
+      "entryCount": 0
+    }
+  ]
+}

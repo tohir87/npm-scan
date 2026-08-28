@@ -1,0 +1,218 @@
+{
+  "package_name": "word-wrap",
+  "version": "1.2.5",
+  "dataset_category": null,
+  "execution_time_ms": 438,
+  "manifest_urls_found": [
+    "https://github.com/jonschlinkert/word-wrap",
+    "https://github.com/jonschlinkert",
+    "https://2fd.github.io",
+    "https://twitter.com/hildjj",
+    "http://twitter.com/jonschlinkert",
+    "https://tck.io",
+    "https://github.com/lordvlad",
+    "http://www.linestarve.com",
+    "http://zachhale.com",
+    "https://github.com/jonschlinkert/word-wrap/issues"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "3af125d5-a537-4890-8901-44802f1a38de",
+  "timestamp": "2026-08-21T11:56:50.977Z",
+  "spec": "word-wrap",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 3,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "test": "mocha"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 10
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/jonschlinkert/word-wrap",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 2,
+      "first_seen": "index.js:2"
+    },
+    {
+      "match": "https://github.com/jonschlinkert",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:6"
+    },
+    {
+      "match": "https://2fd.github.io",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:9"
+    },
+    {
+      "match": "https://twitter.com/hildjj",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:10"
+    },
+    {
+      "match": "http://twitter.com/jonschlinkert",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:11"
+    },
+    {
+      "match": "https://tck.io",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:12"
+    },
+    {
+      "match": "https://github.com/lordvlad",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:13"
+    },
+    {
+      "match": "http://www.linestarve.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:14"
+    },
+    {
+      "match": "http://zachhale.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:15"
+    },
+    {
+      "match": "https://github.com/jonschlinkert/word-wrap/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:19"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "jonschlinkert",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "jonschlinkert",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "jonschlinkert",
+      "field": "bugs"
+    },
+    {
+      "host": "github.com",
+      "owner": "jonschlinkert",
+      "field": "author"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:56:49.981Z",
+      "entryCount": 0
+    }
+  ]
+}

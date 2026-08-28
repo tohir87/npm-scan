@@ -1,0 +1,332 @@
+{
+  "package_name": "diff",
+  "version": "9.0.0",
+  "dataset_category": null,
+  "execution_time_ms": 531,
+  "manifest_urls_found": [
+    "http://incaseofstairs.com",
+    "http://github.com/kpdecker/jsdiff/issues",
+    "https://github.com/kpdecker/jsdiff.git",
+    "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.4.6927",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#the_replacer_parameter",
+    "https://stackoverflow.com/a/60422853/1709587",
+    "https://markamery.com/blog/quadratic-time-regexes/",
+    "https://github.com/kpdecker/jsdiff/pull/550",
+    "https://en.wikipedia.org/wiki/Escape_sequences_in_C#Escape_sequences",
+    "https://www.artima.com/weblogs/viewpost.jsp?thread=164293",
+    "https://github.com/microsoft/TypeScript/issues/61398",
+    "https://diffx.org",
+    "https://en.wikipedia.org/wiki/Latin_script_in_Unicode",
+    "https://github.com/kpdecker/jsdiff/issues/160#issuecomment-1866099640",
+    "https://github.com/kpdecker/jsdiff/issues/180",
+    "https://github.com/kpdecker/jsdiff/issues/211",
+    "https://github.com/google/diff-match-patch"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "19d08a92-acab-4c84-9ccd-f7326da3a192",
+  "timestamp": "2026-08-21T11:58:07.564Z",
+  "spec": "diff",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 90,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "clean": "rm -rf libcjs/ libesm/ dist/ coverage/ .nyc_output/",
+    "lint": "yarn eslint",
+    "build": "yarn lint && yarn generate-esm && yarn generate-cjs && yarn check-types && yarn run-rollup && yarn run-uglify",
+    "generate-cjs": "yarn tsc --module commonjs --outDir libcjs && node --eval \"fs.writeFileSync('libcjs/package.json', JSON.stringify({type:'commonjs',sideEffects:false}))\"",
+    "generate-esm": "yarn tsc --module nodenext --outDir libesm --target es6 && node --eval \"fs.writeFileSync('libesm/package.json', JSON.stringify({type:'module',sideEffects:false}))\"",
+    "check-types": "yarn run-tsd && yarn run-attw",
+    "test": "nyc yarn _test",
+    "_test": "yarn build && cross-env NODE_ENV=test yarn run-mocha",
+    "run-attw": "yarn attw --pack --entrypoints . && yarn attw --pack --entrypoints lib/diff/word.js --profile node16",
+    "run-tsd": "yarn tsd --typings libesm/ && yarn tsd --files test-d/",
+    "run-rollup": "rollup -c rollup.config.mjs",
+    "run-uglify": "uglifyjs dist/diff.js -c -o dist/diff.min.js",
+    "run-mocha": "mocha --require ./runtime 'test/**/*.js'"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 18
+  },
+  "url_findings": [
+    {
+      "match": "http://incaseofstairs.com",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "metadata only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:16"
+    },
+    {
+      "match": "http://github.com/kpdecker/jsdiff/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:21"
+    },
+    {
+      "match": "https://github.com/kpdecker/jsdiff.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:26"
+    },
+    {
+      "match": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.4.6927",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "libesm/index.js:14"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 4,
+      "first_seen": "libesm/types.d.ts:133"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#the_replacer_parameter",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "libesm/types.d.ts:169"
+    },
+    {
+      "match": "https://stackoverflow.com/a/60422853/1709587",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 3,
+      "first_seen": "libesm/util/string.js:49"
+    },
+    {
+      "match": "https://markamery.com/blog/quadratic-time-regexes/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "libesm/util/string.js:147"
+    },
+    {
+      "match": "https://github.com/kpdecker/jsdiff/pull/550",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 3,
+      "first_seen": "libesm/util/string.js:152"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Escape_sequences_in_C#Escape_sequences",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "libesm/patch/create.js:35"
+    },
+    {
+      "match": "https://www.artima.com/weblogs/viewpost.jsp?thread=164293",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 6,
+      "first_seen": "libesm/patch/create.js:306"
+    },
+    {
+      "match": "https://github.com/microsoft/TypeScript/issues/61398",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "libesm/patch/line-endings.js:8"
+    },
+    {
+      "match": "https://diffx.org",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "libesm/patch/parse.js:57"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Latin_script_in_Unicode",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "libesm/diff/word.js:3"
+    },
+    {
+      "match": "https://github.com/kpdecker/jsdiff/issues/160#issuecomment-1866099640",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 3,
+      "first_seen": "libesm/diff/word.js:39"
+    },
+    {
+      "match": "https://github.com/kpdecker/jsdiff/issues/180",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 3,
+      "first_seen": "libesm/diff/word.js:272"
+    },
+    {
+      "match": "https://github.com/kpdecker/jsdiff/issues/211",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 3,
+      "first_seen": "libesm/diff/word.js:273"
+    },
+    {
+      "match": "https://github.com/google/diff-match-patch",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 5,
+      "first_seen": "libesm/convert/dmp.d.ts:4"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "kpdecker",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "kpdecker",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:58:06.543Z",
+      "entryCount": 0
+    }
+  ]
+}

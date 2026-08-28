@@ -1,0 +1,2834 @@
+{
+  "package_name": "prismjs",
+  "version": "1.30.0",
+  "dataset_category": null,
+  "execution_time_ms": 773,
+  "manifest_urls_found": [
+    "https://webplatform.github.io/docs/",
+    "https://github.com/PrismJS/prism.git",
+    "https://opensource.org/licenses/MIT",
+    "https://lea.verou.me",
+    "http://localhost/components/prism-core.js:119:5",
+    "http://localhost/components/prism-core.js:606:1",
+    "https://prismjs.com/faq.html#why-is-asynchronous-highlighting-disabled-by-default",
+    "https://prismjs.com/download.html",
+    "https://github.com/PrismJS/prism/issues/2102",
+    "https://www.w3.org/TR/xml/#NT-doctypedecl",
+    "https://drafts.csswg.org/css-values-3/#urls",
+    "http://stackoverflow.com/a/2008444",
+    "https://developer.mozilla.org/en-US/docs/Web/Events#Standard_events",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Polyfill",
+    "http://www.w3.org/2000/svg",
+    "https://stackoverflow.com/a/30810322/7595472",
+    "https://stackoverflow.com/a/20079910/7595472",
+    "https://github.com/microsoft/AL/blob/master/grammar/alsyntax.tmlanguage",
+    "http://avisynth.nl/index.php/The_full_AviSynth_grammar",
+    "https://github.com/apache/avro",
+    "https://avro.apache.org/docs/current/idl.html",
+    "https://www.gnu.org/software/bash/manual/bashref.html#Shell-Arithmetic",
+    "https://en.wikipedia.org/wiki/Here_document",
+    "https://www.gnu.org/software/bash/manual/html_node/Double-Quotes.html",
+    "https://www.gnu.org/software/bash/manual/html_node/Single-Quotes.html",
+    "https://www.gnu.org/software/bash/manual/html_node/ANSI_002dC-Quoting.html",
+    "https://www.gnu.org/software/bash/manual/html_node/Shell-Builtin-Commands.html",
+    "https://github.com/Azure/bicep/blob/main/src/textmate/bicep.tmlanguage",
+    "https://github.com/Azure/bicep/blob/114a3251b4e6e30082a58729f19a8cc4e374ffa6/src/textmate/bicep.tmlanguage#L184",
+    "https://github.com/Diversus23/",
+    "https://en.cppreference.com/w/c/language/string_literal",
+    "https://en.cppreference.com/w/c/language/character_constant",
+    "https://cfdocs.org/script",
+    "https://github.com/jeluard/prism-clojure",
+    "https://github.com/antlr/grammars-v4/blob/42edd5b687d183b5fa679e858a82297bd27141e7/cobol85/Cobol85.g4#L1015",
+    "https://github.com/cooklang/spec/blob/main/EBNF.md",
+    "https://github.com/coq/coq",
+    "https://en.cppreference.com/w/cpp/language/modules",
+    "https://en.cppreference.com/w/cpp/language/class",
+    "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/",
+    "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/lexical-structure#character-literals",
+    "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/lexical-structure#string-literals",
+    "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/lexical-structure#literals",
+    "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/#attribute-targets",
+    "https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-5.0&tabs=visual-studio",
+    "https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-5.0",
+    "https://scotthelme.co.uk/csp-cheat-sheet/",
+    "https://www.w3.org/TR/CSP1/",
+    "https://www.w3.org/TR/CSP2/",
+    "https://www.w3.org/TR/CSP3/",
+    "https://github.com/PrismJS/prism/pull/2373",
+    "https://tools.ietf.org/html/rfc4180",
+    "https://cuelang.org/docs/references/spec/",
+    "https://neo4j.com/docs/cypher-manual/current/syntax/comments/",
+    "https://neo4j.com/docs/cypher-manual/current/syntax/reserved/",
+    "https://neo4j.com/docs/cypher-manual/current/syntax/operators/",
+    "https://github.com/dhall-lang/dhall-lang/blob/master/standard/dhall.abnf",
+    "https://github.com/dhall-lang/dhall-lang/blob/5fde8ef1bead6fb4e999d3c1ffe7044cd019d63a/standard/dhall.abnf#L596",
+    "https://github.com/dhall-lang/dhall-lang/blob/5fde8ef1bead6fb4e999d3c1ffe7044cd019d63a/standard/dhall.abnf#L661",
+    "https://github.com/dhall-lang/dhall-lang/blob/5fde8ef1bead6fb4e999d3c1ffe7044cd019d63a/standard/dhall.abnf#L725",
+    "https://github.com/dhall-lang/dhall-lang/blob/5fde8ef1bead6fb4e999d3c1ffe7044cd019d63a/standard/dhall.abnf#L359",
+    "http://prismjs.com",
+    "https://tools.ietf.org/html/rfc1035#page-13",
+    "https://en.wikipedia.org/wiki/List_of_DNS_record_types",
+    "https://docs.docker.com/engine/reference/builder/#healthcheck",
+    "https://docs.docker.com/engine/reference/builder/#from",
+    "https://docs.docker.com/engine/reference/builder/#onbuild",
+    "https://www.graphviz.org/doc/info/lang.html",
+    "https://editorconfig-specification.readthedocs.io",
+    "https://groups.google.com/forum/#!msg/elm-dev/0AHSnDdkSkQ/E0SVU70JEQAJ",
+    "https://www.ablebits.com/office-addins-blog/2015/12/08/excel-reference-another-sheet-workbook/",
+    "https://docs.factorcode.org/content/article-syntax-floats.html",
+    "https://docs.factorcode.org/content/article-effects.html",
+    "https://docs.factorcode.org/content/article-conventions.html",
+    "https://github.com/PrismJS/prism/issues/2801#issue-829717504",
+    "https://freemarker.apache.org/docs/dgui_template_exp.html",
+    "https://www.gap-system.org/Manuals/doc/ref/chap4.html",
+    "https://www.gap-system.org/Manuals/doc/ref/chap27.html",
+    "https://gn.googlesource.com/gn/+/refs/heads/main/docs/reference.md#grammar",
+    "https://go.dev/ref/mod#go-mod-file-module",
+    "https://groovy-lang.org/syntax.html#_dollar_slashy_string",
+    "https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-keywords",
+    "https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-reserved-words",
+    "https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-grammar#floating-point-numbers",
+    "https://scotthelme.co.uk/hpkp-cheat-sheet/",
+    "https://scotthelme.co.uk/hsts-cheat-sheet/",
+    "http://example.com",
+    "https://ichigojam.net/IchigoJam-en.html",
+    "https://unicode-org.github.io/icu/userguide/format_parse/messages/",
+    "https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/MessageFormat.html",
+    "https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/classicu_1_1ChoiceFormat.html#details",
+    "https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/PluralFormat.html#:~:text=Patterns%20and%20Their%20Interpretation",
+    "https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/SelectFormat.html#:~:text=Patterns%20and%20Their%20Interpretation",
+    "https://git-scm.com/docs/gitignore",
+    "https://github.com/PrismJS/prism/issues/2775#issuecomment-787477723",
+    "http://openjdk.java.net/jeps/355#Description",
+    "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Throwable.html#printStackTrace",
+    "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/StackTraceElement.html#toString",
+    "https://docs.oracle.com/javase/specs/jls/se9/html/jls-6.html#jls-ModuleName",
+    "https://docs.oracle.com/javase/9/docs/api/java/lang/module/ModuleDescriptor.Version.html",
+    "https://github.com/matcdac/jdk/blob/2305df71d1b7710266ae0956d73927a225132c0f/src/java.base/share/classes/java/lang/module/ModuleDescriptor.java#L1108",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects",
+    "https://tc39.es/ecma262/#sec-imports",
+    "https://tc39.es/ecma262/#sec-exports",
+    "https://www.json.org/json-en.html",
+    "https://github.com/JuliaLang/julia/pull/6128",
+    "https://docs.julialang.org/en/v1/manual/strings/#Regular-Expressions-1",
+    "https://docs.julialang.org/en/v1/manual/strings/#String-Basics-1",
+    "https://docs.julialang.org/en/v1/manual/strings/#non-standard-string-literals-1",
+    "https://docs.julialang.org/en/v1/manual/running-external-programs/#Running-External-Programs-1",
+    "https://docs.julialang.org/en/v1/manual/strings/#man-characters-1",
+    "https://docs.julialang.org/en/v1/manual/mathematical-operations/",
+    "https://docs.julialang.org/en/v1/manual/mathematical-operations/#Operator-Precedence-and-Associativity-1",
+    "https://docs.julialang.org/en/v1/base/numbers/#Base.im",
+    "https://help.keyman.com/developer/language/guide/headers",
+    "https://kotlinlang.org/spec/expressions.html#string-interpolation-expressions",
+    "https://kotlinlang.org/spec/expressions.html#character-literals",
+    "https://latte.nette.org/en/tags",
+    "https://github.com/Shopify/liquid/blob/698f5e0d967423e013f6169d9111bd969bd78337/lib/liquid/lexer.rb#L21",
+    "https://www.gnu.org/software/emacs/manual/html_node/elisp/Symbol-Type.html",
+    "https://www.gnu.org/software/emacs/manual/html_node/elisp/Comment-Tips.html",
+    "https://github.com/MTDL9/vim-log-highlighting",
+    "http://magma.maths.usyd.edu.au/magma/handbook/text/82",
+    "https://github.com/lodash/lodash/blob/2da024c3b4f9947a48517639de7560457cd4ec6c/unescape.js#L2",
+    "https://www.stata.com/manuals/m.pdf",
+    "https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/index.html",
+    "https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/reservedwords.html#n1ql-reserved-words",
+    "https://numberfour.github.io/n4js/spec/N4JSSpec.html",
+    "https://numberfour.github.io/n4js/spec/N4JSSpec.html#_annotations",
+    "http://github.com/idleberg",
+    "https://ocaml.org/manual/lex.html",
+    "http://caml.inria.fr/pub/docs/manual-ocaml/lex.html#sec84",
+    "http://streamcomputing.eu/downloads/?opencl.lang",
+    "http://sourceforge.net/tracker/?func=detail&aid=2957794&group_id=95717&atid=612384",
+    "https://www.khronos.org/registry/OpenCL/sdk/2.1/docs/man/xhtml/mathConstants.html",
+    "https://www.khronos.org/registry/OpenCL/sdk/2.1/docs/man/xhtml/macroLimits.html",
+    "https://www.khronos.org/registry/OpenCL/sdk/2.1/docs/man/xhtml/scalarDataTypes.html",
+    "https://www.khronos.org/registry/OpenCL/sdk/2.1/docs/man/xhtml/otherDataTypes.html",
+    "http://streamcomputing.eu/downloads/?opencl_host.lang",
+    "http://github.khronos.org/OpenCL-CLHPP/annotated.html",
+    "https://qiskit.github.io/openqasm/grammar/index.html",
+    "http://aahacreative.com/2012/07/31/php-syntax-highlighting-prism/",
+    "http://milesj.me",
+    "https://www.php.net/manual/en/reserved.keywords.php",
+    "https://docs.oracle.com/en/database/oracle/oracle-database/21/lnpls/plsql-reserved-words-keywords.html",
+    "https://docs.oracle.com/en/database/oracle/oracle-database/21/lnpls/plsql-language-fundamentals.html#GUID-96A42F7C-7A71-4B90-8255-CA9C8BD9722E",
+    "https://docs.microsoft.com/en-us/powerquery-m/power-query-m-language-specification",
+    "http://technet.microsoft.com/en-us/library/hh847744.aspx",
+    "https://github.com/prometheus-community/monaco-promql/blob/master/src/promql/promql.ts",
+    "https://kausal.co/blog/slate-prism-add-new-syntax-promql/",
+    "https://prometheus.io/docs/prometheus/latest/querying/operators/#aggregation-operators",
+    "https://prometheus.io/docs/prometheus/latest/querying/operators/#vector-matching",
+    "https://prometheus.io/docs/prometheus/latest/querying/basics/#offset-modifier",
+    "https://agraef.github.io/pure-docs/pure.html#lexical-matters",
+    "https://codepen.io/ImagineProgramming/details/JYydBy/",
+    "https://github.com/PrismJS/prism/issues/3006",
+    "http://code.kx.com/wiki/Reference/Slash",
+    "https://docs.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/",
+    "https://github.com/microsoft/qsharp-language/tree/main/Specifications/Language/5_Grammar",
+    "https://docs.oracle.com/javase/10/docs/api/java/util/regex/Pattern.html",
+    "https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference?view=netframework-4.7.2#grouping-constructs",
+    "https://www.openpolicyagent.org/docs/latest/policy-reference/",
+    "https://github.com/rust-lang/reference/blob/master/src/keywords.md",
+    "https://doc.rust-lang.org/stable/rust-by-example/primitives.html",
+    "https://doc.rust-lang.org/1.0.0/style/style/naming/README.html",
+    "https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_6.html#SEC30",
+    "https://small.r7rs.org/attachment/r7rs.pdf",
+    "https://github.com/JesusFreke/smali/tree/master/smali/src/test/resources/LexerTest",
+    "https://github.com/JesusFreke/smali/wiki/TypesMethodsAndFields#types",
+    "https://smlfamily.github.io/sml97-defn.pdf",
+    "https://people.mpi-sws.org/~rossberg/sml.html",
+    "https://en.wikipedia.org/wiki/Universally_unique_identifier#Format",
+    "https://docs.splunk.com/Documentation/Splunk/7.3.0/SearchReference/ListOfSearchCommands",
+    "https://mc-stan.org/docs/2_28/reference-manual/bnf-grammars.html",
+    "https://mc-stan.org/docs/2_24/reference-manual/print-statements-section.html#string-literals",
+    "https://www.stata.com/manuals/u.pdf",
+    "https://www.stata.com/manuals/p.pdf",
+    "https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html",
+    "https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID141",
+    "https://docs.swift.org/swift-book/ReferenceManual/zzSummaryOfTheGrammar.html#ID481",
+    "https://www.freedesktop.org/software/systemd/man/systemd.syntax.html",
+    "https://en.wikipedia.org/wiki/Test_Anything_Protocol",
+    "https://github.com/karlhorky",
+    "https://github.com/PrismJS/prism/issues/2594#issuecomment-710666928",
+    "https://docs.unrealengine.com/udk/Three/UnrealScriptExpressions.html",
+    "https://tools.ietf.org/html/rfc3986#appendix-A",
+    "https://www.warp10.io/tags/control",
+    "https://www.warp10.io/tags/operators",
+    "https://wren.io/",
+    "https://yaml.org/spec/1.2/spec.html#c-ns-anchor-property",
+    "https://yaml.org/spec/1.2/spec.html#c-ns-alias-node",
+    "https://yaml.org/spec/1.2/spec.html#c-ns-tag-property",
+    "https://yaml.org/spec/1.2/spec.html#c-ns-properties",
+    "https://yaml.org/spec/1.2/spec.html#ns-plain",
+    "https://tools.ietf.org/html/rfc6020#page-34",
+    "http://www.yang-central.org/twiki/bin/view/Main/YangExamples"
+  ],
+  "ast_intents": [],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "8e5b8823-990a-47fe-8b0f-34d100bf85f3",
+  "timestamp": "2026-08-21T11:51:20.908Z",
+  "spec": "prismjs",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 654,
+  "ips_found": [],
+  "auto_run_scripts": [],
+  "publish_scripts": [],
+  "scripts": {
+    "benchmark": "node benchmark/benchmark.js",
+    "build": "gulp",
+    "start": "http-server -c-1",
+    "lint": "eslint . --cache",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:ci": "eslint . --max-warnings 0",
+    "regex-coverage": "mocha tests/coverage.js",
+    "test:aliases": "mocha tests/aliases-test.js",
+    "test:core": "mocha tests/core/**/*.js",
+    "test:dependencies": "mocha tests/dependencies-test.js",
+    "test:examples": "mocha tests/examples-test.js",
+    "test:identifiers": "mocha tests/identifier-test.js",
+    "test:languages": "mocha tests/run.js",
+    "test:patterns": "mocha tests/pattern-tests.js",
+    "test:plugins": "mocha tests/plugins/**/*.js",
+    "test:runner": "mocha tests/testrunner-tests.js",
+    "test": "npm-run-all test:*",
+    "release": "release-it"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 196
+  },
+  "url_findings": [
+    {
+      "match": "https://webplatform.github.io/docs/",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "no sink, no reputation hit"
+      ],
+      "occurrences": 4,
+      "first_seen": "components.js:1"
+    },
+    {
+      "match": "https://github.com/PrismJS/prism.git",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:32"
+    },
+    {
+      "match": "https://opensource.org/licenses/MIT",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (opensource.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:19"
+    },
+    {
+      "match": "https://lea.verou.me",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:20"
+    },
+    {
+      "match": "http://localhost/components/prism-core.js:119:5",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "loopback address — not reachable off this machine"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:245"
+    },
+    {
+      "match": "http://localhost/components/prism-core.js:606:1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "loopback address — not reachable off this machine"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:246"
+    },
+    {
+      "match": "https://prismjs.com/faq.html#why-is-asynchronous-highlighting-disabled-by-default",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:557"
+    },
+    {
+      "match": "https://prismjs.com/download.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:561"
+    },
+    {
+      "match": "https://github.com/PrismJS/prism/issues/2102",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:1195"
+    },
+    {
+      "match": "https://www.w3.org/TR/xml/#NT-doctypedecl",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:1285"
+    },
+    {
+      "match": "https://drafts.csswg.org/css-values-3/#urls",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:1490"
+    },
+    {
+      "match": "http://stackoverflow.com/a/2008444",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:1592"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/Events#Standard_events",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "prism.js:1738"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Polyfill",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 4,
+      "first_seen": "prism.js:1758"
+    },
+    {
+      "match": "http://www.w3.org/2000/svg",
+      "severity": "info",
+      "position": "code",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 2,
+      "first_seen": "plugins/wpd/prism-wpd.js:131"
+    },
+    {
+      "match": "https://stackoverflow.com/a/30810322/7595472",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 1,
+      "first_seen": "plugins/copy-to-clipboard/prism-copy-to-clipboard.js:30"
+    },
+    {
+      "match": "https://stackoverflow.com/a/20079910/7595472",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 1,
+      "first_seen": "plugins/copy-to-clipboard/prism-copy-to-clipboard.js:81"
+    },
+    {
+      "match": "https://github.com/microsoft/AL/blob/master/grammar/alsyntax.tmlanguage",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-al.js:1"
+    },
+    {
+      "match": "http://avisynth.nl/index.php/The_full_AviSynth_grammar",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-avisynth.js:1"
+    },
+    {
+      "match": "https://github.com/apache/avro",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-avro-idl.js:1"
+    },
+    {
+      "match": "https://avro.apache.org/docs/current/idl.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (apache.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-avro-idl.js:2"
+    },
+    {
+      "match": "https://www.gnu.org/software/bash/manual/bashref.html#Shell-Arithmetic",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (gnu.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-bash.js:36"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Here_document",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-bash.js:123"
+    },
+    {
+      "match": "https://www.gnu.org/software/bash/manual/html_node/Double-Quotes.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (gnu.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-bash.js:142"
+    },
+    {
+      "match": "https://www.gnu.org/software/bash/manual/html_node/Single-Quotes.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (gnu.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-bash.js:149"
+    },
+    {
+      "match": "https://www.gnu.org/software/bash/manual/html_node/ANSI_002dC-Quoting.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (gnu.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-bash.js:155"
+    },
+    {
+      "match": "https://www.gnu.org/software/bash/manual/html_node/Shell-Builtin-Commands.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (gnu.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-bash.js:176"
+    },
+    {
+      "match": "https://github.com/Azure/bicep/blob/main/src/textmate/bicep.tmlanguage",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-bicep.js:1"
+    },
+    {
+      "match": "https://github.com/Azure/bicep/blob/114a3251b4e6e30082a58729f19a8cc4e374ffa6/src/textmate/bicep.tmlanguage#L184",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-bicep.js:66"
+    },
+    {
+      "match": "https://github.com/Diversus23/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-bsl.js:4"
+    },
+    {
+      "match": "https://en.cppreference.com/w/c/language/string_literal",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-c.js:7"
+    },
+    {
+      "match": "https://en.cppreference.com/w/c/language/character_constant",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-c.js:23"
+    },
+    {
+      "match": "https://cfdocs.org/script",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cfscript.js:1"
+    },
+    {
+      "match": "https://github.com/jeluard/prism-clojure",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-clojure.js:1"
+    },
+    {
+      "match": "https://github.com/antlr/grammars-v4/blob/42edd5b687d183b5fa679e858a82297bd27141e7/cobol85/Cobol85.g4#L1015",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cobol.js:20"
+    },
+    {
+      "match": "https://github.com/cooklang/spec/blob/main/EBNF.md",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cooklang.js:3"
+    },
+    {
+      "match": "https://github.com/coq/coq",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-coq.js:3"
+    },
+    {
+      "match": "https://en.cppreference.com/w/cpp/language/modules",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cpp.js:36"
+    },
+    {
+      "match": "https://en.cppreference.com/w/cpp/language/class",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cpp.js:85"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-csharp.js:42"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/lexical-structure#character-literals",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-csharp.js:82"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/lexical-structure#string-literals",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-csharp.js:83"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/lexical-structure#literals",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-csharp.js:161"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/#attribute-targets",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-csharp.js:277"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-5.0&tabs=visual-studio",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cshtml.js:2"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-5.0",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cshtml.js:3"
+    },
+    {
+      "match": "https://scotthelme.co.uk/csp-cheat-sheet/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-csp.js:4"
+    },
+    {
+      "match": "https://www.w3.org/TR/CSP1/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-csp.js:7"
+    },
+    {
+      "match": "https://www.w3.org/TR/CSP2/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-csp.js:8"
+    },
+    {
+      "match": "https://www.w3.org/TR/CSP3/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (w3.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-csp.js:9"
+    },
+    {
+      "match": "https://github.com/PrismJS/prism/pull/2373",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-css-extras.js:63"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc4180",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-csv.js:1"
+    },
+    {
+      "match": "https://cuelang.org/docs/references/spec/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cue.js:3"
+    },
+    {
+      "match": "https://neo4j.com/docs/cypher-manual/current/syntax/comments/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cypher.js:2"
+    },
+    {
+      "match": "https://neo4j.com/docs/cypher-manual/current/syntax/reserved/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cypher.js:26"
+    },
+    {
+      "match": "https://neo4j.com/docs/cypher-manual/current/syntax/operators/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-cypher.js:33"
+    },
+    {
+      "match": "https://github.com/dhall-lang/dhall-lang/blob/master/standard/dhall.abnf",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-dhall.js:2"
+    },
+    {
+      "match": "https://github.com/dhall-lang/dhall-lang/blob/5fde8ef1bead6fb4e999d3c1ffe7044cd019d63a/standard/dhall.abnf#L596",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-dhall.js:32"
+    },
+    {
+      "match": "https://github.com/dhall-lang/dhall-lang/blob/5fde8ef1bead6fb4e999d3c1ffe7044cd019d63a/standard/dhall.abnf#L661",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-dhall.js:37"
+    },
+    {
+      "match": "https://github.com/dhall-lang/dhall-lang/blob/5fde8ef1bead6fb4e999d3c1ffe7044cd019d63a/standard/dhall.abnf#L725",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-dhall.js:47"
+    },
+    {
+      "match": "https://github.com/dhall-lang/dhall-lang/blob/5fde8ef1bead6fb4e999d3c1ffe7044cd019d63a/standard/dhall.abnf#L359",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-dhall.js:56"
+    },
+    {
+      "match": "http://prismjs.com",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-django.js:1"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc1035#page-13",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-dns-zone-file.js:19"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/List_of_DNS_record_types",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-dns-zone-file.js:25"
+    },
+    {
+      "match": "https://docs.docker.com/engine/reference/builder/#healthcheck",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-docker.js:65"
+    },
+    {
+      "match": "https://docs.docker.com/engine/reference/builder/#from",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-docker.js:71"
+    },
+    {
+      "match": "https://docs.docker.com/engine/reference/builder/#onbuild",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-docker.js:77"
+    },
+    {
+      "match": "https://www.graphviz.org/doc/info/lang.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-dot.js:1"
+    },
+    {
+      "match": "https://editorconfig-specification.readthedocs.io",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-editorconfig.js:2"
+    },
+    {
+      "match": "https://groups.google.com/forum/#!msg/elm-dev/0AHSnDdkSkQ/E0SVU70JEQAJ",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-elm.js:39"
+    },
+    {
+      "match": "https://www.ablebits.com/office-addins-blog/2015/12/08/excel-reference-another-sheet-workbook/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-excel-formula.js:12"
+    },
+    {
+      "match": "https://docs.factorcode.org/content/article-syntax-floats.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-factor.js:78"
+    },
+    {
+      "match": "https://docs.factorcode.org/content/article-effects.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-factor.js:175"
+    },
+    {
+      "match": "https://docs.factorcode.org/content/article-conventions.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-factor.js:265"
+    },
+    {
+      "match": "https://github.com/PrismJS/prism/issues/2801#issue-829717504",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-false.js:5"
+    },
+    {
+      "match": "https://freemarker.apache.org/docs/dgui_template_exp.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (apache.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-ftl.js:3"
+    },
+    {
+      "match": "https://www.gap-system.org/Manuals/doc/ref/chap4.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-gap.js:1"
+    },
+    {
+      "match": "https://www.gap-system.org/Manuals/doc/ref/chap27.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-gap.js:2"
+    },
+    {
+      "match": "https://gn.googlesource.com/gn/+/refs/heads/main/docs/reference.md#grammar",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-gn.js:1"
+    },
+    {
+      "match": "https://go.dev/ref/mod#go-mod-file-module",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-go-module.js:1"
+    },
+    {
+      "match": "https://groovy-lang.org/syntax.html#_dollar_slashy_string",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-groovy.js:20"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-keywords",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-hlsl.js:5"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-reserved-words",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-hlsl.js:6"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-grammar#floating-point-numbers",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-hlsl.js:17"
+    },
+    {
+      "match": "https://scotthelme.co.uk/hpkp-cheat-sheet/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-hpkp.js:4"
+    },
+    {
+      "match": "https://scotthelme.co.uk/hsts-cheat-sheet/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-hsts.js:4"
+    },
+    {
+      "match": "http://example.com",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 9,
+      "first_seen": "components/prism-http.js:20"
+    },
+    {
+      "match": "https://ichigojam.net/IchigoJam-en.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-ichigojam.js:2"
+    },
+    {
+      "match": "https://unicode-org.github.io/icu/userguide/format_parse/messages/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-icu-message-format.js:1"
+    },
+    {
+      "match": "https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/MessageFormat.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-icu-message-format.js:2"
+    },
+    {
+      "match": "https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/classicu_1_1ChoiceFormat.html#details",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-icu-message-format.js:69"
+    },
+    {
+      "match": "https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/PluralFormat.html#:~:text=Patterns%20and%20Their%20Interpretation",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-icu-message-format.js:86"
+    },
+    {
+      "match": "https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/SelectFormat.html#:~:text=Patterns%20and%20Their%20Interpretation",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-icu-message-format.js:101"
+    },
+    {
+      "match": "https://git-scm.com/docs/gitignore",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-ignore.js:3"
+    },
+    {
+      "match": "https://github.com/PrismJS/prism/issues/2775#issuecomment-787477723",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-ini.js:6"
+    },
+    {
+      "match": "http://openjdk.java.net/jeps/355#Description",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-java.js:64"
+    },
+    {
+      "match": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Throwable.html#printStackTrace",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-javastacktrace.js:2"
+    },
+    {
+      "match": "https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/StackTraceElement.html#toString",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-javastacktrace.js:53"
+    },
+    {
+      "match": "https://docs.oracle.com/javase/specs/jls/se9/html/jls-6.html#jls-ModuleName",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-javastacktrace.js:57"
+    },
+    {
+      "match": "https://docs.oracle.com/javase/9/docs/api/java/lang/module/ModuleDescriptor.Version.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-javastacktrace.js:60"
+    },
+    {
+      "match": "https://github.com/matcdac/jdk/blob/2305df71d1b7710266ae0956d73927a225132c0f/src/java.base/share/classes/java/lang/module/ModuleDescriptor.java#L1108",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-javastacktrace.js:62"
+    },
+    {
+      "match": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (developer.mozilla.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-js-extras.js:23"
+    },
+    {
+      "match": "https://tc39.es/ecma262/#sec-imports",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (tc39.es)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-js-extras.js:49"
+    },
+    {
+      "match": "https://tc39.es/ecma262/#sec-exports",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (tc39.es)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-js-extras.js:55"
+    },
+    {
+      "match": "https://www.json.org/json-en.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-json.js:1"
+    },
+    {
+      "match": "https://github.com/JuliaLang/julia/pull/6128",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-julia.js:4"
+    },
+    {
+      "match": "https://docs.julialang.org/en/v1/manual/strings/#Regular-Expressions-1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-julia.js:9"
+    },
+    {
+      "match": "https://docs.julialang.org/en/v1/manual/strings/#String-Basics-1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-julia.js:14"
+    },
+    {
+      "match": "https://docs.julialang.org/en/v1/manual/strings/#non-standard-string-literals-1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-julia.js:15"
+    },
+    {
+      "match": "https://docs.julialang.org/en/v1/manual/running-external-programs/#Running-External-Programs-1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-julia.js:16"
+    },
+    {
+      "match": "https://docs.julialang.org/en/v1/manual/strings/#man-characters-1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-julia.js:21"
+    },
+    {
+      "match": "https://docs.julialang.org/en/v1/manual/mathematical-operations/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-julia.js:29"
+    },
+    {
+      "match": "https://docs.julialang.org/en/v1/manual/mathematical-operations/#Operator-Precedence-and-Associativity-1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-julia.js:30"
+    },
+    {
+      "match": "https://docs.julialang.org/en/v1/base/numbers/#Base.im",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-julia.js:33"
+    },
+    {
+      "match": "https://help.keyman.com/developer/language/guide/headers",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-keyman.js:16"
+    },
+    {
+      "match": "https://kotlinlang.org/spec/expressions.html#string-interpolation-expressions",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-kotlin.js:37"
+    },
+    {
+      "match": "https://kotlinlang.org/spec/expressions.html#character-literals",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-kotlin.js:64"
+    },
+    {
+      "match": "https://latte.nette.org/en/tags",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-latte.js:5"
+    },
+    {
+      "match": "https://github.com/Shopify/liquid/blob/698f5e0d967423e013f6169d9111bd969bd78337/lib/liquid/lexer.rb#L21",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-liquid.js:33"
+    },
+    {
+      "match": "https://www.gnu.org/software/emacs/manual/html_node/elisp/Symbol-Type.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (gnu.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-lisp.js:24"
+    },
+    {
+      "match": "https://www.gnu.org/software/emacs/manual/html_node/elisp/Comment-Tips.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (gnu.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-lisp.js:38"
+    },
+    {
+      "match": "https://github.com/MTDL9/vim-log-highlighting",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-log.js:4"
+    },
+    {
+      "match": "http://magma.maths.usyd.edu.au/magma/handbook/text/82",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-magma.js:18"
+    },
+    {
+      "match": "https://github.com/lodash/lodash/blob/2da024c3b4f9947a48517639de7560457cd4ec6c/unescape.js#L2",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-markdown.js:364"
+    },
+    {
+      "match": "https://www.stata.com/manuals/m.pdf",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-mata.js:1"
+    },
+    {
+      "match": "https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/index.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-n1ql.js:1"
+    },
+    {
+      "match": "https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/reservedwords.html#n1ql-reserved-words",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-n1ql.js:17"
+    },
+    {
+      "match": "https://numberfour.github.io/n4js/spec/N4JSSpec.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-n4js.js:2"
+    },
+    {
+      "match": "https://numberfour.github.io/n4js/spec/N4JSSpec.html#_annotations",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-n4js.js:7"
+    },
+    {
+      "match": "http://github.com/idleberg",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-nsis.js:2"
+    },
+    {
+      "match": "https://ocaml.org/manual/lex.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-ocaml.js:1"
+    },
+    {
+      "match": "http://caml.inria.fr/pub/docs/manual-ocaml/lex.html#sec84",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-ocaml.js:47"
+    },
+    {
+      "match": "http://streamcomputing.eu/downloads/?opencl.lang",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 2,
+      "first_seen": "components/prism-opencl.js:4"
+    },
+    {
+      "match": "http://sourceforge.net/tracker/?func=detail&aid=2957794&group_id=95717&atid=612384",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-opencl.js:4"
+    },
+    {
+      "match": "https://www.khronos.org/registry/OpenCL/sdk/2.1/docs/man/xhtml/mathConstants.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-opencl.js:7"
+    },
+    {
+      "match": "https://www.khronos.org/registry/OpenCL/sdk/2.1/docs/man/xhtml/macroLimits.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-opencl.js:8"
+    },
+    {
+      "match": "https://www.khronos.org/registry/OpenCL/sdk/2.1/docs/man/xhtml/scalarDataTypes.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-opencl.js:18"
+    },
+    {
+      "match": "https://www.khronos.org/registry/OpenCL/sdk/2.1/docs/man/xhtml/otherDataTypes.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-opencl.js:19"
+    },
+    {
+      "match": "http://streamcomputing.eu/downloads/?opencl_host.lang",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "components/prism-opencl.js:27"
+    },
+    {
+      "match": "http://github.khronos.org/OpenCL-CLHPP/annotated.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-opencl.js:53"
+    },
+    {
+      "match": "https://qiskit.github.io/openqasm/grammar/index.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-openqasm.js:1"
+    },
+    {
+      "match": "http://aahacreative.com/2012/07/31/php-syntax-highlighting-prism/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-php.js:2"
+    },
+    {
+      "match": "http://milesj.me",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-php.js:3"
+    },
+    {
+      "match": "https://www.php.net/manual/en/reserved.keywords.php",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-php.js:99"
+    },
+    {
+      "match": "https://docs.oracle.com/en/database/oracle/oracle-database/21/lnpls/plsql-reserved-words-keywords.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-plsql.js:6"
+    },
+    {
+      "match": "https://docs.oracle.com/en/database/oracle/oracle-database/21/lnpls/plsql-language-fundamentals.html#GUID-96A42F7C-7A71-4B90-8255-CA9C8BD9722E",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-plsql.js:8"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/powerquery-m/power-query-m-language-specification",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-powerquery.js:1"
+    },
+    {
+      "match": "http://technet.microsoft.com/en-us/library/hh847744.aspx",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-powershell.js:37"
+    },
+    {
+      "match": "https://github.com/prometheus-community/monaco-promql/blob/master/src/promql/promql.ts",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-promql.js:1"
+    },
+    {
+      "match": "https://kausal.co/blog/slate-prism-add-new-syntax-promql/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-promql.js:2"
+    },
+    {
+      "match": "https://prometheus.io/docs/prometheus/latest/querying/operators/#aggregation-operators",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-promql.js:6"
+    },
+    {
+      "match": "https://prometheus.io/docs/prometheus/latest/querying/operators/#vector-matching",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-promql.js:23"
+    },
+    {
+      "match": "https://prometheus.io/docs/prometheus/latest/querying/basics/#offset-modifier",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-promql.js:34"
+    },
+    {
+      "match": "https://agraef.github.io/pure-docs/pure.html#lexical-matters",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-pure.js:2"
+    },
+    {
+      "match": "https://codepen.io/ImagineProgramming/details/JYydBy/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-purebasic.js:4"
+    },
+    {
+      "match": "https://github.com/PrismJS/prism/issues/3006",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-purescript.js:26"
+    },
+    {
+      "match": "http://code.kx.com/wiki/Reference/Slash",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 3,
+      "first_seen": "components/prism-q.js:4"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-qsharp.js:42"
+    },
+    {
+      "match": "https://github.com/microsoft/qsharp-language/tree/main/Specifications/Language/5_Grammar",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-qsharp.js:43"
+    },
+    {
+      "match": "https://docs.oracle.com/javase/10/docs/api/java/util/regex/Pattern.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-regex.js:79"
+    },
+    {
+      "match": "https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference?view=netframework-4.7.2#grouping-constructs",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-regex.js:80"
+    },
+    {
+      "match": "https://www.openpolicyagent.org/docs/latest/policy-reference/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-rego.js:1"
+    },
+    {
+      "match": "https://github.com/rust-lang/reference/blob/master/src/keywords.md",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-rust.js:93"
+    },
+    {
+      "match": "https://doc.rust-lang.org/stable/rust-by-example/primitives.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-rust.js:96"
+    },
+    {
+      "match": "https://doc.rust-lang.org/1.0.0/style/style/naming/README.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-rust.js:102"
+    },
+    {
+      "match": "https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_6.html#SEC30",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-scheme.js:22"
+    },
+    {
+      "match": "https://small.r7rs.org/attachment/r7rs.pdf",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-scheme.js:46"
+    },
+    {
+      "match": "https://github.com/JesusFreke/smali/tree/master/smali/src/test/resources/LexerTest",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-smali.js:2"
+    },
+    {
+      "match": "https://github.com/JesusFreke/smali/wiki/TypesMethodsAndFields#types",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-smali.js:31"
+    },
+    {
+      "match": "https://smlfamily.github.io/sml97-defn.pdf",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-sml.js:1"
+    },
+    {
+      "match": "https://people.mpi-sws.org/~rossberg/sml.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-sml.js:2"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Universally_unique_identifier#Format",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-solution-file.js:4"
+    },
+    {
+      "match": "https://docs.splunk.com/Documentation/Splunk/7.3.0/SearchReference/ListOfSearchCommands",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-splunk-spl.js:7"
+    },
+    {
+      "match": "https://mc-stan.org/docs/2_28/reference-manual/bnf-grammars.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-stan.js:3"
+    },
+    {
+      "match": "https://mc-stan.org/docs/2_24/reference-manual/print-statements-section.html#string-literals",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-stan.js:11"
+    },
+    {
+      "match": "https://www.stata.com/manuals/u.pdf",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-stata.js:1"
+    },
+    {
+      "match": "https://www.stata.com/manuals/p.pdf",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-stata.js:2"
+    },
+    {
+      "match": "https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-swift.js:9"
+    },
+    {
+      "match": "https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID141",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-swift.js:114"
+    },
+    {
+      "match": "https://docs.swift.org/swift-book/ReferenceManual/zzSummaryOfTheGrammar.html#ID481",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-swift.js:140"
+    },
+    {
+      "match": "https://www.freedesktop.org/software/systemd/man/systemd.syntax.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-systemd.js:1"
+    },
+    {
+      "match": "https://en.wikipedia.org/wiki/Test_Anything_Protocol",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-tap.js:1"
+    },
+    {
+      "match": "https://github.com/karlhorky",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-tsx.js:10"
+    },
+    {
+      "match": "https://github.com/PrismJS/prism/issues/2594#issuecomment-710666928",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-tsx.js:11"
+    },
+    {
+      "match": "https://docs.unrealengine.com/udk/Three/UnrealScriptExpressions.html",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-unrealscript.js:37"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc3986#appendix-A",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-uri.js:1"
+    },
+    {
+      "match": "https://www.warp10.io/tags/control",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-warpscript.js:13"
+    },
+    {
+      "match": "https://www.warp10.io/tags/operators",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-warpscript.js:19"
+    },
+    {
+      "match": "https://wren.io/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-wren.js:1"
+    },
+    {
+      "match": "https://yaml.org/spec/1.2/spec.html#c-ns-anchor-property",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-yaml.js:3"
+    },
+    {
+      "match": "https://yaml.org/spec/1.2/spec.html#c-ns-alias-node",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-yaml.js:4"
+    },
+    {
+      "match": "https://yaml.org/spec/1.2/spec.html#c-ns-tag-property",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-yaml.js:6"
+    },
+    {
+      "match": "https://yaml.org/spec/1.2/spec.html#c-ns-properties",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-yaml.js:8"
+    },
+    {
+      "match": "https://yaml.org/spec/1.2/spec.html#ns-plain",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-yaml.js:11"
+    },
+    {
+      "match": "https://tools.ietf.org/html/rfc6020#page-34",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (ietf.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-yang.js:2"
+    },
+    {
+      "match": "http://www.yang-central.org/twiki/bin/view/Main/YangExamples",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "components/prism-yang.js:3"
+    }
+  ],
+  "ip_findings": [],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "PrismJS",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "PrismJS",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "PrismJS",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:51:19.559Z",
+      "entryCount": 0
+    }
+  ]
+}

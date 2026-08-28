@@ -1,0 +1,345 @@
+{
+  "package_name": "superagent",
+  "version": "10.3.0",
+  "dataset_category": null,
+  "execution_time_ms": 524,
+  "manifest_urls_found": [
+    "https://github.com/ladjs/superagent/issues",
+    "https://github.com/ladjs/superagent",
+    "http://stackoverflow.com/questions/10046972/msie-returns-status-code-of-1223-for-ajax-request",
+    "https://connect.microsoft.com/IE/feedback/details/837245/xmlhttprequest-upload-throws-invalid-argument-when-used-from-web-worker-context",
+    "https://github.com/sindresorhus/got/pull/537",
+    "https://github.com/libuv/libuv/commit/02e1ebd40b807be5af46343ea873331b2ee4e9c1",
+    "https://github.com/request/request/search?q=ESOCKETTIMEDOUT&unscoped_q=ESOCKETTIMEDOUT",
+    "https://github.com/sindresorhus/got#retry",
+    "https://github.com/ladjs/superagent/issues/1680",
+    "https://nodejs.org/api/http2.html#http2_http2session_socket",
+    "http://localhost/",
+    "http://localhost/upload",
+    "https://1.2.3.4/",
+    "https://www.iana.org/assignments/media-types/media-types.xhtml",
+    "https://github.com/nodejs/node/pull/39520#issuecomment-889697136"
+  ],
+  "ast_intents": [
+    "superagent"
+  ],
+  "code_load_intents": [],
+  "semantic_mismatch_detected": null,
+  "classification": null,
+  "error_log": null,
+  "run_id": "2dd3fa4f-0f1a-4caa-8564-717187a2d4bb",
+  "timestamp": "2026-08-21T11:53:02.774Z",
+  "spec": "superagent",
+  "verdict": "blocked",
+  "detected_suspicious": false,
+  "installed": false,
+  "files_scanned": 19,
+  "ips_found": [
+    "::1",
+    "1.2.3.4",
+    "127.0.0.1"
+  ],
+  "auto_run_scripts": [],
+  "publish_scripts": [
+    "prepare"
+  ],
+  "scripts": {
+    "browserify": "browserify src/node/index.js -o dist/superagent.js -s superagent -g [ babelify --configFile ./.dist.babelrc ]",
+    "build": "npm run build:clean && npm run build:lib && npm run build:dist",
+    "build:clean": "rimraf lib dist",
+    "build:dist": "npm run browserify && npm run minify",
+    "build:lib": "babel --config-file ./.lib.babelrc src --out-dir lib",
+    "build:test": "babel --config-file ./.test.babelrc test --out-dir lib/node/test",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov",
+    "lint": "eslint -c .eslintrc src test && remark . -qfo && eslint -c .lib.eslintrc lib/**/*.js && eslint -c .dist.eslintrc dist/**/*.js",
+    "minify": "cross-env NODE_ENV=production browserify src/node/index.js -o dist/superagent.min.js -s superagent -g [ babelify --configFile ./.dist.babelrc ] -p tinyify",
+    "nyc": "cross-env NODE_ENV=test nyc ava",
+    "test": "npm run build && npm run lint && make test",
+    "test-http2": "npm run build && npm run lint && make test-node-http2",
+    "prepare": "husky"
+  },
+  "severity_counts": {
+    "critical": 0,
+    "warn": 0,
+    "info": 18
+  },
+  "url_findings": [
+    {
+      "match": "https://github.com/ladjs/superagent/issues",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:12"
+    },
+    {
+      "match": "https://github.com/ladjs/superagent",
+      "severity": "info",
+      "position": "metadata",
+      "provenance": "self",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "package.json:12"
+    },
+    {
+      "match": "http://stackoverflow.com/questions/10046972/msie-returns-status-code-of-1223-for-ajax-request",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (stackoverflow.com)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/client.js:308"
+    },
+    {
+      "match": "https://connect.microsoft.com/IE/feedback/details/837245/xmlhttprequest-upload-throws-invalid-argument-when-used-from-web-worker-context",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/client.js:739"
+    },
+    {
+      "match": "https://github.com/sindresorhus/got/pull/537",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/request-base.js:157"
+    },
+    {
+      "match": "https://github.com/libuv/libuv/commit/02e1ebd40b807be5af46343ea873331b2ee4e9c1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/request-base.js:160"
+    },
+    {
+      "match": "https://github.com/request/request/search?q=ESOCKETTIMEDOUT&unscoped_q=ESOCKETTIMEDOUT",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/request-base.js:161"
+    },
+    {
+      "match": "https://github.com/sindresorhus/got#retry",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/request-base.js:174"
+    },
+    {
+      "match": "https://github.com/ladjs/superagent/issues/1680",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "self",
+      "sinks": [
+        "superagent"
+      ],
+      "loaders": [],
+      "reasons": [
+        "matches the package's own repository field"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/request-base.js:426"
+    },
+    {
+      "match": "https://nodejs.org/api/http2.html#http2_http2session_socket",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "ecosystem",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "standards or ecosystem host (nodejs.org)"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/node/http2wrapper.js:71"
+    },
+    {
+      "match": "http://localhost/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "loopback address — not reachable off this machine"
+      ],
+      "occurrences": 3,
+      "first_seen": "lib/node/index.js:193"
+    },
+    {
+      "match": "http://localhost/upload",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "loopback address — not reachable off this machine"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/node/index.js:229"
+    },
+    {
+      "match": "https://1.2.3.4/",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/node/index.js:740"
+    },
+    {
+      "match": "https://www.iana.org/assignments/media-types/media-types.xhtml",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/node/index.js:1286"
+    },
+    {
+      "match": "https://github.com/nodejs/node/pull/39520#issuecomment-889697136",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/node/response.js:57"
+    }
+  ],
+  "ip_findings": [
+    {
+      "match": "::1",
+      "severity": "info",
+      "position": "code",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "netmask or non-routable address"
+      ],
+      "occurrences": 2,
+      "first_seen": "lib/node/index.js:730"
+    },
+    {
+      "match": "1.2.3.4",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "comment only — never executed"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/node/index.js:740"
+    },
+    {
+      "match": "127.0.0.1",
+      "severity": "info",
+      "position": "comment",
+      "provenance": "third-party",
+      "sinks": [],
+      "loaders": [],
+      "reasons": [
+        "loopback address — not reachable off this machine"
+      ],
+      "occurrences": 1,
+      "first_seen": "lib/node/index.js:1216"
+    }
+  ],
+  "self_origins": [
+    {
+      "host": "github.com",
+      "owner": "ladjs",
+      "field": "repository"
+    },
+    {
+      "host": "github.com",
+      "owner": "ladjs",
+      "field": "homepage"
+    },
+    {
+      "host": "github.com",
+      "owner": "ladjs",
+      "field": "bugs"
+    },
+    {
+      "host": "registry.npmjs.org",
+      "owner": null,
+      "field": "dist.tarball"
+    }
+  ],
+  "osv_advisories": [],
+  "intel_snapshot": [
+    {
+      "name": "urlhaus",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:35:54.790Z",
+      "entryCount": 15880
+    },
+    {
+      "name": "osv",
+      "status": "ready",
+      "reason": null,
+      "fetchedAt": "2026-08-21T11:53:00.505Z",
+      "entryCount": 0
+    }
+  ]
+}
