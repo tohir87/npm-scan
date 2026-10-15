@@ -353,6 +353,10 @@ export async function fetchAndScan(
   const resolvedVersion: string = pkg.version;
   const selfOrigins = deriveSelfOrigins(pkg);
 
+  // OSV only needs name@version, so the network lookup overlaps extraction and scanning.
+  const osvPromise = checkOsv(pkg.name, resolvedVersion, context.intelOptions);
+  osvPromise.catch(() => {});
+
   await extract(spec, tempDir, { ignoreScripts: true });
 
   const entries = await readdir(tempDir, { recursive: true, withFileTypes: true });
@@ -364,14 +368,20 @@ export async function fetchAndScan(
   const into = { urls: new FindingSet(), ips: new FindingSet() };
   let scripts: Record<string, string> = {};
 
-  for (const filePath of files) {
-    const relPath = relative(tempDir, filePath);
-    let content: string;
-    try {
-      content = await readFile(filePath, 'utf8');
-    } catch {
-      continue;
-    }
+  // Reads run in bounded parallel batches; processing stays in file order so findings are deterministic.
+  const READ_BATCH = 32;
+  const contents: Array<string | null> = [];
+  for (let i = 0; i < files.length; i += READ_BATCH) {
+    const batch = await Promise.all(
+      files.slice(i, i + READ_BATCH).map((f) => readFile(f, 'utf8').catch(() => null)),
+    );
+    contents.push(...batch);
+  }
+
+  for (let i = 0; i < files.length; i++) {
+    const content = contents[i];
+    if (content === null) continue;
+    const relPath = relative(tempDir, files[i]);
 
     if (basename(relPath) === 'package.json') {
       const isRoot = relPath === 'package.json';
@@ -383,7 +393,7 @@ export async function fetchAndScan(
     collectFromSource(content, relPath, getExt(relPath) === '.json', into);
   }
 
-  const osv = await checkOsv(pkg.name, resolvedVersion, context.intelOptions);
+  const osv = await osvPromise;
 
   const urls = into.urls.resolve((match, positions, sinks, loaders) =>
     classifyUrl({ url: match, positions, sinks, loaders, selfOrigins, intel: context.urlhaus.lookup(match) }),
